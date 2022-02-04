@@ -10,6 +10,8 @@ Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
   - Anthropogenic disturbance within plot (Y/N)
 
 *Predictors*: **rainfall / temperature / rainfall seasonality / temperature seasonality / disturbance from fragmentation (edge effects) / disturbance within plots / soil**, etc.
+**Some productivity measure and how that varies across biome**
+
 
 *Predicted relationships and why*:
   - Y ~ rainfall; +ve
