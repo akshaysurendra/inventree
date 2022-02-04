@@ -1,5 +1,5 @@
 # inventree
-### Meta-analysis
+## P1 - Meta-analysis diversty ~ predictors across India Babu et al.
 
 Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
 
@@ -27,3 +27,7 @@ Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
 \*: Fisher's alpha, species density, rarefied richness, shannon-diversity, simpsons diversity
 
 \*\*: # of dry months, rain in the dry season, etc. [plethora of drought indices]
+
+## P2 - Meta-analysis: who is doing forest/tree-diversity research? Anujan et al
+
+
