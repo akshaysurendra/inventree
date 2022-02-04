@@ -30,4 +30,3 @@ Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
 
 ## P2 - Meta-analysis: who is doing forest/tree-diversity research? Anujan et al
 
-
