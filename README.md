@@ -3,7 +3,7 @@
 
 Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
 
-*Response*: **plot-level alpha diversity**  of each plot in a study gathered from 1) datasets 2) meta-analysis (picking plot info from other studies) 3) writing to folks to share their data/papers/meta-data with us.
+*Response*: 1) **plot-level alpha diversity** 2) **biomass / productivity** of each plot in a study gathered from 1) datasets 2) meta-analysis (picking plot info from other studies) 3) writing to folks to share their data/papers/meta-data with us.
 
 *Intermediatery for predictors*:
   - GPS locations of each plot: obtained (if given), inferred (if on a high-res map), requested (if we can email them), approximated (if all else fails)
