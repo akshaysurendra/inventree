@@ -1,5 +1,6 @@
 # inventree
-## P1 - Meta-analysis diversty ~ predictors at an India scale [Babu et al.]
+## P0 - Meta-analysis diversty at an India scale (map)
+## P1 - Meta-analysis diversty ~ predictors at an India scale
 
 Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
 
@@ -30,5 +31,5 @@ Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
 
 \*\*: # of dry months, rain in the dry season, etc. [plethora of drought indices]
 
-## P2 - Meta-analysis: who is doing forest/tree-diversity research? [Anujan et al]
+## P2 - Meta-analysis: who is doing forest/tree-diversity research?
 
