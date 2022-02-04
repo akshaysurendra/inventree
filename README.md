@@ -33,3 +33,5 @@ Q: Environmental correlates of tree (alpha) diversity in India (subcontinent?)
 
 ## P2 - Review: who is doing forest/tree-diversity research?
 
+> Whos publishing and on what
+> Most common authors, journals, institutions and where are the pubs about geographically
