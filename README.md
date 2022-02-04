@@ -1,4 +1,8 @@
 # inventree
+
+# TO DO (by 18-Feb-2022)
+  > Exploratory (n=4) with the datasets we already have (richness)
+
 ## P0 - Diversty at an India scale (map)
 ## P1 - Diversity ~ predictors at an India scale
 
