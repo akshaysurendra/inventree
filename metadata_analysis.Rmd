@@ -1,0 +1,139 @@
+---
+title: "Metadata analysis"
+author: "Krishna Anujan"
+date: "07/03/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction/Background
+
+Region- and biome-specific baselines are crucial to understand forest dynamics under global change. Yet, global analyses draw on sparse data from the tropics, particularly from South Asian forests. Even though data from India - representing two-thirds of South Asia and spanning a wide range of tree-based biomes - exists, a barrier to syntheses is the absence of standardised and accessible data. To address this gap, we formed the India Tree Inventory (INvenTree) Network to harmonise published tree data from forest plots across India into an aggregate inventory and identify geographic and human dimensions of data gaps across biomes in India. Led by early career researchers from India and with substantial experience on Indian ecosystems, this network will help fill crucial gaps in our understanding of forest dynamics from the region and allow novel syntheses and application.
+
+## Objectives
+
+Our objectives were to understand (1) who and where tree-based data on India was being published from, (2) to understand geographic gaps in sampling effort (3) status of data availability across studies.
+
+
+```{r reading the files, echo=F}
+lvl2<-read.csv("modified_data/InvenTree_WoS-search_2023_level_2_sorting.csv", skip=1)
+#metadata$Lat<-as.numeric(metadata$Lat)
+#metadata$Long<-as.numeric(metadata$Long)
+
+#removing all the extra empty rows - to avoid having to check the number each time
+lvl2[lvl2=="#N/A"]<-NA
+lvl2[lvl2==""]<-NA
+lvl2<-lvl2[rowSums(is.na(lvl2)) <=ncol(lvl2)-2, ]
+
+#also need to remove any row with Row number in WoS == 3355 for using info from WoS because these are all from a different search
+
+```
+
+```{r summaries, echo=F}
+
+#total number of papers
+lvl2_tot<-nrow(lvl2)
+
+#split between number of checklists and plots
+num_check<-table(lvl2$Remarks)[1]
+num_plot_trans<-table(lvl2$Remarks)[2]+table(lvl2$Remarks)[3]
+num_unsure<-table(lvl2$Remarks)[4]
+
+#code for open access Y/N summary
+
+#code for data accessibility Y/N summary
+
+```
+
+## Methods
+
+We created a database of studies from Indian ecosystems that use tree inventory information from multispecies communities from 1991 to 2023. We used a Web of Science Search with the keywords AB=((tree diversity OR forest structure OR (tree* AND biomass) OR (forest* AND biomass*) OR carbon stock OR vegetation survey* OR vegetation sampling OR (tree* AND plot*) OR (forest* AND plot*) OR (measur* AND tree*) OR (checklist* AND flora*) OR (checklist* AND tree*) OR (checklist* AND plant*)) AND India), that produced 3353 entries. Although this might result in many false positives, we intended to cast a wide net. We then manually sorted these for relevance and looked for trends in publication. We used Google maps based tools on Google Sheets to get the location of author affiliations.
+
+```{r trends, echo=F}
+
+yr<-table(lvl2$Pub_Year)[1:31]
+plot(yr)
+
+```
+```{r mapping authors and sites}
+library(ggmap)
+library(tidygeocoder)
+
+#Corresponding author - 1 per paper
+
+cor.locs<-sub(".*), ", "", lvl2$Reprint.address) #extracting only the address and removing corresponding author name
+cor.locs<-as.data.frame(cor.locs)
+
+#trial<-tidygeocoder::geocode(cor.locs, cor.locs, method="osm")
+#Tried to use R to geocode using Open Street Maps, but these addresses are not in OSM.
+
+#writing the addresses
+write.csv(cor.locs, "modified_data/corresponding_adds.csv", row.names = F)
+
+#exported this and used Awesome Table Geocode
+
+cor.geo<-read.csv("modified_data/InvenTree_corresponding_adds_geocoded.csv")
+
+cor.geo<-cor.geo[complete.cases(cor.geo),]
+
+#All author addresses
+
+library(stringr)
+
+add1<-lvl2$Addresses[2]
+str_extract_all(add1,"]\\s*.*?\\s*;")
+regex("\\](.*?)\\;", add1)
+
+
+add2<-strsplit(add1, "] ")[[1]] 
+
+add2[1]
+add2[2]
+add2[3]
+add2[4]
+
+#processes to code
+#delete the first partition
+#for all that have ";", delete everything starting from the semicolon
+#if none of these, don't do anything
+#add as many rows as these
+#also maybe a counter for how many authors from this address - yikes
+
+```
+
+```{r making the maps}
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(sf)
+library(seqinr)
+library(rgeos)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+projcrs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+df <- st_as_sf(x = cor.geo,                         
+           coords = c("Longitude", "Latitude"),
+           crs = projcrs)
+
+
+png("plots/corr_author_map.png", width=12, height=8, units="in", res=300)
+ggplot(world) +
+    geom_sf(color="black")+
+  geom_sf(data=df, col=col2alpha("forestgreen", 0.5))+
+  xlab("Longitude")+ylab("Latitude")+coord_sf(expand = FALSE) +
+  scale_y_continuous(limits = c(-79, 79))+theme_minimal()+ggtitle("Corresponding author locations")
+dev.off()
+```
+
+## Results
+
+Manual sorting resulted in `r lvl2_tot` publications that report tree inventories either using checklists (n=`r num_check`) or plot/transect methods (n=`r num_plot_trans`), while `r num_unsure` were of uncertain methods. We saw a strong increasing trend in publications with annual numbers crossing 20 from 2016 onwards. We also found that --- (---%) of the publications were open access and ---- (--- %) of the publications had data accessible either in a repository or along with the paper. We found that authors were predominantly based in ---- (---%). Authors based in India made up ---- (---%) of the authorship, and ---% of the corresponding authorship.
+
+## Implications
+
+Based on our metadata analysis, we identify potential for further collaboration among Indian scientists as well as between Indian scientists and foreign collaborators to further the goals of understanding forest dynamics in the region.
+
+
