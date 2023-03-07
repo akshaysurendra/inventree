@@ -58,9 +58,55 @@ yr<-table(lvl2$Pub_Year)[1:31]
 plot(yr)
 
 ```
-```{r mapping authors and sites}
-library(ggmap)
-library(tidygeocoder)
+```{r functions, echo=F}
+
+library(sp)
+library(rworldmap)
+
+# The single argument to this function, points, is a data.frame in which:
+#   - column 1 contains the longitude in degrees
+#   - column 2 contains the latitude in degrees
+coords2continent = function(points)
+{  
+  countriesSP <- rworldmap::getMap(resolution='low')
+  #countriesSP <- getMap(resolution='high') #you could use high res map from rworldxtra if you were concerned about detail
+
+  # converting points to a SpatialPoints object
+  # setting CRS directly to that from rworldmap
+  pointsSP = sp::SpatialPoints(points, proj4string=sp::CRS(sp::proj4string(countriesSP)))  
+
+
+  # use 'over' to get indices of the Polygons object containing each point 
+  indices = over(pointsSP, countriesSP)
+
+  #indices$continent   # returns the continent (6 continent model)
+  indices$REGION   # returns the continent (7 continent model)
+  #indices$ADMIN  #returns country name
+  #indices$ISO3 # returns the ISO3 code 
+}
+
+coords2country = function(points)
+{  
+  countriesSP <- rworldmap::getMap(resolution='low')
+  #countriesSP <- getMap(resolution='high') #you could use high res map from rworldxtra if you were concerned about detail
+
+  # converting points to a SpatialPoints object
+  # setting CRS directly to that from rworldmap
+  pointsSP = sp::SpatialPoints(points, proj4string=sp::CRS(proj4string(countriesSP)))  
+
+
+  # use 'over' to get indices of the Polygons object containing each point 
+  indices = over(pointsSP, countriesSP)
+
+  #indices$continent   # returns the continent (6 continent model)
+  #indices$REGION   # returns the continent (7 continent model)
+  indices$ADMIN  #returns country name
+  #indices$ISO3 # returns the ISO3 code 
+}
+
+```
+
+```{r corresponding authors, echo=F}
 
 #Corresponding author - 1 per paper
 
@@ -79,61 +125,114 @@ cor.geo<-read.csv("modified_data/InvenTree_corresponding_adds_geocoded.csv")
 
 cor.geo<-cor.geo[complete.cases(cor.geo),]
 
+cor.auth.country<-coords2country(cor.geo[,c(3,2)]) #getting the name of the country
+
+countries<-sort(table(as.character(cor.auth.country)), decreasing=T)
+max.cor.country<-names(countries)[1] #country with max
+cor.max<-countries[1] #value of max
+
+```
+
+```{r all authors, echo=F}
 #All author addresses
 
 library(stringr)
 
-add1<-lvl2$Addresses[2]
-str_extract_all(add1,"]\\s*.*?\\s*;")
-regex("\\](.*?)\\;", add1)
+address.split_vec<-function(paperID, Addresses){
+  add5<-as.data.frame(matrix(0, ncol=3))
+  colnames(add5)<-c("address", "count", "paperID")
+  for(i in 1:length(paperID)){
+  add1<-Addresses[i]
+  add2<-strsplit(add1, "] ")[[1]] 
+add3<-as.data.frame(matrix(0, ncol=2))
 
+add3[1,]<-cbind(strsplit(add2[2], "; ")[[1]][1], str_count(add2[1], ";")+1)
+if(length(add2)>2){
+  for(i in 3:length(add2)){
+    add3<-rbind(add3,cbind(strsplit(add2[i], "; ")[[1]][1], str_count(add2[i-1], ";")))
+  }
+}
+colnames(add3)<-c("address", "count")
+add3$paperID<-rep(paperID[i], nrow(add3))
+add5<-rbind(add5, add3)
+  }
+  
+return(add5)
+}
 
+author_matrix<-address.split_vec(paperID=lvl2$paperID, Addresses=lvl2$Addresses)
+
+write.csv(author_matrix, "modified_data/author_matrix.csv", row.names=F) #exporting to geocode
+
+authors_geo<-read.csv("modified_data/InvenTree_all_authors_geocoded.csv")
+
+authors_geo<-authors_geo[complete.cases(authors_geo),]
+auth.country<-coords2country(authors_geo[,c(3,2)]) #getting the name of the country
+authors_geo$country<-as.character(auth.country)
+
+country.freq<-sort(tapply(authors_geo$count, authors_geo$country, sum, na.rm=T), decreasing=T)
+```
+
+```{r rejected code, echo=F}
+address.split<-function(paperID, Addresses){
+add1<-Addresses
 add2<-strsplit(add1, "] ")[[1]] 
 
-add2[1]
-add2[2]
-add2[3]
-add2[4]
+add3<-as.data.frame(matrix(0, ncol=2))
+add3[1,]<-cbind(strsplit(add2[2], "; ")[[1]][1], str_count(add2[1], ";")+1)
+if(length(add2)>2){
+  for(i in 3:length(add2)){
+    add3<-rbind(add3,cbind(strsplit(add2[i], "; ")[[1]][1], str_count(add2[i-1], ";")))
+  }
+}
+colnames(add3)<-c("address", "count")
+add3$paperID<-rep(paperID, nrow(add3))
 
-#processes to code
-#delete the first partition
-#for all that have ";", delete everything starting from the semicolon
-#if none of these, don't do anything
-#add as many rows as these
-#also maybe a counter for how many authors from this address - yikes
+return(add3)
+}
 
 ```
 
-```{r making the maps}
+```{r making the maps, echo=F}
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(sf)
-library(seqinr)
 library(rgeos)
+library(ggplot2)
 
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 projcrs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
-df <- st_as_sf(x = cor.geo,                         
+df <-sf::st_as_sf(x = cor.geo,                         
            coords = c("Longitude", "Latitude"),
            crs = projcrs)
 
 
-png("plots/corr_author_map.png", width=12, height=8, units="in", res=300)
+#png("plots/corr_author_map.png", width=12, height=8, units="in", res=300)
 ggplot(world) +
     geom_sf(color="black")+
-  geom_sf(data=df, col=col2alpha("forestgreen", 0.5))+
+  geom_sf(data=df, col=seqinr::col2alpha("forestgreen", 0.5))+
   xlab("Longitude")+ylab("Latitude")+coord_sf(expand = FALSE) +
   scale_y_continuous(limits = c(-79, 79))+theme_minimal()+ggtitle("Corresponding author locations")
-dev.off()
+#dev.off()
+
+
+
+```
+
+```{r journal summaries, echo=F}
+journals<-sort(table(lvl2$Source.Title), decreasing=T)
+
 ```
 
 ## Results
 
-Manual sorting resulted in `r lvl2_tot` publications that report tree inventories either using checklists (n=`r num_check`) or plot/transect methods (n=`r num_plot_trans`), while `r num_unsure` were of uncertain methods. We saw a strong increasing trend in publications with annual numbers crossing 20 from 2016 onwards. We also found that --- (---%) of the publications were open access and ---- (--- %) of the publications had data accessible either in a repository or along with the paper. We found that authors were predominantly based in ---- (---%). Authors based in India made up ---- (---%) of the authorship, and ---% of the corresponding authorship.
+Manual sorting resulted in `r lvl2_tot` publications that report tree inventories either using checklists (n=`r num_check`) or plot/transect methods (n=`r num_plot_trans`), while `r num_unsure` were of uncertain methods. Preliminary results show a strong increasing trend in publications with annual numbers crossing 20 from 2016 onwards. The most preferred journal was `r names(journals)[1]` with `r journals[1]` publications, followed by `r names(journals)[2]` with `r journals[2]`. We also found that --- (---%) of the publications were open access and ---- (--- %) of the publications had data accessible either in a repository or along with the paper. 
+
+Corresponding authors were predominantly affiliated to institutions in `r max.cor.country` (n=`r cor.max` out of `r lvl2_tot`), followed by `r names(countries)[2]` (n=`r countries[2]`). Across the papers, there were `r sum(authors_geo$count)` points of authorship with the most number (n=`r country.freq[1]`) from `r names(country.freq)[1]`. Authors were second most frquently from `r names(country.freq)[2]` (n=`r country.freq[2]`).
 
 ## Implications
 
-Based on our metadata analysis, we identify potential for further collaboration among Indian scientists as well as between Indian scientists and foreign collaborators to further the goals of understanding forest dynamics in the region.
+Based on our metadata analysis, we identify opportunities for collaboration and data sharing among Indian scientists as well as between Indian scientists and foreign collaborators to further the goals of understanding forest dynamics in the region. We thus motivate the INvenTree network to share and synthesise tree-based data.
 
 
