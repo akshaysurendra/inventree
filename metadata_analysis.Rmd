@@ -50,7 +50,9 @@ num_unsure<-table(lvl2$Remarks)[4]
 
 ## Methods
 
-We created a database of studies from Indian ecosystems that use tree inventory information from multispecies communities from 1991 to 2023. We used a Web of Science Search with the keywords AB=((tree diversity OR forest structure OR (tree* AND biomass) OR (forest* AND biomass*) OR carbon stock OR vegetation survey* OR vegetation sampling OR (tree* AND plot*) OR (forest* AND plot*) OR (measur* AND tree*) OR (checklist* AND flora*) OR (checklist* AND tree*) OR (checklist* AND plant*)) AND India), that produced 3353 entries. Although this might result in many false positives, we intended to cast a wide net. We then manually sorted these for relevance and looked for trends in publication. We used Google maps based tools on Google Sheets to get the location of author affiliations.
+Google scholar search: We created a database of studies from Indian ecosystems that use tree inventory information from multispecies communities from 1991 to 2023. We used a Web of Science Search with the keywords AB=((tree diversity OR forest structure OR (tree* AND biomass) OR (forest* AND biomass\*) OR carbon stock OR vegetation survey* OR vegetation sampling OR (tree* AND plot\*) OR (forest* AND plot\*) OR (measur* AND tree\*) OR (checklist* AND flora\*) OR (checklist* AND tree\*) OR (checklist* AND plant\*)) AND India), that produced 3353 entries. Although this might result in many false positives, we intended to cast a wide net. We then manually sorted these for relevance using three criteria -*) a) reports on data from multi-species tree communities b) either using plot, transect or checklist c) in India*. 
+
+Bibliometric analysis: With this filtered dataset, we looked for trends in publication. We used WoS tools to derive publication year, journal names, authors and affiliations. We used Google maps based tools on Google Sheets to get the location of author affiliations and manually checked data availability and open access status of the papers. We summarised the information using R.
 
 ```{r trends, echo=F}
 
@@ -62,6 +64,8 @@ plot(yr)
 
 library(sp)
 library(rworldmap)
+
+#https://stackoverflow.com/questions/21708488/get-country-and-continent-from-longitude-and-latitude-point-in-r
 
 # The single argument to this function, points, is a data.frame in which:
 #   - column 1 contains the longitude in degrees
