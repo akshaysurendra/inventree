@@ -2,20 +2,24 @@
 title: "Metadata analysis"
 author: "Krishna Anujan"
 date: "07/03/2023"
-output: html_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+##What is the status of publishing on tree inventories in India? : An assessment using the novel INvenTree dataset
+
 ## Introduction/Background
 
-Region- and biome-specific baselines are crucial to understand forest dynamics under global change. Yet, global analyses draw on sparse data from the tropics, particularly from South Asian forests. Even though data from India - representing two-thirds of South Asia and spanning a wide range of tree-based biomes - exists, a barrier to syntheses is the absence of standardised and accessible data. To address this gap, we formed the India Tree Inventory (INvenTree) Network to harmonise published tree data from forest plots across India into an aggregate inventory and identify geographic and human dimensions of data gaps across biomes in India. Led by early career researchers from India and with substantial experience on Indian ecosystems, this network will help fill crucial gaps in our understanding of forest dynamics from the region and allow novel syntheses and application.
+Global analyses draw on sparse data from the tropics, particularly from South Asian forests. Even though data from India - representing two-thirds of South Asia - exists, a barrier to syntheses is the absence of standardised and accessible data. To address this gap, we formed the India Tree Inventory (INvenTree, https://inventree.weebly.com) Network to harmonise published tree data from forest plots across India into an aggregate inventory and identify geographic and human dimensions of data gaps across biomes in India. 
 
 ## Objectives
 
-Our objectives were to understand (1) who and where tree-based data on India was being published from, (2) to understand geographic gaps in sampling effort (3) status of data availability across studies.
+Our objectives are to understand (1) who and where tree-based data on India was being published from, (2) to understand geographic gaps in sampling effort (3) status of data availability across studies.
 
 
 ```{r reading the files, echo=F}
@@ -50,9 +54,9 @@ num_unsure<-table(lvl2$Remarks)[4]
 
 ## Methods
 
-Google scholar search: We created a database of studies from Indian ecosystems that use tree inventory information from multispecies communities from 1991 to 2023. We used a Web of Science Search with the keywords AB=((tree diversity OR forest structure OR (tree* AND biomass) OR (forest* AND biomass\*) OR carbon stock OR vegetation survey* OR vegetation sampling OR (tree* AND plot\*) OR (forest* AND plot\*) OR (measur* AND tree\*) OR (checklist* AND flora\*) OR (checklist* AND tree\*) OR (checklist* AND plant\*)) AND India), that produced 3353 entries. Although this might result in many false positives, we intended to cast a wide net. We then manually sorted these for relevance using three criteria -*) a) reports on data from multi-species tree communities b) either using plot, transect or checklist c) in India*. 
+We created a database of peer-reviewed articles published between 1991-2023 from Indian ecosystems that use tree inventory information from multispecies communities. We used a Web of Science Search to search abstracts for the terms ((tree diversity OR forest structure OR (tree* AND biomass) OR (forest* AND biomass\*) OR carbon stock OR vegetation survey* OR vegetation sampling OR (tree* AND plot\*) OR (forest* AND plot\*) OR (measur* AND tree\*) OR (checklist* AND flora\*) OR (checklist* AND tree\*) OR (checklist* AND plant\*)) AND India), that produced 3353 entries. Although this might result in many false positives, we intended to cast a wide net. We then manually sorted these for relevance using three criteria -*) a) reports on data from multi-species tree communities b) either using plot, transect or checklist c) in India*. 
 
-Bibliometric analysis: With this filtered dataset, we looked for trends in publication. We used WoS tools to derive publication year, journal names, authors and affiliations. We used Google maps based tools on Google Sheets to get the location of author affiliations and manually checked data availability and open access status of the papers. We summarised the information using R.
+With this filtered dataset, we looked for trends in publication. We used WoS tools to derive publication year, journal names, authors and affiliations. We used Google maps based tools to extract locations of author affiliations. We analysed this using community ecology methods, following Mori et al 2015. 
 
 ```{r trends, echo=F}
 
@@ -110,7 +114,68 @@ coords2country = function(points)
 
 ```
 
+```{r addresses pipeline, eval=F, echo=F}
+
+#NEED to avoid repeating the geocoding process - maps has a daily limit
+
+#1. make a lookup table of addresses with lat/long
+
+#files so far
+#"modified_data/InvenTree_corresponding_adds_geocoded.csv"
+#"modified_data/InvenTree_all_authors_geocoded.csv"
+
+#make sure that all addresses have the full stop from the end removed
+
+add_lat_long<-read.csv("modified_data/InvenTree_corresponding_adds_geocoded.csv")
+colnames(add_lat_long)[1]<-"address"
+add_lat_long$address <- sub('\\..*', '', add_lat_long$address)
+
+add2<-read.csv("modified_data/InvenTree_all_authors_geocoded.csv")
+add2<-add2[,1:3]
+
+add_lat_long<-rbind(add_lat_long, add2)
+
+library(plyr)
+
+add_unique<-ddply(add_lat_long, .(address), summarise,
+                  lat=mean(Latitude, na.rm=T),
+                  long=mean(Longitude, na.rm=T))
+
+write.csv(add_unique, "modified_data/addresses_unique.csv", row.names = F)
+
+#2. only geocode if address is not in lookup table
+
+add3<-read.csv("modified_data/InvenTree_corresponding_adds_12th_March.csv")
+colnames(add3)[1]<-"address"
+add3<-add3[,1:3]
+add3$address <- sub('\\..*', '', add3$address)
+add3<-add3[complete.cases(add3),]
+add_lat_long<-rbind(add_lat_long, add3)
+
+
+add4<-read.csv("modified_data/InvenTree_authors_12th_March.csv")
+colnames(add4)[1]<-"address"
+add4<-add4[,1:3]
+add4$address <- sub('\\..*', '', add4$address)
+add4<-add4[complete.cases(add4),]
+add_lat_long<-rbind(add_lat_long, add4)
+
+
+library(plyr)
+
+add_unique<-ddply(add_lat_long, .(address), summarise,
+                  lat=mean(Latitude, na.rm=T),
+                  long=mean(Longitude, na.rm=T))
+
+write.csv(add_unique, "modified_data/addresses_unique.csv", row.names = F)
+
+
+```
+
+
 ```{r corresponding authors, echo=F}
+
+add_unique<-read.csv("modified_data/addresses_unique.csv")
 
 #Corresponding author - 1 per paper
 
@@ -120,22 +185,33 @@ cor.locs<-as.data.frame(cor.locs)
 #trial<-tidygeocoder::geocode(cor.locs, cor.locs, method="osm")
 #Tried to use R to geocode using Open Street Maps, but these addresses are not in OSM.
 
+cor.locs$Latitude<-rep(NA, nrow(cor.locs))
+cor.locs$Longitude<-rep(NA, nrow(cor.locs))
+cor.locs$cor.locs2 <- sub('\\..*', '', cor.locs$cor.locs)
+
+# trying to match to unique addresses file
+
+cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$Latitude<-add_unique$lat[match(cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$cor.locs2, add_unique$address)]
+
+cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$Longitude<-add_unique$long[match(cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$cor.locs2, add_unique$address)]
+
+#empty rows
+
+cor.locs.empty<-cor.locs[!complete.cases(cor.locs),]
+
+
+#possibly delete this stuff
+
 #writing the addresses
-write.csv(cor.locs, "modified_data/corresponding_adds.csv", row.names = F)
+#write.csv(cor.locs, "modified_data/corresponding_adds.csv", row.names = F)
 
 #exported this and used Awesome Table Geocode
 
-cor.geo<-read.csv("modified_data/InvenTree_corresponding_adds_geocoded.csv")
+#cor.geo<-read.csv("modified_data/InvenTree_corresponding_adds_geocoded.csv")
 
-cor.geo<-cor.geo[complete.cases(cor.geo),]
-
-cor.auth.country<-coords2country(cor.geo[,c(3,2)]) #getting the name of the country
-
-countries<-sort(table(as.character(cor.auth.country)), decreasing=T)
-max.cor.country<-names(countries)[1] #country with max
-cor.max<-countries[1] #value of max
 
 ```
+
 
 ```{r all authors, echo=F}
 #All author addresses
@@ -166,15 +242,52 @@ return(add5)
 
 author_matrix<-address.split_vec(paperID=lvl2$paperID, Addresses=lvl2$Addresses)
 
-write.csv(author_matrix, "modified_data/author_matrix.csv", row.names=F) #exporting to geocode
+#write.csv(author_matrix, "modified_data/author_matrix.csv", row.names=F) #exporting to geocode
 
-authors_geo<-read.csv("modified_data/InvenTree_all_authors_geocoded.csv")
+# trying to match to unique addresses file
 
-authors_geo<-authors_geo[complete.cases(authors_geo),]
-auth.country<-coords2country(authors_geo[,c(3,2)]) #getting the name of the country
+author_matrix$Latitude<-rep(NA, nrow(author_matrix))
+author_matrix$Longitude<-rep(NA, nrow(author_matrix))
+
+author_matrix[which(author_matrix$address%in%add_unique$address),]$Latitude<-add_unique$lat[match(author_matrix[which(author_matrix$address%in%add_unique$address),]$address, add_unique$address)]
+
+author_matrix[which(author_matrix$address%in%add_unique$address),]$Longitude<-add_unique$long[match(author_matrix[which(author_matrix$address%in%add_unique$address),]$address, add_unique$address)]
+
+#empty rows
+
+author_matrix.empty<-author_matrix[!complete.cases(author_matrix),]
+
+```
+```{r new geocoding, eval=F, echo=F}
+
+write.csv(author_matrix.empty, "modified_data/author_matrix.empty.csv")
+
+write.csv(cor.locs.empty, "modified_data/cor.locs.empty.csv")
+
+
+```
+```{r countries from addresses, echo=F}
+#corresponding authors
+
+cor.geo<-cor.locs[complete.cases(cor.locs),]
+
+cor.auth.country<-coords2country(cor.geo[,c(3,2)]) #getting the name of the country
+
+countries<-sort(table(as.character(cor.auth.country)), decreasing=T)
+max.cor.country<-names(countries)[1] #country with max
+cor.max<-countries[1] #value of max
+
+#all authors
+
+authors_geo<-author_matrix[complete.cases(author_matrix),]
+auth.country<-coords2country(authors_geo[,c(5,4)]) #getting the name of the country
 authors_geo$country<-as.character(auth.country)
 
+authors_geo$count<-as.numeric(authors_geo$count)
 country.freq<-sort(tapply(authors_geo$count, authors_geo$country, sum, na.rm=T), decreasing=T)
+```
+
+```{r number of times an author is mentioned}
 ```
 
 ```{r rejected code, echo=F}
@@ -197,14 +310,28 @@ return(add3)
 
 ```
 
-```{r making the maps, echo=F}
+```{r making the maps, echo=F, eval=F}
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(sf)
 library(rgeos)
 library(ggplot2)
+library(sp)
+library(rgdal)
+library(maptools)
 
-world <- ne_countries(scale = "medium", returnclass = "sf")
+#https://sadique.io/blog/2014/08/08/disputed-territories-and-merging-shapes-and-features/
+
+#world <- ne_countries(scale = "medium", returnclass = "sf")
+
+world_shp<-readOGR("C://Users/krish/Documents/Columbia/Naeem_Lab/Phd_thesis/Chap3/maps/world_borders", "TM_WORLD_BORDERS_SIMPL-0.3")
+world_shp2<-unionSpatialPolygons(world_shp, IDs=world_shp@data$NAME)
+
+world_shp<-readOGR("C://Users/krish/Documents/INvenTree/large_data/shapefiles/ne_50m_admin_0_countries", "ne_50m_admin_0_countries")
+world<-st_as_sf(world_shp, crs=projcrs)
+
+disputed<-readOGR("C://Users/krish/Documents/INvenTree/large_data/shapefiles/ne_50m_admin_0_boundary_lines_disputed_areas", "ne_50m_admin_0_boundary_lines_disputed_areas")
+disputed<-st_as_sf(disputed, crs=projcrs)
 
 projcrs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 df <-sf::st_as_sf(x = cor.geo,                         
@@ -212,13 +339,14 @@ df <-sf::st_as_sf(x = cor.geo,
            crs = projcrs)
 
 
-#png("plots/corr_author_map.png", width=12, height=8, units="in", res=300)
+png("plots/corr_author_map_12_March.png", width=12, height=8, units="in", res=300)
 ggplot(world) +
+geom_sf(disputed) +
     geom_sf(color="black")+
   geom_sf(data=df, col=seqinr::col2alpha("forestgreen", 0.5))+
   xlab("Longitude")+ylab("Latitude")+coord_sf(expand = FALSE) +
   scale_y_continuous(limits = c(-79, 79))+theme_minimal()+ggtitle("Corresponding author locations")
-#dev.off()
+dev.off()
 
 
 
@@ -227,16 +355,32 @@ ggplot(world) +
 ```{r journal summaries, echo=F}
 journals<-sort(table(lvl2$Source.Title), decreasing=T)
 
+#richness of journals
+
+#diversity of journals
+pi<-journals/sum(journals)
+shannon.journal<-round(-sum(pi*log(pi)), 2)
+
+#richness of corresponding authors
+#diversity of corresponding authors
+```
+
+```{r bibliometrix, echo=F}
+#bibliometrix::biblioshiny()
 ```
 
 ## Results
 
-Manual sorting resulted in `r lvl2_tot` publications that report tree inventories either using checklists (n=`r num_check`) or plot/transect methods (n=`r num_plot_trans`), while `r num_unsure` were of uncertain methods. Preliminary results show a strong increasing trend in publications with annual numbers crossing 20 from 2016 onwards. The most preferred journal was `r names(journals)[1]` with `r journals[1]` publications, followed by `r names(journals)[2]` with `r journals[2]`. We also found that --- (---%) of the publications were open access and ---- (--- %) of the publications had data accessible either in a repository or along with the paper. 
+We have completed phase I of the INvenTree metadata analysis. Manual sorting resulted in `r lvl2_tot` publications that report tree inventories either using plot/transect methods (n=`r num_plot_trans`), checklists (n=`r num_check`) while `r num_unsure` were of uncertain methods.
 
-Corresponding authors were predominantly affiliated to institutions in `r max.cor.country` (n=`r cor.max` out of `r lvl2_tot`), followed by `r names(countries)[2]` (n=`r countries[2]`). Across the papers, there were `r sum(authors_geo$count)` points of authorship with the most number (n=`r country.freq[1]`) from `r names(country.freq)[1]`. Authors were second most frquently from `r names(country.freq)[2]` (n=`r country.freq[2]`).
+Preliminary results show that publications spanned `r sum(journals)` journals, with the top 3 being `r names(journals)[1]` (n=`r journals[1]`), `r names(journals)[2]` (n=`r journals[2]`) and `r names(journals)[3]` (n=`r journals[3]`). The Shannon's diversity of journals was `r shannon.journal`, suggesting high dominance.
+
+Corresponding authors were predominantly affiliated to institutions in `r max.cor.country` (n=`r cor.max` out of `r lvl2_tot`), followed by `r names(countries)[2]` (n=`r countries[2]`). Across the papers, there were `r sum(authors_geo$count)` points of authorship with the most number (n=`r country.freq[1]`) from `r names(country.freq)[1]`. Authors were second most frequently from `r names(country.freq)[2]` (n=`r country.freq[2]`).
+
+In ongoing analyses, we are assessing the spread and accessibility of the data as well as gaps.
 
 ## Implications
 
-Based on our metadata analysis, we identify opportunities for collaboration and data sharing among Indian scientists as well as between Indian scientists and foreign collaborators to further the goals of understanding forest dynamics in the region. We thus motivate the INvenTree network to share and synthesise tree-based data.
+Based on our metadata analysis, we identify opportunities for collaboration and data sharing among Indian scientists as well as between Indian scientists and foreign collaborators to further the goals of understanding forest dynamics in the region. We thus motivate the INvenTree network to share and synthesise tree-based data that will help fill crucial gaps in our understanding of forest dynamics from the region and allow novel syntheses and application.
 
 
