@@ -1,0 +1,635 @@
+---
+title: "Metadata analysis full"
+author: "Krishna Anujan"
+date: "21/06/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##What is the status of publishing on tree inventories in India? : An assessment using the novel INvenTree dataset
+
+## Introduction/Background
+
+Global analyses draw on sparse data from the tropics, particularly from South Asian forests. Even though data from India - representing two-thirds of South Asia - exists, a barrier to syntheses is the absence of standardised and accessible data. To address this gap, we formed the India Tree Inventory (INvenTree, https://inventree.weebly.com) Network to harmonise published tree data from forest plots across India into an aggregate inventory and identify geographic and human dimensions of data gaps across biomes in India.
+
+## Objectives
+
+We seek to understand (1) publication biases and (2) geographic gaps in tree community research in India.
+
+
+```{r reading the files, echo=F}
+lvl2<-read.csv("modified_data/InvenTree_WoS-search_2023_level_2_sorting.csv", skip=1)
+#lvl2_fill<-read.csv("modified_data/InvenTree_WoS-search_2023_level_2_23rd_June.csv", skip=1)
+lvl2_fill<-read.csv("modified_data/InvenTree_WoS-search_2023_level_2_8th_Aug.csv", skip=1)
+
+#metadata$Lat<-as.numeric(metadata$Lat)
+#metadata$Long<-as.numeric(metadata$Long)
+
+#removing all the extra empty rows - to avoid having to check the number each time
+lvl2[lvl2=="#N/A"]<-NA
+lvl2[lvl2==""]<-NA
+lvl2<-lvl2[rowSums(is.na(lvl2)) <=ncol(lvl2)-2, ]
+
+lvl2_fill[lvl2_fill=="#N/A"]<-NA
+lvl2_fill[lvl2_fill==""]<-NA
+lvl2_fill<-lvl2_fill[rowSums(is.na(lvl2_fill)) <=ncol(lvl2_fill)-2, ]
+
+#also need to remove any row with Row number in WoS == 3355 for using info from WoS because these are all from a different search
+
+```
+
+```{r summaries, echo=F}
+
+#total number of papers
+lvl2_tot<-nrow(lvl2)
+
+#split between number of checklists and plots
+num_check<-table(lvl2$Remarks)[1]
+num_plot_trans<-table(lvl2$Remarks)[2]+table(lvl2$Remarks)[3]
+num_unsure<-table(lvl2$Remarks)[4]
+
+#code for open access Y/N summary
+
+#code for data accessibility Y/N summary
+
+```
+
+## Methods
+
+We created a database of peer-reviewed articles published between 1991-2023 from Indian ecosystems that use tree inventory information from multispecies communities. We used a Web of Science (WoS) Search to search abstracts using broad search terms for tree, vegetation, plot or biomass  based studies in India, which returned 3353 entries and manually sorted these for relevance. With this filtered dataset, we attempted to discern patterns in publication. We used WoS tools to derive publication year, journal names, authors and affiliations and Google maps-based tools to extract locations of author affiliations. We analysed this dataset using community ecology methods, following Mori et al 2015.
+
+```{r trends, echo=F}
+
+yr<-table(lvl2$Pub_Year)[1:31]
+plot(yr)
+
+```
+```{r functions, echo=F}
+
+library(sp)
+library(rworldmap)
+
+#https://stackoverflow.com/questions/21708488/get-country-and-continent-from-longitude-and-latitude-point-in-r
+
+# The single argument to this function, points, is a data.frame in which:
+#   - column 1 contains the longitude in degrees
+#   - column 2 contains the latitude in degrees
+coords2continent = function(points)
+{  
+  countriesSP <- rworldmap::getMap(resolution='low')
+  #countriesSP <- getMap(resolution='high') #you could use high res map from rworldxtra if you were concerned about detail
+
+  # converting points to a SpatialPoints object
+  # setting CRS directly to that from rworldmap
+  pointsSP = sp::SpatialPoints(points, proj4string=sp::CRS(sp::proj4string(countriesSP)))  
+
+
+  # use 'over' to get indices of the Polygons object containing each point 
+  indices = over(pointsSP, countriesSP)
+
+  #indices$continent   # returns the continent (6 continent model)
+  indices$REGION   # returns the continent (7 continent model)
+  #indices$ADMIN  #returns country name
+  #indices$ISO3 # returns the ISO3 code 
+}
+
+coords2country = function(points)
+{  
+  countriesSP <- rworldmap::getMap(resolution='low')
+  #countriesSP <- getMap(resolution='high') #you could use high res map from rworldxtra if you were concerned about detail
+
+  # converting points to a SpatialPoints object
+  # setting CRS directly to that from rworldmap
+  pointsSP = sp::SpatialPoints(points, proj4string=sp::CRS(proj4string(countriesSP)))  
+
+
+  # use 'over' to get indices of the Polygons object containing each point 
+  indices = over(pointsSP, countriesSP)
+
+  #indices$continent   # returns the continent (6 continent model)
+  #indices$REGION   # returns the continent (7 continent model)
+  indices$ADMIN  #returns country name
+  #indices$ISO3 # returns the ISO3 code 
+}
+
+```
+
+```{r addresses pipeline, eval=F, echo=F}
+
+#NEED to avoid repeating the geocoding process - maps has a daily limit
+
+#1. make a lookup table of addresses with lat/long
+
+#files so far
+#"modified_data/InvenTree_corresponding_adds_geocoded.csv"
+#"modified_data/InvenTree_all_authors_geocoded.csv"
+
+#make sure that all addresses have the full stop from the end removed
+
+add_lat_long<-read.csv("modified_data/InvenTree_corresponding_adds_geocoded.csv")
+colnames(add_lat_long)[1]<-"address"
+add_lat_long$address <- sub('\\..*', '', add_lat_long$address)
+
+add2<-read.csv("modified_data/InvenTree_all_authors_geocoded.csv")
+add2<-add2[,1:3]
+
+add_lat_long<-rbind(add_lat_long, add2)
+
+
+add3<-read.csv("modified_data/InvenTree_corresponding_adds_12th_March.csv")
+colnames(add3)[1]<-"address"
+add3<-add3[,1:3]
+add3$address <- sub('\\..*', '', add3$address)
+add3<-add3[complete.cases(add3),]
+add_lat_long<-rbind(add_lat_long, add3)
+
+
+add4<-read.csv("modified_data/InvenTree_authors_12th_March.csv")
+colnames(add4)[1]<-"address"
+add4<-add4[,1:3]
+add4$address <- sub('\\..*', '', add4$address)
+add4<-add4[complete.cases(add4),]
+add_lat_long<-rbind(add_lat_long, add4)
+
+add5<-read.csv("modified_data/InvenTree_corresponding_adds_13th_March.csv")
+colnames(add5)[1]<-"address"
+add5<-add5[,1:3]
+add5$address <- sub('\\..*', '', add5$address)
+add5<-add5[complete.cases(add5),]
+add_lat_long<-rbind(add_lat_long, add5)
+
+add6<-read.csv("modified_data/InvenTree_authors_13th_March.csv")
+colnames(add6)[1]<-"address"
+add6<-add6[,1:3]
+add6$address <- sub('\\..*', '', add6$address)
+add6<-add6[complete.cases(add6),]
+add_lat_long<-rbind(add_lat_long, add6)
+
+library(plyr)
+
+add_unique<-ddply(add_lat_long, .(address), summarise,
+                  lat=mean(Latitude, na.rm=T),
+                  long=mean(Longitude, na.rm=T))
+
+write.csv(add_unique, "modified_data/addresses_unique.csv", row.names = F)
+
+
+```
+
+
+```{r corresponding authors, echo=F}
+
+add_unique<-read.csv("modified_data/addresses_unique.csv")
+
+#Corresponding author - 1 per paper
+
+cor.locs<-sub(".*), ", "", lvl2$Reprint.address) #extracting only the address and removing corresponding author name
+cor.locs<-as.data.frame(cor.locs)
+cor.locs$paperID<-lvl2$paperID
+
+#trial<-tidygeocoder::geocode(cor.locs, cor.locs, method="osm")
+#Tried to use R to geocode using Open Street Maps, but these addresses are not in OSM.
+
+cor.locs$Latitude<-rep(NA, nrow(cor.locs))
+cor.locs$Longitude<-rep(NA, nrow(cor.locs))
+cor.locs$cor.locs2 <- sub('\\..*', '', cor.locs$cor.locs)
+
+# trying to match to unique addresses file
+
+cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$Latitude<-add_unique$lat[match(cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$cor.locs2, add_unique$address)]
+
+cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$Longitude<-add_unique$long[match(cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$cor.locs2, add_unique$address)]
+
+#empty rows
+
+cor.locs.empty<-cor.locs[!complete.cases(cor.locs),]
+
+
+#possibly delete this stuff
+
+#writing the addresses
+#write.csv(cor.locs, "modified_data/corresponding_adds.csv", row.names = F)
+
+#exported this and used Awesome Table Geocode
+
+#cor.geo<-read.csv("modified_data/InvenTree_corresponding_adds_geocoded.csv")
+
+
+```
+
+
+```{r all authors, echo=F}
+#All author addresses
+
+library(stringr)
+
+address.split_vec<-function(paperID, Addresses){
+  add5<-as.data.frame(matrix(0, ncol=3))
+  colnames(add5)<-c("address", "count", "paperID")
+  for(i in 1:length(paperID)){
+  add1<-Addresses[i]
+  add2<-strsplit(add1, "] ")[[1]] 
+add3<-as.data.frame(matrix(0, ncol=2))
+
+add3[1,]<-cbind(strsplit(add2[2], "; ")[[1]][1], str_count(add2[1], ";")+1)
+if(length(add2)>2){
+  for(i in 3:length(add2)){
+    add3<-rbind(add3,cbind(strsplit(add2[i], "; ")[[1]][1], str_count(add2[i-1], ";")))
+  }
+}
+colnames(add3)<-c("address", "count")
+add3$paperID<-rep(paperID[i], nrow(add3))
+add5<-rbind(add5, add3)
+  }
+  
+return(add5)
+}
+
+author_matrix<-address.split_vec(paperID=lvl2$paperID, Addresses=lvl2$Addresses)
+
+#write.csv(author_matrix, "modified_data/author_matrix.csv", row.names=F) #exporting to geocode
+
+# trying to match to unique addresses file
+
+author_matrix$Latitude<-rep(NA, nrow(author_matrix))
+author_matrix$Longitude<-rep(NA, nrow(author_matrix))
+
+author_matrix[which(author_matrix$address%in%add_unique$address),]$Latitude<-add_unique$lat[match(author_matrix[which(author_matrix$address%in%add_unique$address),]$address, add_unique$address)]
+
+author_matrix[which(author_matrix$address%in%add_unique$address),]$Longitude<-add_unique$long[match(author_matrix[which(author_matrix$address%in%add_unique$address),]$address, add_unique$address)]
+
+#empty rows
+
+author_matrix.empty<-author_matrix[!complete.cases(author_matrix),]
+
+```
+```{r new geocoding, eval=F, echo=F}
+
+write.csv(author_matrix.empty, "modified_data/author_matrix.empty.csv")
+
+write.csv(cor.locs.empty, "modified_data/cor.locs.empty.csv")
+
+
+```
+```{r countries from addresses, echo=F}
+#corresponding authors
+
+cor.geo<-cor.locs[complete.cases(cor.locs),]
+
+cor.auth.country<-coords2country(cor.geo[,c(4,3)]) #getting the name of the country
+
+countries<-sort(table(as.character(cor.auth.country)), decreasing=T)
+max.cor.country<-names(countries)[1] #country with max
+cor.max<-countries[1] #value of max
+
+#all authors
+
+authors_geo<-author_matrix[complete.cases(author_matrix),]
+auth.country<-coords2country(authors_geo[,c(5,4)]) #getting the name of the country
+authors_geo$country<-as.character(auth.country)
+
+authors_geo$count<-as.numeric(authors_geo$count)
+country.freq<-sort(tapply(authors_geo$count, authors_geo$country, sum, na.rm=T), decreasing=T)
+```
+
+```{r number of times an author is mentioned}
+```
+
+```{r rejected code, echo=F}
+address.split<-function(paperID, Addresses){
+add1<-Addresses
+add2<-strsplit(add1, "] ")[[1]] 
+
+add3<-as.data.frame(matrix(0, ncol=2))
+add3[1,]<-cbind(strsplit(add2[2], "; ")[[1]][1], str_count(add2[1], ";")+1)
+if(length(add2)>2){
+  for(i in 3:length(add2)){
+    add3<-rbind(add3,cbind(strsplit(add2[i], "; ")[[1]][1], str_count(add2[i-1], ";")))
+  }
+}
+colnames(add3)<-c("address", "count")
+add3$paperID<-rep(paperID, nrow(add3))
+
+return(add3)
+}
+
+```
+
+```{r making the maps, echo=F, eval=F}
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(sf)
+library(rgeos)
+library(ggplot2)
+library(sp)
+library(rgdal)
+library(maptools)
+
+#https://sadique.io/blog/2014/08/08/disputed-territories-and-merging-shapes-and-features/
+
+#world <- ne_countries(scale = "medium", returnclass = "sf")
+
+world_shp<-readOGR("C://Users/krish/Documents/Columbia/Naeem_Lab/Phd_thesis/Chap3/maps/world_borders", "TM_WORLD_BORDERS_SIMPL-0.3")
+world_shp2<-unionSpatialPolygons(world_shp, IDs=world_shp@data$NAME)
+
+world_shp<-readOGR("C://Users/krish/Documents/INvenTree/large_data/shapefiles/ne_50m_admin_0_countries", "ne_50m_admin_0_countries")
+world<-st_as_sf(world_shp, crs=projcrs)
+
+disputed<-readOGR("C://Users/krish/Documents/INvenTree/large_data/shapefiles/ne_50m_admin_0_boundary_lines_disputed_areas", "ne_50m_admin_0_boundary_lines_disputed_areas")
+disputed<-st_as_sf(disputed, crs=projcrs)
+
+projcrs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+df <-sf::st_as_sf(x = cor.geo,                         
+           coords = c("Longitude", "Latitude"),
+           crs = projcrs)
+
+
+png("plots/corr_author_map_12_March.png", width=12, height=8, units="in", res=300)
+ggplot(world) +
+geom_sf(disputed) +
+    geom_sf(color="black")+
+  geom_sf(data=df, col=seqinr::col2alpha("forestgreen", 0.5))+
+  xlab("Longitude")+ylab("Latitude")+coord_sf(expand = FALSE) +
+  scale_y_continuous(limits = c(-79, 79))+theme_minimal()+ggtitle("Corresponding author locations")
+dev.off()
+
+
+
+```
+
+```{r journal summaries, echo=F}
+journals<-sort(table(lvl2$Source.Title), decreasing=T)
+
+journals_plot<-ggplot(as.data.frame(journals)[1:8,], aes(y=Freq, x=Var1))+
+  geom_bar(stat="identity")+theme_bw()+
+  xlab("")+ylab("No. of papers")+
+  theme(axis.text.x = element_text(angle=45, hjust=1))
+
+png("plots/journals.png", width=8, height=8, res=300, units="in")
+journals_plot
+dev.off()
+
+#richness of journals
+
+#diversity of journals
+pi<-journals/sum(journals)
+shannon.journal<-round(-sum(pi*log(pi)), 2)
+
+#richness of corresponding author affiliations
+cor.affs<-sort(table(cor.locs$cor.locs), decreasing=T)
+
+#diversity of corresponding author affiliations
+pi<-cor.affs/sum(cor.affs)
+shannon.cors<-round(-sum(pi*log(pi)), 2)
+```
+
+```{r where are the plots, echo=F}
+
+lvl2_fill<-lvl2_fill[lvl2_fill$All.checked.=="Y" & lvl2_fill$Relevant...Y.N.=="Y" & is.na(lvl2_fill$plot_shape)==F & is.na(lvl2_fill$latitude_site_decimal)==F & is.na(lvl2_fill$longitude_site_decimal)==F,]
+
+library(rgdal)
+library(sp)
+library(sf)
+library(rgeos)
+
+ind2<-readOGR("C://Users/krish/Documents/Andamans/Fejervarya/India-shape/india_shape2", "India_Country_Boundary")
+
+ind<-spTransform(ind2, CRS("+proj=longlat +datum=WGS84 +no_defs"))
+
+lat_site<-as.numeric(lvl2_fill$latitude_site_decimal)
+long_site<-as.numeric(lvl2_fill$longitude_site_decimal)
+
+
+png("plots/sites_map.png", width=8, height = 8, units="in", res=300)
+plot(ind)
+axis(1)
+axis(2)
+grid()
+points(lat_site~long_site, pch=16, col="mediumseagreen", cex=1)
+dev.off()
+```
+```{r how much area has been surveyed, echo=F}
+
+lvl2_fill$area<-rep(NA, nrow(lvl2_fill))
+lvl2_fill$plot_shape<-as.character(lvl2_fill$plot_shape)
+
+lvl2_fill$dim1_for_rect_in_m<-as.numeric(lvl2_fill$dim1_for_rect_in_m)
+lvl2_fill$dim2_for_rect_in_m<-as.numeric(lvl2_fill$dim2_for_rect_in_m)
+lvl2_fill$diameter_for_circular_in_m<-as.numeric(lvl2_fill$diameter_for_circular_in_m)
+
+for (i in 1:nrow(lvl2_fill)){
+  if (lvl2_fill$plot_shape[i]=="square or rectangle"){
+    lvl2_fill$area[i]<-lvl2_fill$dim1_for_rect_in_m[i]*lvl2_fill$dim2_for_rect_in_m[i]
+  }
+  else if (lvl2_fill$plot_shape[i]=="circular"){
+    lvl2_fill$area[i]<-pi*((lvl2_fill$diameter_for_circular_in_m[i]/2)^2)
+  }
+  else (lvl2_fill$area[i]<-NA)
+}
+
+lvl2_fill$number_of_plots<-as.numeric(lvl2_fill$number_of_plots)
+lvl2_fill$tot_area<-lvl2_fill$area*lvl2_fill$number_of_plots
+
+```
+
+```{r maps with ggplot, echo=F}
+
+library(ggplot2)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(rgdal)
+library(rgeos)
+library(maptools)
+
+inventree_coords<-as.data.frame(cbind(long_site, lat_site))
+inventree_points<-SpatialPointsDataFrame(coords=inventree_coords, data=lvl2_fill, proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
+
+world_shp<-readOGR("C://Users/krish/Documents/Columbia/Naeem_Lab/Phd_thesis/Chap3/maps/world_borders", "TM_WORLD_BORDERS_SIMPL-0.3")
+world_shp2<-unionSpatialPolygons(world_shp, IDs=world_shp@data$NAME)
+
+
+
+inventree_plot<-ggplot()+
+  #geom_sf(data=st_as_)
+  geom_sf(data=st_as_sf(world_shp2), fill="grey80", colour="grey20")+
+geom_sf(data=st_as_sf(ind), fill="white", size=0.4)+
+        #fill="grey80", colour="grey20", size=0.4)+
+  #geom_sf(data=st_as_sf(kochi), fill="white", colour="grey20", size=1)+
+  geom_sf(data=st_as_sf(inventree_points), aes(size=tot_area), col="mediumseagreen", alpha=0.5)+
+  #labs(x="", y="") +
+  ggtitle("Surveyed plots")+labs(size="Surveyed area (m2)")+
+  coord_sf(xlim = c(65, 100), ylim = c(8, 40))+
+  ggspatial::annotation_scale(location="br", bar_cols=c("grey60", "white"))+
+  ggspatial::annotation_north_arrow(location="tr", style=ggspatial::north_arrow_orienteering(fill=c("grey60", "white")))+
+  #guides(size=F)+
+  theme_bw()+
+  theme(axis.line = element_line(colour = "black"),
+        panel.border = element_blank(),
+        panel.background= element_rect(fill = "aliceblue", colour = "aliceblue"))
+
+png("plots/inventree_data_23rdJune.png", width=8, height=8, units="in", res=300)
+inventree_plot
+dev.off()
+```
+
+```{r distance between location and corresponding author location, echo=F}
+
+cor.geo$lat_site<-rep(NA, nrow(cor.geo))
+cor.geo$long_site<-rep(NA, nrow(cor.geo))
+
+cor.geo$lat_site<-lvl2_fill$latitude_site_decimal[match(cor.geo$paperID, lvl2_fill$paperID)]
+
+cor.geo$long_site<-lvl2_fill$longitude_site_decimal[match(cor.geo$paperID, lvl2_fill$paperID)]
+
+cor.geo<-cor.geo[complete.cases(cor.geo),]
+
+cor.geo$dists<-geosphere::distHaversine(cbind(cor.geo$Longitude, cor.geo$Latitude), cbind(cor.geo$long_site, cor.geo$lat_site))/1000
+
+dist_plot<-ggplot(cor.geo, aes(x=dists))+geom_histogram(binwidth=500)+
+  geom_vline(xintercept=median(dists)/1000, col="mediumseagreen", lwd=2)+
+  theme_bw()+xlab("Distance between site and corresponding author location (km)")+ylab("Number of studies")+
+  scale_colour_manual(values="grey60")+
+  scale_fill_manual(values="grey40")
+
+png("plots/distance_hist.png", width=8, height=8, units="in", res=300)
+dist_plot
+dev.off()
+
+```
+
+```{r bioregions, echo=F}
+
+bioregions<-readOGR("C://Users/krish/Documents/INvenTree/large_data/Ecoregions2017", "Ecoregions2017")
+
+str(bioregions@data)
+
+
+#finding the distribution of bioregions in India
+bio_india<-st_intersection(st_as_sf(bioregions), st_as_sf(ind))
+
+#http://rstudio-pubs-static.s3.amazonaws.com/7993_6b081819ba184047802a508a7f3187cb.html
+
+join<-over(inventree_points, bioregions) #extracting the bioregions values for all points
+inventree_points<-merge(inventree_points, join)# not working
+
+inventree_points@data$BIOME_NAME<-join$BIOME_NAME
+inventree_points@data$ECO_NAME<-join$ECO_NAME
+
+lvl2_fill$BIOME_NAME<-join$BIOME_NAME
+lvl2_fill$ECO_NAME<-join$ECO_NAME
+```
+
+```{r paper and data access, echo=F}
+
+lvl2_fill$Open_access<-factor(lvl2_fill$Open_access, levels=c("Y", "N", "Unsure"))
+
+lvl2_fill$Data_access<-factor(lvl2_fill$Data_access, levels=c("Y", "N", "Unsure"))
+
+inventree_plot<-ggplot()+
+  #geom_sf(data=st_as_)
+  geom_sf(data=st_as_sf(world_shp2), fill="grey80", colour="grey20")+
+geom_sf(data=st_as_sf(ind), fill="white", size=0.4)+
+        #fill="grey80", colour="grey20", size=0.4)+
+  #geom_sf(data=st_as_sf(kochi), fill="white", colour="grey20", size=1)+
+  geom_sf(data=st_as_sf(inventree_points), aes(size=tot_area), col="mediumseagreen", alpha=0.5)+
+  #labs(x="", y="") +
+  ggtitle("Surveyed plots")+labs(size="Surveyed area (m2)")+
+  coord_sf(xlim = c(65, 100), ylim = c(8, 40))+
+  ggspatial::annotation_scale(location="br", bar_cols=c("grey60", "white"))+
+  ggspatial::annotation_north_arrow(location="tr", style=ggspatial::north_arrow_orienteering(fill=c("grey60", "white")))+
+  #guides(size=F)+
+  theme_bw()+
+  theme(axis.line = element_line(colour = "black"),
+        panel.border = element_blank(),
+        panel.background= element_rect(fill = "aliceblue", colour = "aliceblue"))
+
+png("plots/inventree_data_21stMar.png", width=8, height=8, units="in", res=300)
+inventree_plot
+dev.off()
+
+
+OA_table<-as.data.frame(table(lvl2_fill$Open_access))
+DA_table<-as.data.frame(table(lvl2_fill$Data_access))
+
+OA_table_2<-as.data.frame(table(lvl2_fill$Open_access, lvl2_fill$BIOME_NAME))
+DA_table_2<-as.data.frame(table(lvl2_fill$Data_access, lvl2_fill$BIOME_NAME))
+
+
+OA_table$area<-tapply(lvl2_fill$tot_area, lvl2_fill$Open_access, sum, na.rm=T)
+DA_table$area<-tapply(lvl2_fill$tot_area, lvl2_fill$Data_access, sum, na.rm=T)
+
+OA_table_2$area<-tapply(lvl2_fill$tot_area, c(lvl2_fill$Open_access, lvl2_fill$BIOME_NAME), sum, na.rm=T)
+DA_table_2$area<-tapply(lvl2_fill$tot_area, lvl2_fill$Data_access, sum, na.rm=T)
+
+
+OA_status<-ggplot(OA_table, aes(x=Var1, y=Freq, fill=Var1))+
+  geom_bar(stat="identity")+
+  xlab("Open access status")+ ylab("No. of studies")+
+  scale_fill_manual(values=c("mediumseagreen", "salmon1", "grey40"))+
+  theme_bw()+guides(fill="none")
+
+DA_status<-ggplot(DA_table, aes(x=Var1, y=Freq, fill=Var1))+
+  geom_bar(stat="identity")+
+  xlab("Data access status")+ ylab("No. of studies")+
+  scale_fill_manual(values=c("mediumseagreen", "salmon1", "grey40"))+
+  theme_bw()+guides(fill="none")
+
+OA_status2<-ggplot(OA_table_2, aes(x=reorder(Var2, -Freq), y=Freq, fill=Var1))+
+  geom_bar(stat="identity")+ggtitle("Are studies Open Access?")+
+  xlab("Biome")+ ylab("No. of studies")+
+  scale_fill_manual(values=c("mediumseagreen", "salmon1", "grey40"))+
+  theme_bw()+theme(axis.text.x = element_text(angle=90, hjust=1))
+
+DA_status2<-ggplot(DA_table_2, aes(x=reorder(Var2, -Freq), y=Freq, fill=Var1))+
+  geom_bar(stat="identity")+ggtitle("Are data accessible?")+
+  xlab("Biome")+ ylab("No. of studies")+
+  scale_fill_manual(values=c("mediumseagreen", "salmon1", "grey40"))+
+  theme_bw()+theme(axis.text.x = element_text(angle=90, hjust=1))
+
+
+OA_area<-ggplot(OA_table, aes(x=Var1, y=area, fill=Var1))+
+  geom_bar(stat="identity")+
+  xlab("Open access status")+ ylab("Total area")+
+  scale_fill_manual(values=c("mediumseagreen", "salmon1", "grey40"))+
+  theme_bw()+guides(fill="none")
+
+DA_area<-ggplot(DA_table, aes(x=Var1, y=area, fill=Var1))+
+  geom_bar(stat="identity")+
+  xlab("Data access status")+ ylab("Total area")+
+  scale_fill_manual(values=c("mediumseagreen", "salmon1", "grey40"))+
+  theme_bw()+guides(fill="none")
+
+library(patchwork)
+
+png("plots/OA_DA.png", width=8, height=8, res=300, units="in")
+OA_status+DA_status+OA_area+DA_area
+dev.off()
+
+png("plots/OA_DA_status_biome.png", width=8, height=8, res=300, units="in")
+OA_status2+DA_status2
+dev.off()
+
+OA_status2
+```
+
+```{r bibliometrix, echo=F}
+#bibliometrix::biblioshiny()
+```
+
+## Results
+
+Manual sorting resulted in `r lvl2_tot` potentially relevant publications that report on tree inventories from multispecies communities in India either using plot/transect methods (n=`r num_plot_trans`), checklists (n=`r num_check`).
+
+Preliminary results show that publications spanned `r sum(journals)` journals; the top 3 were `r names(journals)[1]` (n=`r journals[1]`), `r names(journals)[2]` (n=`r journals[2]`) and `r names(journals)[3]` (n=`r journals[3]`). The Shannon's diversity of journals was `r shannon.journal`, suggesting high dominance. Across the papers, there were `r sum(authors_geo$count)` instances of authorship with the most number (n=`r country.freq[1]`) from `r names(country.freq)[1]`, followed by `r names(country.freq)[2]` (n=`r country.freq[2]`). Corresponding authors were predominantly affiliated to institutions in `r max.cor.country` (n=`r cor.max` out of `r lvl2_tot`), followed by `r names(countries)[2]` (n=`r countries[2]`). There were a total of `r sum(cor.affs)` corresponding author affiliations with a Shannon's diversity of `r shannon.cors`.
+
+Ongoing analyses will assess geographic and habitat biases.
+
+## Implications
+
+Based on our metadata analysis, we identify opportunities for collaboration and data sharing among Indian scientists as well as between Indian scientists and foreign collaborators towards a more diverse and equitable community of ecologists. We thus motivate the INvenTree network to share and synthesise tree-based data that will help fill crucial gaps in our understanding of forest dynamics from the region and allow novel syntheses and application.
+
+
