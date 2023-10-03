@@ -1,0 +1,268 @@
+---
+title: "Metadata final analysis"
+author: "Krishna Anujan"
+date: "16/08/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r reading the files, echo=F}
+
+lvl2<-read.csv("modified_data/InvenTree_WoS-search_2023_level_2_sorting.csv", skip=1)
+lvl2_fill<-read.csv("modified_data/InvenTree_WoS-search_2023_level_2_8th_Aug.csv", skip=1)
+
+#removing all the extra empty rows - to avoid having to check the number each time
+lvl2[lvl2=="#N/A"]<-NA
+lvl2[lvl2==""]<-NA
+lvl2<-lvl2[rowSums(is.na(lvl2)) <=ncol(lvl2)-2, ]
+
+lvl2_fill[lvl2_fill=="#N/A"]<-NA
+lvl2_fill[lvl2_fill==""]<-NA
+lvl2_fill<-lvl2_fill[rowSums(is.na(lvl2_fill)) <=ncol(lvl2_fill)-2, ]
+
+#also need to remove any row with Row number in WoS == 3355 for using info from WoS because these are all from a different search
+#this does not hold for the full analysis
+
+```
+
+
+```{r functions, echo=F}
+
+library(sp)
+library(rworldmap)
+
+#https://stackoverflow.com/questions/21708488/get-country-and-continent-from-longitude-and-latitude-point-in-r
+
+# The single argument to this function, points, is a data.frame in which:
+#   - column 1 contains the longitude in degrees
+#   - column 2 contains the latitude in degrees
+coords2continent = function(points)
+{  
+  countriesSP <- rworldmap::getMap(resolution='low')
+  #countriesSP <- getMap(resolution='high') #you could use high res map from rworldxtra if you were concerned about detail
+
+  # converting points to a SpatialPoints object
+  # setting CRS directly to that from rworldmap
+  pointsSP = sp::SpatialPoints(points, proj4string=sp::CRS(sp::proj4string(countriesSP)))  
+
+
+  # use 'over' to get indices of the Polygons object containing each point 
+  indices = over(pointsSP, countriesSP)
+
+  #indices$continent   # returns the continent (6 continent model)
+  indices$REGION   # returns the continent (7 continent model)
+  #indices$ADMIN  #returns country name
+  #indices$ISO3 # returns the ISO3 code 
+}
+
+coords2country = function(points)
+{  
+  countriesSP <- rworldmap::getMap(resolution='low')
+  #countriesSP <- getMap(resolution='high') #you could use high res map from rworldxtra if you were concerned about detail
+
+  # converting points to a SpatialPoints object
+  # setting CRS directly to that from rworldmap
+  pointsSP = sp::SpatialPoints(points, proj4string=sp::CRS(proj4string(countriesSP)))  
+
+
+  # use 'over' to get indices of the Polygons object containing each point 
+  indices = over(pointsSP, countriesSP)
+
+  #indices$continent   # returns the continent (6 continent model)
+  #indices$REGION   # returns the continent (7 continent model)
+  indices$ADMIN  #returns country name
+  #indices$ISO3 # returns the ISO3 code 
+}
+
+```
+
+```{r summaries, echo=F}
+
+#total number of papers
+lvl2_tot<-nrow(lvl2)
+
+#split between number of checklists and plots
+num_check<-table(lvl2$Remarks)[1]
+num_plot_trans<-table(lvl2$Remarks)[2]+table(lvl2$Remarks)[3]
+num_unsure<-table(lvl2$Remarks)[4]
+
+```
+Figures
+
+- Where are plot-level data being collected and where are the gaps?
+  * Map of observations on forest cover map.
+  * Proportion sampled in each biome [NEEDS]
+  * Undersampled districts [NEEDS]
+
+```{r Figure 1}
+
+
+
+```
+
+```{r Fig 1a, echo=F}
+
+#so far doesn't have forest cover map
+
+lvl2_fill<-lvl2_fill[lvl2_fill$All.checked.=="Y" & lvl2_fill$Relevant...Y.N.=="Y" & is.na(lvl2_fill$plot_shape)==F & is.na(lvl2_fill$latitude_site_decimal)==F & is.na(lvl2_fill$longitude_site_decimal)==F,]
+
+library(rgdal)
+library(sp)
+library(sf)
+library(rgeos)
+
+ind2<-readOGR("C://Users/krish/Documents/Andamans/Fejervarya/India-shape/india_shape2", "India_Country_Boundary")
+
+ind<-spTransform(ind2, CRS("+proj=longlat +datum=WGS84 +no_defs"))
+
+lat_site<-as.numeric(lvl2_fill$latitude_site_decimal)
+long_site<-as.numeric(lvl2_fill$longitude_site_decimal)
+
+library(ggplot2)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(rgdal)
+library(rgeos)
+library(maptools)
+
+inventree_coords<-as.data.frame(cbind(long_site, lat_site))
+inventree_points<-SpatialPointsDataFrame(coords=inventree_coords, data=lvl2_fill, proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
+
+world_shp<-readOGR("C://Users/krish/Documents/Columbia/Naeem_Lab/Phd_thesis/Chap3/maps/world_borders", "TM_WORLD_BORDERS_SIMPL-0.3")
+world_shp2<-unionSpatialPolygons(world_shp, IDs=world_shp@data$NAME)
+
+
+
+inventree_plot<-ggplot()+
+  geom_sf(data=st_as_sf(world_shp2), fill="grey80", colour="grey20")+
+geom_sf(data=st_as_sf(ind), fill="white", size=0.4)+
+  geom_sf(data=st_as_sf(inventree_points), aes(size=tot_area), col="mediumseagreen", alpha=0.5)+
+  ggtitle("Surveyed plots")+labs(size="Surveyed area (m2)")+
+  coord_sf(xlim = c(65, 100), ylim = c(8, 40))+
+  ggspatial::annotation_scale(location="br", bar_cols=c("grey60", "white"))+
+  ggspatial::annotation_north_arrow(location="tr", style=ggspatial::north_arrow_orienteering(fill=c("grey60", "white")))+
+  theme_bw()+
+  theme(axis.line = element_line(colour = "black"),
+        panel.border = element_blank(),
+        panel.background= element_rect(fill = "aliceblue", colour = "aliceblue"))
+
+#png("plots/inventree_data_23rdJune.png", width=8, height=8, units="in", res=300)
+#inventree_plot
+#dev.off()
+```
+
+```{r Fig 1b, echo=F}
+
+#using the ecoregions classification
+
+bioregions<-readOGR("C://Users/krish/Documents/INvenTree/large_data/Ecoregions2017", "Ecoregions2017")
+
+str(bioregions@data)
+
+
+#finding the distribution of bioregions in India
+bio_india<-st_intersection(st_as_sf(bioregions), st_as_sf(ind))
+
+#http://rstudio-pubs-static.s3.amazonaws.com/7993_6b081819ba184047802a508a7f3187cb.html
+
+join<-over(inventree_points, bioregions) #extracting the bioregions values for all points
+inventree_points<-merge(inventree_points, join)# not working
+
+inventree_points@data$BIOME_NAME<-join$BIOME_NAME
+inventree_points@data$ECO_NAME<-join$ECO_NAME
+
+lvl2_fill$BIOME_NAME<-join$BIOME_NAME
+lvl2_fill$ECO_NAME<-join$ECO_NAME
+
+```
+
+```{r corresponding authors, echo=F}
+
+#add_unique is a lookup table for all the unique addresses in the original, larger dataset. 
+#This has been created using code in metadata_analysis_full.Rmd
+#The addresses of all potential institutions in the larger list have been looked up on Google maps using Awesome Table Geocode to make this list.
+add_unique<-read.csv("modified_data/addresses_unique.csv")
+
+#Corresponding author - 1 per paper
+
+cor.locs<-sub(".*), ", "", lvl2$Reprint.address) #extracting only the address and removing corresponding author name
+
+#how to address mutliple corresponding author addresses?
+cor.locs<-as.data.frame(cor.locs)
+cor.locs$paperID<-lvl2$paperID
+
+
+cor.locs$Latitude<-rep(NA, nrow(cor.locs))
+cor.locs$Longitude<-rep(NA, nrow(cor.locs))
+cor.locs$cor.locs2 <- sub('\\..*', '', cor.locs$cor.locs)
+
+# trying to match to unique addresses file
+
+cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$Latitude<-add_unique$lat[match(cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$cor.locs2, add_unique$address)]
+
+cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$Longitude<-add_unique$long[match(cor.locs[which(cor.locs$cor.locs2%in%add_unique$address),]$cor.locs2, add_unique$address)]
+
+```
+
+
+```{r all authors, echo=F}
+#All author addresses
+
+library(stringr)
+
+address.split_vec<-function(paperID, Addresses){
+  add5<-as.data.frame(matrix(0, ncol=3))
+  colnames(add5)<-c("address", "count", "paperID")
+  for(i in 1:length(paperID)){
+  add1<-Addresses[i]
+  add2<-strsplit(add1, "] ")[[1]] 
+add3<-as.data.frame(matrix(0, ncol=2))
+
+add3[1,]<-cbind(strsplit(add2[2], "; ")[[1]][1], str_count(add2[1], ";")+1)
+if(length(add2)>2){
+  for(i in 3:length(add2)){
+    add3<-rbind(add3,cbind(strsplit(add2[i], "; ")[[1]][1], str_count(add2[i-1], ";")))
+  }
+}
+colnames(add3)<-c("address", "count")
+add3$paperID<-rep(paperID[i], nrow(add3))
+add5<-rbind(add5, add3)
+  }
+  
+return(add5)
+}
+
+author_matrix<-address.split_vec(paperID=lvl2$paperID, Addresses=lvl2$Addresses)
+
+#write.csv(author_matrix, "modified_data/author_matrix.csv", row.names=F) #exporting to geocode
+
+# trying to match to unique addresses file
+
+author_matrix$Latitude<-rep(NA, nrow(author_matrix))
+author_matrix$Longitude<-rep(NA, nrow(author_matrix))
+
+author_matrix[which(author_matrix$address%in%add_unique$address),]$Latitude<-add_unique$lat[match(author_matrix[which(author_matrix$address%in%add_unique$address),]$address, add_unique$address)]
+
+author_matrix[which(author_matrix$address%in%add_unique$address),]$Longitude<-add_unique$long[match(author_matrix[which(author_matrix$address%in%add_unique$address),]$address, add_unique$address)]
+
+
+```
+
+```{r dealing with empty rows}
+
+#empty rows
+
+#cor.locs.empty<-cor.locs[!complete.cases(cor.locs),]
+
+
+
+#empty rows
+
+#author_matrix.empty<-author_matrix[!complete.cases(author_matrix),]
+
+```
+
