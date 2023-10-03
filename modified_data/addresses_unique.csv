@@ -1,6 +1,10 @@
 "address","lat","long"
 "52 Hamzah Colony Bemina, Srinagar, Jammu & Kashmir, India",34.0786607,74.7658918
+"Aban Infrastruct Pvt Ltd, Biotechnol Div, 113 Pantheon Rd, Madras 600008, Tamil Nadu, India",13.0697121,80.2574122
+"Abasaheb Garware Coll, Annasaheb Kulkarni Dept Biodivers, Pune 4, Maharashtra, India",18.5116964,73.8391238
+"Abasaheb Garware Coll, Dept Zool, Pune 4, Maharashtra, India",18.5116964,73.8391238
 "Abdus Salam Int Ctr Theoret Phys, Earth Syst Phys, I-34151 Trieste, Italy",45.69477,13.7794937
+"Abellon CleanEnergy Ltd, Sangeeta Complex, Ahmadabad 380006, Gujarat, India",23.0348485,72.5654557
 "Acad Sci & Innovat Res AcSIR, CSIR, New Delhi, India",28.6184547,77.2120814
 "Acad Sci & Innovat Res AcSIR, Ghaziabad 201002, Uttar Pradesh, India",28.6880422,77.4653861
 "Acad Sci & Innovat Res AcSIR, Ghaziabad, India",28.6880422,77.4653861
@@ -34,15 +38,18 @@
 "Arunachal Univ Studies, Namsai 792103, Arunachal Prad, India",27.6474202,95.8702558
 "Ashoka Trust Res Ecol & Environm, Bangalore 560064, Karnataka, India",13.0642925,77.6202162
 "Ashoka Trust Res Ecol & Environm, Bengaluru, India",13.0642925,77.6202162
+"Ashoka Trust Res Ecol & Environm, Conservat Genet Lab, Bangalore, Karnataka, India",12.9849591,77.5461221
 "Ashoka Trust Res Ecol & Environm, Jakkur PO, Bangalore 560064, Karnataka, India",13.0642925,77.6202162
 "Ashoka Trust Res Ecol & Environm, Suri Sehgal Ctr Biodivers & Conservat, Bangalore 560064, Karnataka, India",13.0716618,77.6484903
 "Ashoka Trust Res Ecol Environm, Ctr Biodivers & Conservat, Bengaluru 560064, Karnataka, India",13.0642925,77.6202162
 "Asia Univ, Dept Med Lab Sci & Biotechnol, Taichung 41354, Taiwan",24.0461479,120.6874019
+"Assam Agr Univ, Coll Sericulture, Jorhat 785013, Assam, India",26.7247344,94.1935921
 "Assam Agr Univ, Coll Vet Sci, Dept Anim Biotechnol, Khanapara 781022, Assam, India",26.1212925,91.8215716
 "Assam Agr Univ, Directorate Extens Educ, Jorhat 785013, Assam, India",26.7247344,94.1935921
 "Assam Agr Univ, Krishi Vigyan Kendra, Diphu 782462, Assam, India",25.8747231,93.4464235
 "Assam Agr Univ, Reg Agr Res Stn, Karbi Anglong 782462, Assam, India",25.6712272,93.3792057
 "Assam Univ, Dept Ecol & Environm Sci, Silchar 788011, Assam, India",24.6849545,92.7511682
+"Assam Univ, Dept Ecol & Environm Sci, Silchar, India",24.6849545,92.7511682
 "Atom Minerals Directorate Explorat & Res, Hyderabad 500016, Andhra Pradesh, India",15.9128998,79.7399875
 "ATREE, Bangalore 560064, Karnataka, India",13.0642925,77.6202162
 "ATREE, Suri Sehgal Ctr Biodivers & Conservat, Bangalore 560064, Karnataka, India",13.0642925,77.6202162
@@ -54,6 +61,7 @@
 "B2-M91 SBI Colony,Sect B, Lucknow 226021, Uttar Pradesh, India",26.9078416,80.9450271
 "Banaras Hindu Univ, Dept Appl Agr, Rajiv Gandhi South Campus, Mirzapur 231001, India",25.0579088,82.5997545
 "Banaras Hindu Univ, Dept Bot, Varanasi 221005, Uttar Pradesh, India",25.2774555,83.0019211
+"Banaras Hindu Univ, Dept Bot, Varanasi, Uttar Pradesh, India",25.2774555,83.0019211
 "Banaras Hindu Univ, Dept Entomol & Agr Zool, Inst Agr Sci, Varanasi 221005, Uttar Pradesh, India",25.266519,82.9923467
 "Banaras Hindu Univ, Dept Entomol & Agr Zool, Varanasi 221005, Uttar Pradesh, India",25.2774555,83.0019211
 "Banaras Hindu Univ, Inst Environm & Sustainable Develeopment, Varanasi, Uttar Pradesh, India",25.3176452,82.9739144
@@ -110,6 +118,7 @@
 "Can Tho Univ Med & Pharm, Fac Med, Can Tho 94117, Vietnam",10.0299337,105.7706153
 "CAR Cent Soil Salin Res Inst, Reg Res Stn, Lucknow 226002, Uttar Pradesh, India",26.7809628,80.9981576
 "Cardiff Univ, Sch Biosci, Catchment Res Grp, POB 915, Cardiff CF1 3TL, S Glam, Wales",51.483707,-3.1680962
+"Catholic Univ Bukavu, Fac Agron Sci, Bukavu, Rep Congo",-2.5123017,28.8480284
 "CCS Haryana Agr Univ, Hisar 125004, Haryana, India",29.1307214,75.6847085
 "CEEW, New Delhi, India",28.5430152,77.1480712
 "Cent Arid Zone Res Inst, Jodhpur 342003, Rajasthan, India",26.2484769,72.9976487
@@ -121,6 +130,7 @@
 "Cent Inst Min & Fuel Res, Environm Management Div, Dhanbad 828108, Jharkhand, India",23.7173367,86.47438
 "Cent Inst Min & Fuel Res, Environm Management Div, Digwadih Campus,PO FRI, Dhanbad 828108, Jharkhand, India",23.7066203,86.4132148
 "Cent Inst Temperate Hort, Srinagar 190007, Jammu & Kashmir, India",33.9842845,74.7990977
+"Cent Marine Fisheries Res Inst, Ernakulam North PO, Kochi 682018, Kerala, India",9.9878439,76.281121
 "Cent Muga & Eri Res & Training Inst, Ladoigarh, Assam, India",26.7221476,94.2302565
 "Cent MugaEri Res & Training Inst, Cent Silk Board, Jorhat, Assam, India",26.7509207,94.2036696
 "Cent Queensland Univ, Sch Hlth Med & Appl Sci, Sydney, NSW, Australia",-33.8688197,151.2092955
@@ -128,14 +138,17 @@
 "Cent Res Inst Dryland Agr, Hyderabad, Andhra Pradesh, India",17.385044,78.486671
 "Cent Rice Res Inst, Div Crop Prod, Microbiol Lab, Cuttack 753006, Odisha, India",20.4537085,85.9337698
 "Cent Soil & Water Conservat Res & Training Inst, 218 Kaulagarh Rd, Dehra Dun 248195, Uttar Pradesh, India",30.335641,78.0240375
+"Cent Soil & Water Conservat Res & Training Inst, Dehra Dun 248195, Uttar Pradesh, India",30.3661106,78.0723248
 "Cent Soil Salin Res Inst, AICRP Management Salt Affected Soils & Use Saline, Karnal 132001, Haryana, India",29.6386837,77.0794705
 "Cent Soil Salin Res Inst, Karnal 132001, India",29.6856929,76.9904825
+"CENT SOIL SALIN RES INST,KARNAL 132001,PUNJAB,INDIA",29.6856929,76.9904825
 "Cent Univ Kashmir, Dept Bot, Sci Campus, Ganderbal 191201, Jammu & Kashmir, India",34.2311726,74.7271672
 "Cent Univ Kerala, Dept Environm Sci, Kasaragod 671316, Kerala, India",12.3921243,75.0926584
 "Cent Univ Kerala, Kasaragod 671316, Kerala, India",12.3921243,75.0926584
 "Cent Univ Orissa, Dept Biodivers & Conservat Nat Resources, Landiguda 764021, Koraput, India",18.7769895,82.742228
 "Cent Univ Punjab, Mansa Rd, Bathinda 151001, India",30.1990166,74.9468941
 "Cent Univ Rajasthan, Sch Earth Sci, Dept Environm Sci, Ajmer 305817, Rajasthan, India",26.4498954,74.6399163
+"Cent Univ Rajasthan, Sch Earth Sci, Dept Environm Sci, Remote Sensing & GIS Lab, NH-8, Ajmer 305817, Rajasthan, India",26.7451371,75.3538913
 "Cent Univ South Bihar, Ctr Educ Life Sci, Gaya Campus, Gaya 823001, Bihar, India",24.7912052,84.9973546
 "Cent Univ South Bihar, Sch Earth Biol & Environm Sci, Ctr Biol Sci Biotechnol, Patna 800014, Bihar, India",25.6164189,85.1411084
 "Cent Univ Tamil Nadu, Dept Geog, Thiruvarur, India",10.8152103,79.6365999
@@ -146,10 +159,15 @@
 "China Med Univ, Dept Med Lab Sci & Biotechnol, 91 Hsueh Shih Rd, Taichung 404, Taiwan",24.1573171,120.6832556
 "China Med Univ, Dept Med Lab Sci & Biotechnol, Taichung 40402, Taiwan",24.1631651,120.6746691
 "China Univ Geosci Beijing, Sch Earth Sci & Resources, Beijing, Peoples R China",39.991253,116.3471009
+"China Univ Min & Technol, Coll Geosci & Survey Engn, Beijing 100083, Peoples R China",39.9911599,116.3534999
+"China Univ Min & Technol, Sch Resources & Geosci, Xuzhou 221116, Jiangsu, Peoples R China",34.2006442,117.4732571
+"China Univ Min & Technol, State Key Lab Coal Resources & Safe Min, Xuzhou, Jiangsu, Peoples R China",34.2043999,117.28577
 "Chinese Acad Agr Sci, Inst Anim Sci, CAAS ILRI Joint Lab Livestock & Forage Genet Reso, Beijing, Peoples R China",39.904211,116.407395
+"Chinese Acad Forestry, Res Inst Resource Insects, Key Lab Cultivating & Utilizat Resource Insects, State Forestry Adm, Kunming 650224, Peoples R China",25.1117899,102.85012
 "Chinese Acad Sci, Ctr Integrat Conservat, Xishuangbanna Trop Bot Garden, Mengla 666303, Yunnan, Peoples R China",21.9353099,101.24881
 "Chinese Acad Sci, Gardening & Hort Dept, Xishuangbanna Trop Bot Garden, Mengla 666303, Yunnan, Peoples R China",21.9353099,101.24881
 "Chinese Acad Sci, Inst Geog Sci & Nat Resources Res, Beijing 100101, Peoples R China",39.9966999,116.41
+"Chinese Acad Sci, Inst Geol & Geophys, Beijing, Peoples R China",39.904211,116.407395
 "Chinese Acad Sci, Kunming Inst Bot, Key Lab Plant Divers & Biogeog East Asia KLPB, Kunming 650201, Yunnan, Peoples R China",24.8796599,102.83322
 "Chinese Acad Sci, Kunming Inst Zool, Yunnan Lab Mol Biol Domest Anim, Kunming, Yunnan, Peoples R China",24.8796599,102.83322
 "Chinese Acad Sci, State Key Lab Genet Resources & Evolut, Kunming Inst Zool, Kunming, Yunnan, Peoples R China",25.0674712,102.7048115
@@ -173,18 +191,26 @@
 "Coll Vet Sci, Dept Parasitol, Gauhati, Assam, India",26.1212925,91.8215716
 "Colorado State Univ, Nat Resource Ecol Lab, Ft Collins, CO 80523 USA",40.5702631,-105.0903456
 "Columbia Univ, Dept Ecol Evolut & Environm Biol, New York, NY 10027 USA",40.8075355,-73.9625727
+"Columbia Univ, Dept Ecol Evolut & Environm Biol, New York, NY USA",40.8075355,-73.9625727
 "Columbia Univ, Earth Inst, New York, NY 10027 USA",40.8063056,-73.964554
 "CONACYT Inst Tecnol Conkal, Av Tecnol S-N, Conkal 97345, Yucatan, Mexico",21.0862422,-89.5198391
 "Concordia Univ, Ctr Struct & Funct Genom, Biol Dept, 7141 Sherbrooke West, Montreal, PQ H4B 1R6, Canada",45.4578426,-73.6415682
+"Concordia Univ, Ctr Struct & Funct Genom, Montreal, PQ, Canada",45.4969874,-73.5788077
+"Concordia Univ, Dept Biol, Montreal, PQ H3G 1M8, Canada",45.4948363,-73.5779128
 "Conservat Int, 2011 Crystal Dr,Suite 600, Arlington, VA 22202 USA",38.8556199,-77.048901
 "Cooch Behar Panchanan Barma Univ, Dept Geog, Cooch Behar 736101, India",26.3215884,89.4695429
+"Cornell Univ, Cornell Lab Ornithol, Bioacoust Res Program, Ithaca, NY 14853 USA",42.4467049,-76.4830579
 "Cotton Univ, Dept Environm Biol & Wildlife Sci, Panbazar 781001, Guwahati, India",26.187526,91.7440996
 "CRIJAF, Div Crop Prod, Kolkata 700120, India",22.7597693,88.4268522
 "CSIC, Museo Nacl Ciencias Nat, E-28006 Madrid, Spain",40.4351996,-3.68134
+"CSIR Cent Inst Min & Fuel Res, Environm Management Div, Digwadih Campus,PO FRI, Dhanbad 828108, Jharkhand, India",23.7066203,86.4132148
+"CSIR Indian Inst Toxicol Res, Div Environm Chem, Lucknow 226001, Uttar Pradesh, India",26.8537051,80.9484195
+"CSIR Indian Inst Toxicol Res, Div Environm Chem, Post Box 80,Mahatma Gandhi Marg, Lucknow 226001, Uttar Pradesh, India",26.8516824,80.9386863
 "CSIR Natl Bot Res Inst NBRI, Bot Garden Div, Rana Pratap Marg, Lucknow 226001, Uttar Pradesh, India",26.8562908,80.9498597
 "CSIR Natl Bot Res Inst, Lucknow 226001, Uttar Pradesh, India",26.8594354,80.9308304
 "CSIR Natl Bot Res Inst, Plant Ecol & Climate Change Sci Div, Rana Pratap Marg, Lucknow 226001, Uttar Pradesh, India",26.8562834,80.948002
 "CSIR Natl Inst Oceanog CSIR NIO, Biol Oceanog Div BOD, Panaji 403004, Goa, India",15.459061,73.8051458
+"CSIR, Acad Sci & Innovat Res, New Delhi 110001, India",28.6184547,77.2120814
 "CSIR, Cent Inst Med & Aromat Plants, Lucknow 226015, Uttar Pradesh, India",26.8757363,80.9732924
 "CSIR, Cent Inst Med & Aromat Plants, Res Ctr, PO Nagla Dairy Farm, Udham Singh Nagar 263149, Uttarakhand, India",28.9981478,79.5125662
 "CSIR, Cent Inst Med & Aromat Plants, Res Ctr, Udham Singh Nagar 263149, Uttarakhand, India",28.9733562,79.5266211
@@ -203,6 +229,7 @@
 "CSKHPKV, Dept Plant Breeding & Genet, FPGMC, Palampur 176062, Himachal Prades, India",32.0931135,76.5546031
 "CSWCRTI, Div Agroforestry, Dehra Dun 248195, India",30.3517987,78.0095607
 "Ctr Adv Sustainable Agr, New Delhi, India",28.6139391,77.2090212
+"Ctr Biotechnol Bordj Cedria, Lab Physiol Mol Plantes, Hammam Lif, Tunisia",36.7230724,10.3441758
 "Ctr Cellular & Mol Biol, Hyderabad 500007, Andhra Pradesh, India",15.9128998,79.7399875
 "Ctr Cellular & Mol Biol, Uppal Rd, Hyderabad 500007, Andhra Pradesh, India",15.9128998,79.7399875
 "Ctr Dev Adv Comp, HPC Med & Bioinformat Applicat Grp, Pune 411008, Maharashtra, India",18.5378802,73.8048243
@@ -214,9 +241,12 @@
 "Ctr Ecol & Hydrol, Wallingford OX10 8BB, Oxon, England",51.6023743,-1.1107182
 "Ctr Ecol & Rural Dev, 46 Vinayagar Koil St,Perumal Raja Garden, Pondicherry 60510, India",11.9385659,79.823639
 "Ctr Environm & Dev, Thiruvananthapuram 695013, Kerala, India",8.5433026,76.974896
+"Ctr Environm Planning & Technol CEPT Univ, Ahmadabad 380009, Gujarat, India",23.0371184,72.5489122
 "Ctr Invest Cient Yucatan AC, Unidad Recursos Nat, Calle 43 130, Merida 97200, Yucatan, Mexico",20.9759492,-89.6037211
+"Ctr Large Landscape Conservat, Bozeman, MT USA",45.6805544,-111.0415821
 "Ctr Oceans Rivers Atmosphere & Land Sci, Indian Inst Technol Kharagpur, Kharagpur, W Bengal, India",22.34601,87.2319753
 "Ctr Wildlife Studies, 1669 31st Cross,16th Main,Banashankari 2nd Stage, Bangalore 560070, Karnataka, India",12.9205725,77.5651755
+"Ctr Wildlife Studies, 551,7th Main Rd,2nd Phase, Bengaluru 560097, India",13.0697287,77.5822943
 "Ctr Wildlife Studies, Bangalore 560070, Karnataka, India",12.974809,77.616254
 "CTRAN Consulting, Bhubaneswar, India",20.2488562,85.8416045
 "Curtin Univ, Dept Appl Geol, Miri, Sarawak, Malaysia",4.5128342,114.0176403
@@ -246,9 +276,11 @@
 "Dr Harisingh Gour Vishwavidyalaya Cent Univ, Dept Bot, Ecol Lab, Sagar 470003, Madhya Pradesh, India",23.8265828,78.7751302
 "Dr Harisingh Gour Vishwavidyalaya Cent Univ, Dept Bot, Sagar 470003, Madhya Pradesh, India",23.8265828,78.7751302
 "Dr Panjabrao Deshmukh Krishi Vidyapeeth, Dept Plant Pathol, Akola, Maharashtra, India",20.7006054,77.037085
+"Dr Rajendra Prasad Cent Agr Univ, Dept Forestry, Samastipur, Bihar, India",25.9845072,85.6743075
 "Dr Yashwant Singh Parmar Univ Hort & Forestry, Dept Silviculture & Agroforestry, Coll Forestry, Solan 173230, India",31.2194893,76.9815877
 "Dr Yashwant Singh Parmar Univ Hort & Forestry, Microbiol Sect, Dept Basic Sci, Solan 173230, HP, India",31.2194893,76.9815877
 "Dr Yashwant Singh Parmar Univ Hort & Forestry, Solan 173230, India",30.8652881,77.1697682
+"DSMZ German Collect Microorganisms & Cell Culture, Braunschweig, Germany",52.2688736,10.5267696
 "DST Birbal Sahni Inst Palaeosci, Lucknow 226007, Uttar Pradesh, India",26.8671761,80.9392066
 "Duke Univ, Nicholas Sch Environm, Durham, NC 27706 USA",36.0044762,-78.9418788
 "Duke Univ, Sanford Sch Publ Policy, Durham, NC 27706 USA",35.9993655,-78.9439609
@@ -262,17 +294,21 @@
 "Era Univ, Eras Lucknow Med Coll & Hosp, Dept Microbiol, Lucknow 226003, Uttar Pradesh, India",26.878359,80.8725733
 "Era Univ, Eras Lucknow Med Coll & Hosp, Dept Pathol, Lucknow, Uttar Pradesh, India",26.878359,80.8725733
 "Euromediterranean Ctr Climate Change, IAFES Div, Sassari, Italy",40.7259269,8.5556826
+"FAIRMONT STATE COLL,DEPT BIOL,FAIRMONT,WV 26554, USA",39.4857867,-80.1630335
 "Fed Univ ABC UFABC, Ctr Engn Modeling & Appl Social Sci CECS, BR-09210580 Santo Andre, SP, Brazil",-23.644231,-46.5285065
 "Forest Coll & Res Inst, Dept Agroforestry, Mettupalayam 641301, India",11.3027849,76.9383385
 "Forest Res Inst, Bot Div, PO New Forest, Dehra Dun 248006, Uttar Pradesh, India",30.3438262,77.9978107
 "Forest Res Inst, Dehra Dun 248006, Uttarakhand, India",30.3437685,77.9995589
 "Forest Res Inst, Dept Forest Pathol, Dehra Dun 248006, India",30.3438262,77.9978107
+"Forest Res Inst, Forest Bot & Tree Improvement Sect, Yezin 05282, Nay Pyi Taw, Myanmar",19.8436632,96.2788572
 "Forest Res Inst, Forest Pathol Div, Dehra Dun, Uttarakhand, India",30.3438148,77.9967117
+"Forestry Survey India, Kaulagarh Rd, Dehra Dun 248195, India",30.3400065,78.0186504
 "FPInnovations, Montrea, PQ H9R 3J9, Canada",45.4564268,-73.8223714
 "Free Univ Brussels, Mangrove Management Grp, Lab Analyt & Environm Chem, Pleinlaan 2, B-1050 Brussels, Belgium",50.8216447,4.3949306
 "French Inst Pondicherry, 11 St Louis St,POB 33, Pondicherry 605001, India",11.9369401,79.8356517
 "French Inst Pondicherry, Dept Ecol, 11 St Louis St, Pondicherry 605001, India",11.9369401,79.8356517
 "French Inst Pondicherry, Ecol Dept, Pondicherry 605001, India",11.9369401,79.8356517
+"French Inst Pondicherry, UMIFRE 21, USR 3330, CNRS MAEE, Pondicherry, India",11.9415915,79.8083133
 "French Inst Pondichery, Pondicherry 605001, India",11.9297212,79.8268729
 "Fukuoka Womens Univ, Dept Environm Sci, Higasi Ku, Fukuoka 8138529, Japan",33.6358122,130.4210684
 "Gauhati Univ, Dept Biotechnol, Gauhati 781014, Assam, India",26.1538664,91.6590261
@@ -282,6 +318,7 @@
 "GB Pant Natl Inst Himalayan Environm & Sustainabl, Sikkim Unit, Gangtok 737101, Sikkim, India",27.3371364,88.6096575
 "GB Pant Natl Inst Himalayan Environm, Ctr Environm Assessment & Climate Change, Kosi Katarmal 263643, Almora, India",29.6324558,79.6146787
 "GB Pant Univ Agr & Technol, Coll Basic Sci & Humanities, Dept Environm Sci, Pantnagar 263145, Uttarakhand, India",29.0246773,79.4895819
+"GB Pant Univ Agr & Technol, Dept Irrigat & Drainage Engn, Pantnagar 263145, Uttarakhand, India",29.0202741,79.4647633
 "GB Pant Univ Agr & Technol, Dept Soil Sci, Coll Agr, Pantnagar 263145, Uttar Pradesh, India",27.5705886,80.0981869
 "GB Pant Univ Agr & Technol, Pantnagar 263145, Uttar Pradesh, India",27.5705886,80.0981869
 "GB PLANT INST HIMALAYAN ENVIRONM & DEV,SIKKIM UNIT,SIKKIM 737102,INDIA",27.301881,88.6096575
@@ -300,6 +337,7 @@
 "Govt Assam, Anim Husb & Vet Dept, Kamrup 781037 M, Assam, India",26.1272231,91.8391485
 "Govt Haryana, Forest Dept, Panchkula 134109, India",30.7040392,76.8538962
 "Govt India, Dept Sci & Technol, New Delhi, India",28.5382079,77.1894671
+"Govt India, Dept Space, Indian Space Res Org, IIRS, 4 Kalidas Rd, Dehra Dun 248001, Uttarakhand, India",30.3407597,78.0440265
 "Govt India, Dept Space, Natl Remote Sensing Agcy, Hyderabad 500037, Andhra Pradesh, India",15.9128998,79.7399875
 "Govt India, Dept Space, NRSC ISRO, Reg Remote Sensing Ctr West, CAZRI Campus, Jodhpur 342003, Rajasthan, India",26.2592753,72.9944875
 "Govt India, Dept Space, NRSC ISRO, Reg Remote Sensing Ctr West, Jodhpur 342003, Rajasthan, India",26.2063647,73.0226088
@@ -311,6 +349,7 @@
 "Govt West Bengal, Directorate Agr, Kolkata 1, West Bengal, India",22.5675368,88.3461036
 "Govt West Bengal, West Bengal Biodivers Board, Dept Environm, Kolkata 700106, India",22.5633715,88.414116
 "Graph Era Deemed Univ, Dept Biotechnol, Bell Rd, Dehra Dun 248002, Uttarakhand, India",30.2686208,77.9948422
+"Graph Era Hill Univ, Dept Environm Sci, Dehra Dun, Uttarakhand, India",30.2723733,78.0010035
 "Graph Era Hill Univ, Sch Agr Sci, Dehra Dun 248002, Uttarakhand, India",30.2723733,78.0010035
 "Greeley Mem Lab, 370 Prospect St, New Haven, CT 06511 USA",41.3219383,-72.9245009
 "Greenlink Analyt & Res Lab India Private Ltd, Coimbatore 641014, Tamil Nadu, India",11.044802,77.035019
@@ -324,6 +363,7 @@
 "Guru Nanak Dev Univ, Guru Ramdas Sch Planning, Amritsar 143005, Punjab, India",31.637656,74.8258562
 "Gurukul Kangri Univ, Haridwar 249401, India",29.9200441,78.1229689
 "Gurukula Kangri Deemed Univ, Fac Management Studies, Haridwar, Uttarakhand, India",29.9200441,78.1229689
+"Gurukula Kangri Univ, Dept Zool & Environm Sci, Avian Divers & Bioacoust Lab, Haridwar 249404, Uttarakhand, India",29.8856108,78.1222336
 "Gurukula Kangri Vishwavidyalaya, Dept Zool & Environm Sci, Haridwar 249404, India",29.9200441,78.1229689
 "Hadassah Hebrew Univ Hosp, Dept Med, Jerusalem, Israel",31.7945578,35.2414009
 "Harvard Smithsonian Ctr Astrophys, 60 Garden St, Cambridge, MA 02138 USA",42.3814329,-71.1280685
@@ -331,6 +371,7 @@
 "Hebrew Univ Jerusalem Hadassah Hosp & Med Sch, Fac Med Dent, Dept Prosthodont, POB 12272, IL-91120 Jerusalem, Israel",31.768319,35.21371
 "Hebrew Univ Jerusalem Hadassah Hosp & Med Sch, Fac Med Dent, Inst Dent Res, Jerusalem, Israel",31.7945578,35.2414009
 "Helmholtz Zentrum Munchen, MIPS IBIS, D-85764 Neuherberg, Germany",48.2229659,11.5904385
+"Hemchandracharya North Gujarat Univ, Dept Biotechnol, Univ Rd, Patan 384265, Gujarat, India",23.8595527,72.1343738
 "Hemwati Nandan Bahuguna Garhwal Cent Univ, Dept Bot, Garhwal, Uttarakhand, India",30.2278191,78.8035453
 "High Commiss Water Forests & Desertificat Control, Forest Res Ctr, Omar Ibn El Khattab Ave,BP 763, Rabat 10050, Morocco",33.9715904,-6.8498129
 "Himalayan Forest Res Inst, Conifer Campus, Panthaghati 171013, Shimla, India",31.0679382,77.180149
@@ -351,10 +392,12 @@
 "ICAR Cent Arid Zone Res Inst, Reg Res Inst, Pali Marwar 306401, India",25.7748303,73.3382006
 "ICAR Cent Arid Zone Res Inst, Reg Res Stn, Pali Marwar 306401, India",25.7748303,73.3382006
 "ICAR Cent Inst Freshwater Aquaculture, Bhubaneswar, India",20.1838505,85.8511827
+"ICAR Cent Marine Fisheries Res Inst, Calicut Res Ctr, West Hill PO, Calicut 673005, Kerala, India",11.2822586,75.7697399
 "ICAR Cent Potato Res Inst CPRI, Shimla 171001, India",31.096492,77.171703
 "ICAR Cent Res Inst Jute & Allied Fibers, Barakpur 700120, W Bengal, India",22.7597693,88.4268522
 "ICAR Cent Sheep & Wool Res Inst, Avikanagar 304501, India",26.3091966,75.4186087
 "ICAR Cent Soil Salin Res Inst, Karnal 132001, India",29.7082322,76.9541406
+"ICAR Complex NEH Reg, Umiam 793103, Meghalaya, India",25.6768054,91.9270246
 "ICAR Directorate Coldwater Fisheries Res, Naini Tal, India",29.3607268,79.5528173
 "ICAR Directorate Coldwater Fisheries Res, Uttarakhand 263136, Bhimtal, India",29.3607268,79.5528173
 "ICAR Directorate Mushroom Res, Chambaghat 173213, Solari, India",30.922243,77.1024929
@@ -363,6 +406,7 @@
 "ICAR Indian Agr Res Inst IARI, New Delhi 110012, India",28.6331469,77.1524959
 "ICAR Indian Agr Res Inst IARI, Soil Sci & Agr Chem, New Delhi 110012, India",28.6376724,77.1571443
 "ICAR Indian Agr Res Inst IARI, Water Technol Ctr, New Delhi 110012, India",28.6376724,77.1571443
+"ICAR Indian Agr Res Inst, Div Agr Engn, New Delhi 110012, India",28.6376724,77.1571443
 "ICAR Indian Agr Res Inst, Div Entomol, New Delhi 110012, India",28.6376724,77.1571443
 "ICAR Indian Agr Res Inst, Div Fruits & Hort Technol, New Delhi 110012, India",28.6282145,77.1493904
 "ICAR Indian Agr Res Inst, New Delhi 110012, India",28.6376724,77.1571443
@@ -425,6 +469,8 @@
 "Indian Inst Hort Res, Div Plant Physiol & Biochem, Bangalore 560089, Karnataka, India",13.1635584,77.4472495
 "Indian Inst Hort Res, ICAR, Bengaluru 560089, India",13.1335243,77.4911317
 "Indian Inst Pulses Res, Kanpur 208024, Uttar Pradesh, India",26.4939619,80.2720064
+"Indian Inst Remote Sensing NRSA, Dept Space, 4 Kalidas Rd,PB 135, Dehra Dun 248001, Uttar Pradesh, India",27.5705886,80.0981869
+"Indian Inst Remote Sensing, Agr & Soil Div, Dehra Dun, Uttarakhand, India",30.3412185,78.0471393
 "Indian Inst Remote Sensing, Dehra Dun 248001, Uttar Pradesh, India",27.5705886,80.0981869
 "Indian Inst Remote Sensing, Dehra Dun, Uttar Pradesh, India",27.5705886,80.0981869
 "Indian Inst Remote Sensing, Forestry & Ecol Dept, 4 Kalidas Rd, Dehra Dun 248001, Uttar Pradesh, India",27.5705886,80.0981869
@@ -453,8 +499,10 @@
 "Indian Inst Technol Kharagpur, Kharagpur, W Bengal, India",22.34601,87.2319753
 "Indian Inst Technol, Ctr Oceans Rivers Atmosphere & Land Sci, Kharagpur 721302, W Bengal, India",22.3145443,87.3090683
 "Indian Inst Technol, Ctr Studies Resource Engn, Powai, India",19.1138266,72.893833
+"Indian Inst Technol, Dept Chem Engn, Bombay 400076, Maharashtra, India",19.0560004,72.9120387
 "Indian Inst Technol, Dept Civil Engn, Geomat Grp, Roorkee 247667, Uttar Pradesh, India",27.5705886,80.0981869
 "Indian Inst Technol, Dept Civil Engn, Kanpur 208016, Uttar Pradesh, India",26.5113857,80.2349196
+"Indian Inst Technol, Ecol Restorat Lab, Dept Environm Sci & Engn, Ctr Min Environm,Indian Sch Mines, Dhanbad 826004, Bihar, India",23.8529508,86.4288534
 "Indian Inst Technol, Indian Sch Mines, Dept Appl Geol, Coal Geol & Organ Petrol Lab, Dhanbad 826004, Jharkhand, India",23.8144432,86.4412022
 "Indian Inst Technol, Roorkee 247667, Uttar Pradesh, India",29.8542626,77.8880002
 "Indian Inst Technol, Roorkee, Uttar Pradesh, India",29.8542626,77.8880002
@@ -464,18 +512,21 @@
 "Indian Sch Mines Univ, Dept Environm Sci & Engn, Dhanbad 826004, Jharkhand, India",23.8529508,86.4288534
 "Indian Sch Mines, Indian Inst Technol, Dept Environm Sci & Engn, Dhanbad, Bihar, India",25.9644427,85.2722472
 "Indian Space Res Org, Microwave Tech Dev Div, Space Applicat Ctr, Ahmadabad 380015, Gujarat, India",23.0277933,72.518888
+"Indian Space Res Org, Natl Remote Sensing Ctr, Hyderabad, India",17.385044,78.486671
 "Indian Stat Inst, 203 Barrackpore Trunk Rd, Kolkata 700108, W Bengal, India",22.6491893,88.3763794
 "Indian Tobacco Co ITC, Paper Boards & Specialty Papers Div PSPD, Khammam Dt 507201, Andhra Pradesh, India",16.8110192,80.5216184
 "Indian Tobacco Co ITC, Paper Boards & Specialty Papers Div PSPD, Secunderabad 500003, India",17.4369259,78.4894015
 "Indiana Univ, Ctr Study Inst Populat & Environm Change CIPEC, Bloomington, IN USA",39.165325,-86.5263857
 "Indira Gandhi Agr Univ, Dept Forestry, Raipur 492012, Madhya Pradesh, India",22.9734229,78.6568942
 "Indira Gandhi Agr Univ, Dept Forestry, Raipur, Chhattisgarh, India",21.2375704,81.7054549
+"Indira Gandhi Agr Univ, Dept Forestry, Raipur, Madhya Pradesh, India",23.4298973,77.4149715
 "Indira Gandhi Inst Dev Res, Bombay 400065, Maharashtra, India",19.1661694,72.8777268
 "Indira Gandhi Krishi Vishwa Vidyalaya, Dept Soil Sci & Agr Chem, Raipur 492012, Madhya Pradesh, India",21.2375704,81.7054549
 "Indira Gandhi Krishi Vishwavidyalaya, Coll Agr, Dept Forestry, Raipur 492006, CG, India",21.2375704,81.7054549
 "Indira Gandhi Krishi Vishwavidyalaya, Dept Forestry, Raipur 492012, Chhattisgarh, India",21.2375704,81.7054549
 "Indira Gandhi Natl Open Univ IGNOU, Sch Sci, New Delhi 110068, India",28.4820119,77.2170762
 "Indira Gandhi Natl Tribal Univ, Amarkantak, India",22.7935518,81.7496531
+"Indira Gandhi Natl Tribal Univ, Dept Environm Sci, Amarkantak 484887, India",22.6822292,81.7532219
 "Indira Gandhi Natl Tribal Univ, Dept Environm Sci, Amarkantak, MP, India",22.6822292,81.7532219
 "Indraprastha Inst Informat Technol, New Delhi 110020, India",28.5455795,77.273111
 "Infosys Ltd, Hyderabad, India",17.385044,78.486671
@@ -488,11 +539,14 @@
 "Inst Francais Pondichery, UMIFRE CNRS MAEE 21, Pondicherry 605001, India",11.9369401,79.8356517
 "Inst Global Environm Strategies, Integrated Sustainabil Ctr ISC, Hayama, Kanagawa, Japan",35.2589519,139.6118949
 "Inst Himalayan Bioresource Technol, Palampur 176061, Himachal Prades, India",32.1108599,76.5362526
+"Inst Microbial Technol, MTCC Microbial Type Culture Collect & Gene Bank, Chandigarh, India",30.7489159,76.7336736
+"Inst Microbial Technol, MTCC Microbial Type Culture Collect & Gene Bank, Sect 39A, Chandigarh, India",30.7489159,76.7336736
 "Inst Natl Informat Geog & Forestiere, Lab Inventaire Forestier, F-54000 Nancy, France",48.6942707,6.1894947
 "Inst Politecn Nacl, Ctr Interdisciplinario Ciencias Marinas, Av IPN SN, La Paz, Bcs, Mexico",24.1426408,-110.3127531
 "Inst Publ Hlth, Bangalore 560070, Karnataka, India",12.9149298,77.5634899
 "Inst Social & Econ Change, Ctr Ecol Econ & Nat Resources, Dr VKRV Rao Rd, Nagarabhavi 560072, Bengaluru, India",12.954062,77.513997
 "Inst Study & Dev Worldwide, 8-45 Henley Rd,Homebush West, Sydney, NSW 2140, Australia",-33.8654513,151.0702869
+"Inst Terr Ecosyst, Zurich, Switzerland",47.3768866,8.541694
 "Inst Wood Sci & Technol, 18th Cross, Bangalore 560003, Karnataka, India",13.0112668,77.5704048
 "Inst Wood Sci & Technol, 18th Cross, Malleswaram 560003, Bengaluru, India",13.0112668,77.5704048
 "Inst Wood Sci & Technol, Bangalore 560003, Karnataka, India",13.0112668,77.5704048
@@ -532,6 +586,7 @@
 "Jagriti, Kulu 175101, Himachal Prades, India",31.933896,77.1127287
 "JalaSRI Watershed Surveillance & Res Inst, Jalgaon 425002, Maharashtra, India",21.0648834,75.5509602
 "JalaSRI Watershed Surveillance & Res Inst, MJ Coll Campus, Jalgaon 425002, Maharashtra, India",20.9999173,75.5539521
+"James Cook Univ, Coll Marine & Environm Sci, Townsville, Qld 4811, Australia",-19.3258585,146.7566603
 "James Cook Univ, Coll Sci & Engn, Cairns, Qld 4878, Australia",-16.8231524,145.7057659
 "James Cook Univ, Ctr Trop Environm & Sustainabil Sci TESS, Cairns, Qld 4878, Australia",-16.8182489,145.6879262
 "Jamia Millia Islamia, Dept Biosci, New Delhi 110025, India",28.5602381,77.2852899
@@ -559,6 +614,7 @@
 "Kerala Agr Univ, Coll Forestry, KAU PO, Trichur 680656, Kerala, India",10.5507081,76.2739795
 "Kerala Agr Univ, Coll Hort, Dept Soil Sci & Agr Chem, Trichur 680656, Kerala, India",10.5448532,76.2863548
 "Kerala Agr Univ, Coll Hort, Instruct Farm, Trichur 680656, Kerala, India",10.5448532,76.2863548
+"Kerala Agr Univ, Coll Vet & Anim Sci, Ctr Adv Studies Anim Genet & Breeding, Thrissur, Kerala, India",10.2246079,76.2720462
 "Kerala Agr Univ, Dept Silviculture & Agroforestry, Trichur, Kerala, India",10.5448532,76.2863548
 "Kerala Forest Res Inst, Dept Forest Bot, Trichur 680653, India",30.3437685,77.9995589
 "Kerala Forest Res Inst, Div Forest Ecol & Biodivers Conservat, Peechi 680653, India",10.5300855,76.3698791
@@ -577,7 +633,10 @@
 "King Saud Univ, Addiriyah Chair Environm Studies, Coll Sci, Riyadh 11451, Saudi Arabia",24.7481198,46.5363345
 "King Saud Univ, Coll Sci, Dept Bot & Microbiol, POB 2455, Riyadh 11451, Saudi Arabia",24.7135517,46.6752957
 "King Saud Univ, Dept Bot & Microbiol, Coll Sci, Riyadh 11451, Saudi Arabia",24.7222078,46.6258804
+"Kisan PG Coll, Post Grad Dept Bot, Bahraich 271801, Uttar Pradesh, India",27.56153,81.5871461
 "Kocaeli Univ, Dept Biol Fac Sci & Literature, Kocaeli, Turkey",40.8221732,29.9216517
+"Konkan Cetacean Res Team Dadar West, Bombay 400028, Maharashtra, India",19.0235976,72.8378125
+"Konkan Cetacean Res Team, 9-A Balaji Apts,Dutta Raul Marg,Dadar W, Bombay 400028, Maharashtra, India",19.0168046,72.8334361
 "Korea Res Inst Biosci & Biotechnol, Int Biol Mat Res Ctr, Taejon 305806, South Korea",36.3504119,127.3845475
 "Krishna Mahavidyalaya, Post Grad Ctr Bot, Satara 415108, Maharashtra, India",17.1756718,74.2545359
 "KSN Univ Agr & Hort Sci Shivamogga, Coll Forestry, Ponnampet 571216, India",12.1514612,75.9430278
@@ -587,6 +646,7 @@
 "Kumaun Univ, Dept Bot, DSB Campus, Naini Tal 263001, Uttarakhand, India",29.3911653,79.4459095
 "Kumaun Univ, Dept Bot, DSB Campus, Naini Tal 263002, India",29.3911653,79.4459095
 "Kumaun Univ, Dept Bot, Naini Tal 263001, Uttarakhand, India",29.3911653,79.4459095
+"Kumaun Univ, Dept Bot, Naini Tal, India",29.3911653,79.4459095
 "Kuvempu Univ, Dept PG Studies & Res Environm Sci, Shivamogga 577451, Karnataka, India",13.8422333,75.6731734
 "Kyushu Univ, Appl Mech Res Inst, Fukuoka, Japan",33.5901838,130.4016888
 "Kyushu Univ, Dept Biol, Grad Sch Sci, Higashi Ku, 6-10-1 Hakozaki, Fukuoka 8128581, Japan",33.6254727,130.4244086
@@ -604,22 +664,28 @@
 "Madurai Kamaraj Univ, Sch Biol Sci, Dept Plant Sci, Madurai 625021, Tamil Nadu, India",9.9403922,78.0105374
 "Madurai Kamaraj Univ, Sch Energy Environm & Nat Resources, Madurai 625021, Tamil Nadu, India",9.9403922,78.0105374
 "Maharshi Dayanand Univ, Med Microbiol & Bioproc Technol Lab, Dept Microbiol, Rohtak, Haryana, India",28.8768269,76.621108
+"Mahatma Gandhi Inst Technol Hyderabad, Dept Comp Sci & Engn, Hyderabad, India",17.385044,78.486671
 "Majmaah Univ, Coll Appl Med Sci, Dept Med Lab Sci, Al Majmaah 11952, Saudi Arabia",25.8758866,45.3730695
 "Mangalore Univ, Dept Appl Bot, Mangalagangothri 574199, Karnataka, India",12.8167413,74.9231456
 "Manipal Univ, Manipal Inst Technol, Dept Civil Engn, Manipal 576104, Karnataka, India",13.3525321,74.7928224
 "Manipal Univ, Udupi 576104, Karnataka, India",13.3533433,74.7848955
 "Manipur Univ, Dept Life Sci, Imphal 795003, Manipur, India",24.7522876,93.9280425
+"Manipur Univ, Dept Life Sci, Imphal, Manipur, India",24.7522876,93.9280425
 "Manipur Univ, Sch Life Sci, Dept Bot, Imphal, Manipur, India",24.7522876,93.9280425
 "Manonmaniam Sundaranar Univ, Sri Paramakalyani Ctr Environm Sci, Environm Nanotechnol Div, Alwarkurichi 627412, Tamil Nadu, India",8.7833896,77.3897471
+"Manonmaniam Sundaranar Univ, Sri Paramakalyani Ctr Environm Sci, Tirunelveli, Tamil Nadu, India",8.7636783,77.6486139
+"Mansoura Univ, Fac Agr, Agr Engn Dept, Mansoura 35516, Egypt",31.0448903,31.3536867
 "Marymount Manhattan Coll, New York, NY 10021 USA",40.7687419,-73.9597198
 "Max Planck Inst Biogeochem, D-07701 Jena, Germany",50.927054,11.5892372
 "Mekelle Univ, Coll Nat & Computat Sci, Dept Biol, Mekelle 3033, Tigray, Ethiopia",13.4935504,39.465738
 "Met Off Hadley Ctr, Exeter EX1 3PB, Devon, England",50.7269301,-3.4734769
 "Michigan State Univ, Dept Plant Biol, E Lansing, MI 48824 USA",42.7228144,-84.474989
+"Michigan Technol Univ, Sch Forest Resources & Environm Sci, 1400 Townsend Dr, Houghton, MI 49931 USA",47.1196551,-88.5482234
 "Minist Agr Livestock & Irrigat, Dept Fisheries, Naypyitaw, Myanmar",19.7633057,96.0785104
 "Minist Environm Forest & Climate Change MoEFCC, Natl Ctr Sustainable Coastal Management NCSCM, Anna Univ Campus, Chennai 600025, Tamil Nadu, India",13.013487,80.2332271
 "Minist Environm Forest & Climate Change, Natl Ctr Sustainable Coastal Management, Chennai 600025, Tamil Nadu, India",13.013487,80.2332271
 "Minist Environm Forest & Climate Change, North Eastern Reg Off, Shillong 793021, Meghalaya, India",25.5484274,92.0126276
+"Mira Corp Suites, BSI Grp India, Global Reporting Initiat GRI, Plot 1 & 2,Mathura Rd, New Delhi 110065, India",28.572262,77.2563541
 "MIT, Dept Civil & Environm Engn, 77 Massachusetts Ave, Cambridge, MA 02139 USA",42.359143,-71.0935584
 "MITS Sch Biotechnol, Dept Biotechnol, Bhubaneswar 751024, Odisha, India",20.3435449,85.8066629
 "Mizoram Univ, Dept Biotechnol, Mol Microbiol & Systemat Lab, Mizoram, India",23.164543,92.9375739
@@ -631,6 +697,7 @@
 "Mizoram Univ, Dept Forestry, Aizawl, India",23.7332381,92.6654329
 "Mizoram Univ, Dept Forestry, Aizawl, Mizoram, India",23.7332381,92.6654329
 "Mizoram Univ, Pachhunga Univ Coll, Dept Zool, Aizawl 796001, Mizoram, India",23.7232572,92.7272181
+"Modern Coll, Dept Zool, Pune 5, Maharashtra, India",18.5262182,73.8453756
 "MoES, ESSO, Natl Ctr Medium Range Weather Forecasting, Noida 201309, India",28.62492,77.3598937
 "Museum Natl Hist Nat, CNRS MNHN UPMC, UMR 7207, F-75231 Paris 05, France",48.8433896,2.3634888
 "Myanmar Earthquake Comm, Yangon, Myanmar",16.840939,96.173526
@@ -652,6 +719,7 @@
 "Nat Conservat Fdn, Mysore 570002, Karnataka, India",12.3319211,76.6268306
 "Nat Conservat Fdn, Mysore 570017, Karnataka, India",12.3307739,76.6037222
 "Nat Hist Museum, Cromwell Rd, London SW7 5BD, England",51.4955306,-0.1768635
+"Nat Hist Museum, Dept Earth Sci, Cromwell Rd, London SW7 5BD, England",51.4955306,-0.1768635
 "Nat Hist Museum, Dept Life Sci, London SW7 5BD, England",51.496715,-0.1763672
 "Natl Bot Res Inst, Biomass Biol Div, 1 Rana Pratap Marg, Lucknow 226001, Uttar Pradesh, India",26.8576084,80.9382574
 "Natl Bot Res Inst, CSIR, Mol Biol & Genet Lab, Rana Pratap Marg, Lucknow 226001, Uttar Pradesh, India",26.8562834,80.948002
@@ -666,6 +734,7 @@
 "Natl Bur Plant Genet Resources, Pusa Campus, New Delhi 110012, India",28.6331469,77.1524959
 "Natl Bur Plant Genet Resources, Tissue Culture & Cryopreservat Unit, New Delhi 110012, India",28.6282145,77.1493904
 "Natl Bur Plant Genet Resources, Tissue Culture & Cryopreservat Unit, Pusa Campus, New Delhi 110012, India",28.6331469,77.1524959
+"Natl Ctr Biol Sci, GKVK Campus, Bengaluru 560065, Karnataka, India",13.0800718,77.5785151
 "Natl Ctr Biol Sci, Postgrad Program Wildlife Biol & Conservat, Bangalore 560065, Karnataka, India",13.0935798,77.5778529
 "Natl Ctr Biol Sci, Postgrad Program Wildlife Biol & Conservat, GKVK Campus,Bellary Rd, Bangalore 560065, Karnataka, India",13.0773484,77.5778085
 "Natl Ctr Biol Sci, Tata Inst Fundamental Res, Bangalore 560065, Karnataka, India",13.0938741,77.5763042
@@ -686,6 +755,7 @@
 "Natl Inst Plant Genome Res, New Delhi 110067, India",28.5306795,77.1664768
 "Natl Inst Res TB, 1 Mayor Sathyamoorthy Rd, Chennai 600031, Tamil Nadu, India",13.0739281,80.2489993
 "Natl Inst Space Res INPE, Ctr Weather Forecasting & Climate Studies CPTEC, BR-12630000 Cachoeira Paulista, SP, Brazil",-22.6845581,-45.0075237
+"Natl Inst Tech Teachers Training & Res, Chandigarh 160019, India",30.7303302,76.8000091
 "Natl Inst Technol Hamirpur, Dept Architecture, Hamirpur 177005, HP, India",31.7096132,76.5199195
 "Natl Inst Technol Hamirpur, Dept Civil Engn, Hamirpur 177005, HP, India",31.7096132,76.5199195
 "Natl Inst Technol Karnataka Surathkal, Sch Management, Mangalore 575025, Karnataka, India",13.0270159,74.7892951
@@ -697,11 +767,15 @@
 "Natl Inst Virol, ICMR, Kerala Unit, Alappuzha, India",9.4126239,76.4100267
 "Natl Inst Virol, ICMR, Sus Rd, Pune 411021, Maharashtra, India",18.543185,73.7887827
 "Natl Remote Sensing Agcy, Dept Space Govt India, Atmospher Sci & Oceanog Grp, Atmospher Sci Sect, Hyderabad 500625, Andhra Pradesh, India",16.4795969,79.8923979
+"Natl Remote Sensing Agcy, Dept Space, Govt India, Atmospher Sci Sect, Hyderabad 500037, Andhra Pradesh, India",15.9128998,79.7399875
 "Natl Remote Sensing Agcy, Dept Space, IGBP Stn, Hyderabad 500037, Andhra Pradesh, India",15.9128998,79.7399875
 "Natl Remote Sensing Ctr, Forestry & Ecol Div, Hyderabad 500625, Andhra Pradesh, India",15.9128998,79.7399875
 "Natl Remote Sensing Ctr, Hyderabad 500037, Andhra Pradesh, India",15.9128998,79.7399875
 "Natl Remote Sensing Ctr, Hyderabad, Andhra Pradesh, India",17.4249895,78.4259878
+"Natl Remote Sensing Ctr, Land Resources Use & Monitoring Grp, Hyderabad 500037, Andhra Pradesh, India",15.9128998,79.7399875
 "Natl Remote Sensing Ctr, Remote Sensing Area, Forestry & Ecol Grp, Hyderabad, Andhra Pradesh, India",17.385044,78.486671
+"Natl Remote Sensing Ctr, Soils & Land Resources Assessment Div, Hyderabad 500037, Andhra Pradesh, India",15.9128998,79.7399875
+"Natl Remote Sensing Ctr, Watershed Monitoring & Rural Dev Div, Hyderabad 500037, Andhra Pradesh, India",15.9128998,79.7399875
 "Natl Res Ctr Agroforestry NRCAF, Gwalior Rd, Jhansi 284003, Uttar Pradesh, India",25.4512035,78.5893257
 "Natl Res Ctr Agroforestry NRCAF, Jhansi 284003, Uttar Pradesh, India",25.4954651,78.5561085
 "Natl Res Ctr Agroforestry, Jhansi 284003, Uttar Pradesh, India",25.5040404,78.5430535
@@ -715,12 +789,15 @@
 "Navdanya, Dehra Dun, Uttarakhand, India",30.3321761,78.0489639
 "Navsari Agr Univ, Coll Forestry, Navsari 396450, India",20.9229886,72.9081745
 "NE Hill Univ, Ctr Ecodev, Shillong 793014, Meghalaya, India",25.6131418,91.8981471
+"NE Hill Univ, Dept Environm Studies, Shillong, Meghalaya, India",25.6131418,91.8981471
 "NE Hill Univ, Pachhunga Univ Coll, Dept Bot, Aizawl 796005, India",23.7232572,92.7272181
 "NE Hill Univ, Sch Life Sci, Ctr Adv Studies Bot, Shillong 793022, Meghalaya, India",25.6116774,91.8992403
 "NE HILL UNIV, SCH LIFE SCI, DEPT BOT, SHILLONG 793022, MEGHALAYA, INDIA",25.6116774,91.8992403
 "NE Hill Univ, Sch Technol, Dept Basic Sci & Social Sci, Shillong 793022, Meghalaya, India",25.6384419,91.9196949
 "NE Inst Sci & Technol, Med Aromat & Econ Plants Div, Plant Genom Lab, Jorhat 785006, Assam, India",26.7241939,94.1616143
 "NEIST, Paper & Pulp Div, Jorhat, Assam, India",26.7377826,94.1569527
+"NERIST, Dept Forestry, Nirjuli 791109, Arunachal Prade, India",27.1262059,93.7390674
+"Network Conserving Cent India, Ranchi, Bihar, India",25.9644427,85.2722472
 "New York Bot Garden, Inst Systemat Bot, Bronx, NY 10458 USA",40.866555,-73.883109
 "NG Acharya & DK Marathe Coll, Bombay 400071, Maharashtra, India",19.058532,72.907973
 "NIAH, Tu Liem, Ha Noi, Vietnam",21.0695076,105.8378366
@@ -728,6 +805,8 @@
 "NIMR Field Unit Ranchi, Jharkhand, India",23.3440997,85.309562
 "NIMR, Sector 8, New Delhi 110077, India",28.5774264,77.0761819
 "Nirmalagiri Coll, Dept Zool, Kannur, India",11.8566253,75.5698513
+"NIT, Dept Biotechnol, Yupia 791112, Arunachal Prade, India",27.1465064,93.7193936
+"No Arizona Univ, Coll Engn Forestry & Nat Sci, Sch Forestry, Flagstaff, AZ 86011 USA",35.1905403,-111.653403
 "Nord Sch Publ Hlth, Gothenburg, Sweden",57.70887,11.97456
 "North Eastern Hill Univ, Ctr Adv Studies Bot, Shillong 793022, Meghalaya, India",25.6120984,91.8977131
 "North Eastern Hill Univ, Dept Basic Sci & Social Sci, Sch Technol, Shillong 793022, Meghalaya, India",25.6091604,91.8971103
@@ -738,6 +817,7 @@
 "North Eastern Reg Inst Sci & Technol Deemed Univ, Dept Agr Engn, Nirjuli, Arunachal Prade, India",27.1178324,93.7485874
 "North Eastern Reg Inst Sci & Technol Deemed Univ, Dept Elect & Commun Engn, Nirjuli, Arunachal Prade, India",27.1178324,93.7485874
 "North Eastern Reg Inst Sci & Technol Deemed Univ, Dept Forestry, Nirjuli 791109, Arunachal Prade, India",27.1178324,93.7485874
+"North Eastern Reg Inst Sci & Technol, Dept Forestry, Itanagar, India",27.0843682,93.6053163
 "North Eastern Reg Inst Sci & Technol, Dept Forestry, Restorat Ecol Lab, Nirjuli 791109, Arunachal Prade, India",27.1178324,93.7485874
 "Novel Res Acad, 194 Thiruvalluvar Salai, Kuyavarpalayam 605013, Puducherry, India",11.9359858,79.815845
 "NRSC, Reg Remote Sensing Ctr South, 1 Site Campus, Bangalore, India",12.9715987,77.5945627
@@ -746,6 +826,7 @@
 "Odisha Space Applicat Ctr, Bhubaneswar, Odisha, India",20.30751,85.8112209
 "Off Chief Conservator Forest MIS & E Governance, Darjeeling, W Bengal, India",27.0410218,88.2662745
 "Ohio State Univ, Ohio Agr Res & Dev Ctr, Columbus, OH 43210 USA",40.0066723,-83.0304546
+"OP Jindal Global Univ, Sonipat 131001, Haryana, India",28.9264157,77.0565769
 "Open Univ, Dept Geog, Walton Hall, Milton Keynes MK7 6AA, Bucks, England",52.0249295,-0.7081895
 "Open Univ, Open Space Res Ctr, Walton Hall, Milton Keynes MK7 6AA, Bucks, England",52.0249295,-0.7081895
 "Oran Univ, Biol Dept, Oran, Algeria",35.6373208,-0.6150587
@@ -766,6 +847,7 @@
 "Polish Acad Sci, Dept Geoenvironm Res, Inst Geog & Spatial Org, Jana 22, PL-31018 Krakow, Poland",50.064357,19.9391795
 "Polish Acad Sci, Inst Anim Reprod & Food Res, PL-10748 Olsztyn, Poland",53.7562675,20.4698753
 "Politecn Milan, Dipartimento Informat Elettron & Bioingn, Milan, Italy",45.4642035,9.189982
+"Polytech Coimbra, ESTGOH, Rua Gen Santos Costa, P-3400124 Oliveira Do Hosp, Portugal",40.3609438,-7.8611917
 "Pondicherry Univ, Dept Disaster Management, Port Blair, India",11.6233774,92.7264828
 "Pondicherry Univ, Dept Ecol & Environm Sci, Kalapet 605014, Puducherry, India",12.0182619,79.8568461
 "Pondicherry Univ, Dept Ecol & Environm Sci, Pondicherry 605014, India",12.0182619,79.8568461
@@ -785,18 +867,22 @@
 "Punjab Agr Univ, Dept Agr Meteorol, Ludhiana 141004, Punjab, India",30.9041,75.8065531
 "Punjab Agr Univ, Dept Agron, Ludhiana 141004, Punjab, India",30.8996258,75.8047678
 "Punjab Agr Univ, Dept Forestry & Nat Resources, Ludhiana 141004, Punjab, India",30.8999028,75.8107931
+"Punjab Agr Univ, Dept Soil & Water Conservat Engn, Ludhiana 141004, Punjab, India",30.8996258,75.8047678
 "Punjab Agr Univ, Dept Soil Sci, Ludhiana 141004, Punjab, India",30.8996258,75.8047678
 "Punjab Agr Univ, Punjab Remote Sensing Ctr, Ludhiana 141004, Punjab, India",30.8996258,75.8047678
 "Punjab Agr Univ, Reg Res Stn, Bathinda 151001, Punjab, India",30.1738414,74.8974925
+"Punjabi Univ, Dept Bot, Patiala 147002, Punjab, India",30.3612752,76.4491686
 "PURDUE UNIV, DEPT FORESTRY & NAT RESOURCES, 1159 FORESTRY BLDG, W LAFAYETTE, IN 47907 USA",40.4228054,-86.9140972
 "Qatar Fdn, Dept Med Genet, Doha 24144, Qatar",25.2854473,51.5310398
 "Qatar Fdn, Genom Lab, Doha 24144, Qatar",25.2854473,51.5310398
 "Qatar Fdn, Weill Cornell Med Coll Qatar, Box 24144, Educ City, Doha, Qatar",25.2854473,51.5310398
 "Qatar Fdn, Weill Cornell Med Coll Qatar, Doha 24144, Qatar",25.2854473,51.5310398
 "Quebec Ctr Biodivers Sci, 1205 Dr Penfield Ave, Montreal, PQ H3A 1B1, Canada",45.5026777,-73.5809999
+"Quebec Ctr Biodivers Sci, Montreal, PQ, Canada",45.5018869,-73.5673919
 "Rain Forest Res Inst, Jorhat, Assam, India",26.7454906,94.1656158
 "Rajasthan Tech Univ, Univ Dept, Petr Engn Branch, Kota 324010, Rajasthan, India",25.1413055,75.8040022
 "Rajendra Agr Univ, Dept Forestry, Samastipur 848125, Bihar, India",25.9850076,85.6735308
+"Rajiv Gandhi Univ, Dept Bot, Ctr Potential Excellence Biodivers, Higher Plant Div & Validat Unit, Rono Hills, Doimukh 791112, Arunachal Prade, India",27.1518218,93.7551208
 "Rajiv Gandhi Univ, Dept Bot, Doimukh 791112, Arunachal Prade, India",27.1500703,93.7511268
 "Rajiv Gandhi Univ, Dept Zool, Univ Rd, Itanagar 791112, Arunachal Prade, India",27.1499677,93.7672772
 "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyala, Gwalior 474002, India",26.2231392,78.1908748
@@ -824,12 +910,14 @@
 "Salim Ali Fdn, Trichur 680027, Kerala, India",10.4885286,76.2163418
 "Sambalpur Univ, PG Dept Environm Sci, Sambalpur 768019, India",21.4784664,83.8844697
 "Sanaria Inc, Rockville, MD 20850 USA",39.0958216,-77.1971631
+"Sandip Univ, SMTS Agr Sci, Madhubani 847235, Bihar, India",26.3506102,86.2405787
 "Santa Fe Inst, Santa Fe, NM 87501 USA",35.700306,-105.908634
 "Sardar Swaran Singh Natl Inst Renewable Energy, 12KM Stone,Jalandhar Kapurthala Rd, Kapurthala 144601, Punjab, India",31.3697019,75.4080482
 "Sardar Swaran Singh Natl Inst Renewable Energy, Kapurthala 144601, Punjab, India",31.387092,75.3836931
 "Sardar Vallabh Bhai Patel Univ Agr & Technol, Dept Biotechnol, Meerut 250110, Uttar Pradesh, India",29.0453587,77.7072588
 "SASTRA Deemed Univ, Ctr Adv Res Environm, Sch Civil Engn, Thanjavur 613401, India",10.7346273,79.0249516
 "Sathyabama Inst Sci & Technol, Ctr Remote Sensing & Geoinformat, Chennai 600119, Tamil Nadu, India",12.8713372,80.222404
+"Satpuda Fdn, Amravati, India",20.8759211,77.7337629
 "Savitribai Phule Pune Univ Formerly Univ Pune, Bioinformat Ctr, Pune 411007, Maharashtra, India",18.5551349,73.8225725
 "Savitribai Phule Pune Univ Formerly Univ Pune, Dept Stat, Pune 411007, Maharashtra, India",18.5551349,73.8225725
 "Savitribai Phule Pune Univ, Dept Atmospher & Space Sci, Pune 411007, Maharashtra, India",18.554021,73.8224091
@@ -855,7 +943,9 @@
 "Shivaji Univ, Cytogenet & Plant Breeding Lab, Dept Bot, Kolhapur 416004, Maharashtra, India",16.6779832,74.2555867
 "Shoolini Univ Biotechnol & Management Sci, Sch Agr Sci, Solan 173229, India",30.8643599,77.1184188
 "Shoolini Univ Biotechnol & Management Sci, Sch Biol & Environm Sci, Solan 173229, India",30.8643599,77.1184188
+"Shoolini Univ, Civil Engn Dept, Solan 173229, Himachal Prades, India",30.8643599,77.1184188
 "Shriram Inst Ind Res, Delhi 110007, India",28.68132,77.212346
+"Sikkim Univ, Dept Bot, Gangtok, India",27.3087859,88.5879671
 "Sikkim Univ, Dept Zool, Tadong 737102, Gangtok, India",27.3087859,88.5879671
 "SKP Engn Coll, Dept Chem, Thiruvannamalai 606611, India",12.2354833,79.1233073
 "So Reg Ctr, Energy & Resources Inst TERI, 4th Main,2nd Cross,Domlur 2nd Stage, Bangalore 560071, Karnataka, India",12.9634971,77.6380856
@@ -863,27 +953,36 @@
 "Space Applicat Ctr ISRO, Ahmadabad 380015, Gujarat, India",23.0277933,72.518888
 "Space Applicat Ctr ISRO, Remote Sensing Applicat Area RESA, Ahmadabad 380015, Gujarat, India",23.024349,72.5301521
 "Sri Dev Suman Uttarakhand Univ Badsahithol, Tehri Garhwal, Uttarakhand, India",30.3370687,78.40273
+"Sri JCBM Coll, Sringeri 577139, Karnataka, India",13.4235374,75.2592555
 "Sri Krishnadevaraya Univ, Dept Microbiol, Anantapur, AP, India",14.6106617,77.6477974
 "Sri Padmavathi Mahila Visvavidyalayam, Dept Appl Microbiol, Tirupati, AP, India",13.6181585,79.3989732
 "Sri Venkateswara Univ, Dept Virol, Appl Microbiol Lab, Tirupati, AP, India",13.6288857,79.3978254
 "SRM Univ AP, Sch Engn & Sci, Dept Environm Sci, Amaravati, Andhra Pradesh, India",16.4649199,80.5083236
 "St Anthonys Coll, Shillong, Meghalaya, India",25.5710063,91.8896847
 "St Baba Bhag Singh Univ, Dept Zool, Jalandhar 144030, Punjab, India",31.4220106,75.8087244
+"St Gadge Baba Amravati Univ, Dept Geol, Amravati 444602, Maharashtra, India",20.938967,77.7995126
 "St Gahira Guru Vishwavidyalaya, Dept Farm Forestry, Ambikapur 497001, Chhattisgarh, India",23.1145687,83.1885839
 "St Johns Coll, Sch Chem Sci, Dept Chem, Agra 282002, Uttar Pradesh, India",27.193875,78.002463
 "St Longowal Inst Engn & Technol, Dept Chem Engn, Longowal 148106, Sangrur, India",30.2213855,75.6996642
 "St Louis Univ, Sch Med, 1402 South Grand Blvd, St Louis, MO 63104 USA",38.6224549,-90.2377947
 "St Prod, Melbourne, Vic 3054, Australia",-37.7843702,144.9694441
+"State Forest Res Inst, Orchid Res & Dev Ctr, Itanagar, Arunachal Prade, India",27.0843682,93.6053163
 "SUNY Coll Environm Sci & Forestry, Dept Environm & Forest Biol, 1 Forestry Dr, Syracuse, NY 13210 USA",43.0345102,-76.1366182
+"SUNY STONY BROOK, MARINE SCI RES CTR, STONY BROOK, NY 11794 USA",40.9166745,-73.1232478
 "Swedish Univ Agr Sci, Dept Urban & Rural Dev, Box 7012, SE-75007 Uppsala, Sweden",59.8585638,17.6389267
+"Swiss Fed Inst Technol, Inst Integrat Biol, Plant Ecol Genet, Univ Str 16, CH-8092 Zurich, Switzerland",47.3765269,8.5483293
+"Swiss Fed Inst Technol, Inst Terr Ecosyst, Ecosyst Management, Univ Str 16, CH-8092 Zurich, Switzerland",47.3765269,8.5483293
 "Tagore Govt Arts & Sci Coll, Dept Bot, Lawspet 605008, Puducherry, India",11.9548966,79.818884
 "Tamil Nadu Agr Univ TNAU, Forest Coll & Res Inst FC&RI, Mettupalayam 641301, Tamil Nadu, India",11.3237093,76.9362182
 "Tamil Nadu Agr Univ, Coimbatore, Tamil Nadu, India",11.0168445,76.9558321
 "Tamil Nadu Agr Univ, Controllerate Examinat, Coimbatore 641003, India",11.0121706,76.9354212
+"Tamil Nadu Agr Univ, Dept Agr Microbiol, Coimbatore 641003, Tamil Nadu, India",11.0121706,76.9354212
 "Tamil Nadu Agr Univ, Dept Agr Microbiol, Coimbatore, Tamil Nadu, India",11.0121706,76.9354212
 "Tamil Nadu Agr Univ, Forest Coll & Res Inst, Coimbatore 641301, Tamil Nadu, India",11.3348611,76.9527836
 "Tamil Nadu Agr Univ, Forest Coll & Res Inst, Mettupalayam 641301, Tamil Nadu, India",11.3027849,76.9383385
 "Tamil Nadu Agr Univ, Forest Coll, Mettupalayam 641301, India",11.3027849,76.9383385
+"Tamil Nadu Agr Univ, Forest Coll, Mettupalayam 641301, Tamil Nadu, India",11.3027849,76.9383385
+"Tamil Nadu Agr Univ, Res Inst, Mettupalayam 641301, Tamil Nadu, India",11.3027849,76.9383385
 "Tamil Nadu Forest Dept, Chennai, Tamil Nadu, India",13.0826802,80.2707184
 "Tarbiat Modares Univ, Dept GIS & RS, Tehran, Iran",35.7234574,51.383975
 "Tata Inst Fundamental Res, Natl Ctr Biol Sci, Bellary Rd, Bangalore 560065, Karnataka, India",13.0938741,77.5763042
@@ -897,6 +996,7 @@
 "Tezpur Univ, Dept Energy, Tezpur 784028, Assam, India",26.6992778,92.8348947
 "Tezpur Univ, Dept Environm Sci, Tezpur 784028, Assam, India",26.7002961,92.8307601
 "Tezpur Univ, Dept Environm Sci, Tezpur 784028, India",26.7002961,92.8307601
+"Thapar Univ, Dept Biotechnol & Environm Studies, Patiala, Punjab, India",30.3529627,76.363638
 "Thomas Jefferson Univ, Dept Hosp Med, Philadelphia, PA USA",39.9485585,-75.1559044
 "Tlemcen Hosp Algeria, Cardiol Dept, Tilimsen, Algeria",34.8828864,-1.3166815
 "Tlemcen Hosp, Biochem Dept, Tilimsen, Algeria",34.8828864,-1.3166815
@@ -906,12 +1006,14 @@
 "Tokyo Univ Agr & Technol, Inst Agr, 3-5-8 Saiwai Cho, Fuchu, Tokyo 1838509, Japan",35.7451187,139.6999923
 "Tokyo Univ Marine Sci & Technol, Grad Sch Marine Sci & Technol, Minato Ku, Tokyo 1088477, Japan",35.6268836,139.7486366
 "Trinity Univ, San Antonio, TX 78212 USA",29.4618769,-98.4833382
+"Tripura Univ, Dept Forestry & Biodivers, Agartala, India",23.7640927,91.2603137
 "Tripura Univ, Dept Forestry & Biodivers, Suryamaninagar, Agartala, Tripura, India",23.7640927,91.2603137
 "Tripura Univ, Dept Geog & Disaster Management, Agartala 799130, Tripura West, India",23.7618654,91.2639182
 "Tripura Univ, Dept Zool, Dasaratha Deb Mem Coll, Khowai 799201, Tripura, India",24.0743358,91.6070757
 "Trop Bot Garden & Res Inst, Div Microbiol, Thiruvananthapuram 695562, Kerala, India",8.550953,76.9108019
 "Trop Forestry Res Inst, Genet & Plant Propagat Div, Post Office-RFRC,Mandla Rd, Jabalpur 482021, India",22.6326108,80.3636493
 "UAS, Coll Agr, Dept Agr Extens, GKVK Campus, Bangaluru 560065, Karnataka, India",13.0300432,77.5878517
+"UMR EcoFoG, Campus Agron, Kourou 97310, French Guiana",5.1733184,-52.6537432
 "UN Joint Logist Ctr, Juba, Sudan",4.859363,31.57125
 "UN OOSA, A-1400 Vienna, Austria",48.2081743,16.3738189
 "UNESP, FCAV, Dept Tecnol, Via Acesso Prof PD Castellane Km 5, BR-14884900 Jaboticabal, SP, Brazil",-21.2553986,-48.3204453
@@ -924,12 +1026,16 @@
 "Univ Aberdeen, Sch Med, Sch Med & Dent, Aberdeen AB25 2ZD, Scotland",57.16476,-2.1015257
 "Univ Acores, Dept Ciencias Agr, P-9700042 Angra Do Heroismo, Acores, Portugal",38.6588401,-27.2325286
 "Univ Adelaide, Dept Earth Sci, Adelaide, SA, Australia",-34.920603,138.6062277
+"Univ Agr & Hort Sci Shimoga, Coll Forestry, Ponnampet 571216, India",12.1514612,75.9430278
 "Univ Agr & Hort Sci, Dept Nat Resource Management, Coll Forestry, Kodagu 571216, Karnataka, India",12.1027291,76.01598
 "Univ Agr Sci Bangalore, Dept Agr Sci, Bangalore 560065, Karnataka, India",13.0935798,77.5778529
+"Univ Agr Sci Bangalore, Dept Crop Physiol, Bangalore, Karnataka, India",13.0799129,77.5791903
+"Univ Agr Sci Bangalore, Dept Forestry & Environm Sci, Bangalore, Karnataka, India",12.9909542,77.5970657
 "Univ Agr Sci Bangalore, GKVK, Dept Crop Physiol, Bangalore 560065, Karnataka, India",13.0799129,77.5791903
 "Univ Agr Sci Bangalore, GKVK, Dept Environm & Forest, Bangalore 560065, Karnataka, India",13.0769488,77.5773449
 "Univ Agr Sci Bangalore, GKVK, Div Hort, Plant Mol Biol Lab, Bangalore 560065, Karnataka, India",13.0814041,77.5664239
 "Univ Agr Sci Bangalore, GKVK, Sch Ecol & Conservat, Bangalore 560065, Karnataka, India",13.0800718,77.5785151
+"Univ Agr Sci Bangalore, Sch Ecol & Conservat, Bangalore, Karnataka, India",12.9909542,77.5970657
 "Univ Agr Sci, Coll Forestry Sirsi, Dept Forest Biol & Tree Improvement, Dharwad 581401, Karnataka, India",14.6085061,74.8286605
 "Univ Agr Sci, Dept Crop Physiol, Bangalore, Karnataka, India",13.0799129,77.5791903
 "Univ Agr Sci, Dept Hort, Coll Agr, Mandya 571410, Karnataka, India",12.5218157,76.8951488
@@ -986,16 +1092,23 @@
 "Univ Georgia, Warnell Sch Forestry & Nat Resources, Athens, GA 30602 USA",33.943993,-83.37441
 "Univ Gondar, Coll Med & Hlth Sci, Dept Clin Chem, Gondar, Ethiopia",12.589413,37.4442387
 "Univ Gondar, Coll Med & Hlth Sci, Dept Med Microbiol, Gondar, Ethiopia",12.589413,37.4442387
+"Univ Gottingen, Dept Forest Genet & Forest Tree Breeding, Busgenweg 2, D-37077 Gottingen, Germany",51.5579429,9.9578779
 "Univ Gour Banga, Dept Geog, Malda, W Bengal, India",24.9837972,88.1381379
+"Univ Grenoble Alpes, Lab Interdisciplinaire Phys, Grenoble, France",45.1915639,5.7672336
 "Univ Guelph, Sch Environm Sci, Guelph, ON N1G 2W1, Canada",43.527799,-80.2248117
+"Univ Guyane, Univ Antilles, INRAE, CNRS,UMR EcoFoG,Agroparistech,Cirad, Kourou, French Guiana",3.933889,-53.125782
 "Univ Hawaii Manoa, Dept Bot, Honolulu, HI 96822 USA",21.301605,-157.8151764
 "UNIV HAWAII MANOA,DEPT ENTOMOL,CTR CONSERVAT RES & TRAINING,3050 MAILE WAY,GILMORE 310,HONOLULU,HI 96822, USA",21.3017409,-157.8167491
+"Univ Hlth Sci, CRERS, Lahore, Pakistan",31.5203696,74.3587473
 "Univ Hort Sci, GKVK, Biovers Int, Bangalore 560065, Karnataka, India",13.0800718,77.5785151
 "Univ Hyderabad, Ctr Earth & Space Sci, Hyderabad 500046, Andhra Pradesh, India",15.9128998,79.7399875
+"Univ Hyderabad, Univ Ctr Earth & Space Sci, Prof CR Rao Rd, Hyderabad 500046, Andhra Pradesh, India",15.9128998,79.7399875
+"Univ Illinois, Agroecosyst Sustainabil Ctr, Inst Sustainabil Energy & Environm, Urbana, IL USA",40.1105875,-88.2072697
 "Univ Illinois, Dept Sci Biol, SES, M-C 066,845 W Taylor St, Chicago, IL 60607 USA",41.8689431,-87.6486317
 "Univ Int Business & Econ, Sch Int Trade & Econ, Beijing 100029, Peoples R China",39.9791999,116.407
 "Univ Int Business & Econ, UIBE Belt & Rd Energy Trade & Dev Ctr, Beijing 100029, Peoples R China",39.977518,116.429591
 "Univ Kalyani, Dept Geog, Kalyani 741235, W Bengal, India",22.9788116,88.4478432
+"Univ Kansas, Biodivers Inst, Lawrence, KS 66045 USA",38.9543439,-95.2557961
 "Univ Kansas, Dept Ecol & Evolutionary Biol, Lawrence, KS 66045 USA",38.9557464,-95.2485952
 "Univ Kashmir, Ctr Res Dev, Srinagar 190006, Jammu & Kashmir, India",34.1279625,74.8365172
 "Univ Kashmir, Dept Bot, Srinagar 190006, J&K, India",34.1279625,74.8365172
@@ -1007,6 +1120,7 @@
 "Univ Kerala, Accredited Ctr Res, Mahatma Gandhi Coll, Post Grad Dept, Thiruvananthapuram 695004, Kerala, India",8.5320843,76.9430605
 "Univ Kerala, Accredited Ctr Res, Mahatma Gandhi Coll, Res Ctr Bot, Thiruvananthapuram 695004, Kerala, India",8.5320843,76.9430605
 "Univ Kerala, Dept Environm Sci, Thiruvananthapuram 695581, Kerala, India",8.5645968,76.8851597
+"Univ Kwazulu Natal, Sch Agr Earth & Environm Sci, ZA-4041 Pietermaritzburg, South Africa",-29.6006068,30.3794118
 "Univ Lagos, Fac Engn, Dept Elect & Elect Engn, Lagos, Nigeria",6.465151,3.1468148
 "Univ Lancaster, Pentland Ctr, Lancaster LA1 1YW, England",54.0103942,-2.7877294
 "Univ Leeds, Sch Biol, Leeds LS2 9JT, W Yorkshire, England",53.8066815,-1.5550328
@@ -1028,17 +1142,21 @@
 "Univ Minnesota Twin Cities, Dept Forest Resources, Minneapolis, MN 55455 USA",44.97399,-93.2277285
 "Univ Minnesota, Dept Fisheries & Wildlife, St Paul, MN 55108 USA",44.9823027,-93.1823116
 "Univ Montana, Div Biol Sci, Missoula, MT 59812 USA",46.8619309,-113.9845969
+"Univ Montpellier, AMAP, IRD, CNRS,CIRAD,INRA, Montpellier, France",43.617897,3.8570839
 "Univ Montpellier, Inst Agro Montpellier, UMR Eco&Sols, INRAE,CIRAD,IRD, Montpellier, France",43.6451206,3.8673324
 "Univ Montpellier, Inst Sci Evolut, CNRS, UMR 5554, F-34095 Montpellier, France",43.615794,3.8721092
 "Univ Montreal, Inst Rech Biol Vegetale, Montreal, PQ, Canada",45.5027292,-73.6183016
+"Univ Mumbai, Dept Geog, Malina Campus, Mumbai 400098, Maharashtra, India",19.0727182,72.8586848
 "Univ Mysore, Dept Studies Appl Bot & Biotechnol, Mysore 570006, Karnataka, India",12.3105551,76.6221822
 "Univ Mysore, Inst Excellence, Mysore, Karnataka, India",12.3558876,76.6354054
 "Univ Mysore, Institut Excellence, Biopsychol Lab, Mysuru, India",12.3558876,76.6354054
 "Univ Nacl Colombia, Dept Ciencias Forestales, Sede Medellin, Medellin AA568, Colombia",6.2603934,-75.5771855
 "Univ Nat Resources & Life Sci BOKU, Inst Surveying Remote Sensing & Land Informat, Vienna, Austria",48.2372989,16.3348065
+"Univ New South Wales, Sch Biol Earth & Environm Sci, Sydney, NSW, Australia",-33.8688197,151.2092955
 "Univ New South Wales, Sch Optometry & Vis Sci, Sydney, NSW, Australia",-33.8688197,151.2092955
 "Univ North Bengal, Dept Geog & Appl Geog, Darjeeling 734013, India",26.7094526,88.3541556
 "Univ North Bengal, Dept Tea Sci, Darjeeling 734013, W Bengal, India",26.7111066,88.350382
+"Univ Nottingham, Dept Chem & Environm Engn, Nottingham Rd, Nottingham, England",52.9387922,-1.1981057
 "Univ Oklahoma, Norman, OK 73019 USA",35.2149448,-97.4476008
 "Univ Oulu, Dept Biol, Oulu, Finland",65.0593177,25.4662935
 "Univ Oxford, Biodivers Res Grp, Sch Geog & Environm, Ctr Environm,Oxford Univ, South Parks Rd, Oxford OX1 3QY, England",51.75883,-1.253712
@@ -1058,6 +1176,8 @@
 "Univ Rajasthan, Dept Bot, Jaipur 302004, Rajasthan, India",26.9071788,75.8159053
 "Univ Reading, Ctr Agr Environm Res, Reading RG6 6AR, Berks, England",51.4551201,-0.9787475
 "Univ Reading, Ctr Agri Environm Res, Reading RG6 6AR, Berks, England",51.4551201,-0.9787475
+"Univ Reims, Lab Microbiol Gen & Mol, BP 1039, F-51687 Reims, France",49.258329,4.031696
+"Univ Reims, Lab Microbiol Gen & Mol, F-51687 Reims, France",49.258329,4.031696
 "Univ Salford, Sch Sci Engn & Environm, Manchester M5 4WT, Lancs, England",53.4872326,-2.2737375
 "Univ Sao Francisco USF, Res Grp Environm & Sustainabil GPMAS, BR-13250400 Itatiba, SP, Brazil",-22.9998957,-46.8457028
 "Univ Sao Paulo, Inst Adv Studies, BR-05508050 Sao Paulo, SP, Brazil",-23.5609494,-46.7213146
@@ -1076,6 +1196,7 @@
 "Univ St Etienne, Lab BVpam, EA3061, 23 Rue Dr Paul Michelon, F-42000 St Etienne, France",45.423379,4.4257127
 "Univ Stellenbosch, Dept Conservat Ecol & Entomol, Ctr Invas Biol, Private Bag X1, ZA-7602 Matieland, South Africa",-33.9325387,18.8600224
 "Univ Stellenbosch, Dept Conservat Ecol & Entomol, Ctr Invas Biol, ZA-7602 Matieland, South Africa",-33.9325387,18.8600224
+"Univ Stirling, Dept Biol & Mol Sci, Stirling FK9 4LA, Scotland",56.1457961,-3.9198663
 "Univ Suthanpton, Dept Geog & Environm Sci, Southampton, Hants, England",51.0576948,-1.3080629
 "Univ Sydney, Fac Med & Hlth, Westmead Appl Res Ctr, Sydney, NSW, Australia",-33.8068132,150.9878316
 "Univ Sydney, Sydney Sch Vet Sci, Camden, NSW, Australia",-34.0659551,150.6935958
@@ -1085,6 +1206,8 @@
 "Univ Teknol Petronas, South East Asia Carbonate Res Lab, Tronoh, Malaysia",4.423069,100.993027
 "Univ Tokyo, Atmosphere Ocean Res Inst, Kashiwa, Chiba, Japan",35.8675958,139.9757575
 "Univ Utara Malaysia, Othman Yeop Abdullah Grad Sch Business, Kedah 06010, Malaysia",6.4647045,100.5100174
+"Univ Utrecht, Copernicus Inst Susthinable Dev, NL-3508 TC Utrecht, Netherlands",52.0907374,5.1214201
+"Univ Vet & Anim Sci, Inst Biochem & Biotechnol, Lahore, Pakistan",31.5203696,74.3587473
 "Univ Victoria, Dept Geog, Victoria, BC, Canada",48.4634067,-123.3116935
 "Univ Washington, Sch Environm & Forest Sci, Seattle, WA 98195 USA",47.6508882,-122.3084023
 "Univ Yangon, Dept Zool, Kamayut Township 11041, Yangon, Myanmar",16.8331492,96.1361704
@@ -1109,6 +1232,7 @@
 "Vali E Asr Univ Rafsanjan, Dept Water Sci & Engn, Rafsanjan, Iran",30.4184192,55.971532
 "VCSG Uttarakhand Univ Hort & Forestry, Coll Forestry, Tehri Garhwal, India",30.0600033,78.9977448
 "VCSGUUHF, Coll Forestry, Tehri 249199, India",30.0600033,78.9977448
+"Veer Chandra Singh Garhwali Uttarakhand Univ Hort, Coll Forestry, Ranichauri 249199, India",30.3110779,78.4096036
 "Vellore Inst Technol, Sch Elect Engn, Dept Commun Engn, Vellore, Tamil Nadu, India",13.0070313,79.1223174
 "Vellore Inst Technol, Sch Elect Engn, Dept Control & Automation, Vellore, Tamil Nadu, India",12.9774183,79.1291079
 "VHNSN Coll Autonomous, Dept Bot, 3-151-1 Coll Rd, Virudunagar 626001, Tamil Nadu, India",9.5736426,77.9731303
@@ -1118,9 +1242,13 @@
 "Vimix Solut Private Ltd, Dehra Dun 248001, India",30.3345816,78.0537813
 "VIT Univ, Sch Biosci & Technol, Dept Biotechnol, Vellore 632014, Tamil Nadu, India",12.9692232,79.1559336
 "VIT Univ, Sch Biosci & Technol, Vellore 632014, Tamil Nadu, India",12.9692232,79.1559336
+"VNR Vignana Jyothi Inst Engn & Technol, Dept Mech Engn, Hyderabad, India",17.5396743,78.3868837
 "W Parana State Univ Toledo, Dept Chem Engn, BR-85903000 Toledo, Parana, Brazil",-24.7250241,-53.752961
 "Wageningen Univ & Res, Plant Prod Syst, Wageningen, Netherlands",51.9863475,5.6680191
 "Wageningen Univ, Anim Breeding & Genom Ctr, NL-6700 AH Wageningen, Netherlands",51.969962,5.6680586
+"Wageningen Univ, Forest & Nat Conservat Policy Grp, NL-6700 AP Wageningen, Netherlands",51.9812239,5.6584157
+"Wageningen Univ, Strateg Commun Grp, NL-6700 AP Wageningen, Netherlands",51.9812239,5.6584157
+"Water Resources & Appl Math Res Lab, Nagpur 440027, Maharashtra, India",21.1041576,79.0927484
 "WHO, SE Asian Reg Off, New Delhi, India",28.6139391,77.2090212
 "Wildlife Conservat Soc India Program, Bangalore 560070, Karnataka, India",12.9149298,77.5634899
 "Wildlife Inst India, Chandrabani Dehradun, Uttarakhand, India",30.2834983,77.9735518
@@ -1128,8 +1256,10 @@
 "Wildlife Inst India, Dehra Dun 248001, Uttarakhand, India",30.2834983,77.9735518
 "Wildlife Inst India, Dehra Dun, Uttarakhand, India",30.2834983,77.9735518
 "Wildlife Inst India, Dept Anim Ecol & Conservat Biol, Post Box 18, Dehra Dun 248001, Uttarakhand, India",30.3345816,78.0537813
+"Wildlife Inst India, Dept Anim Ecol Conservat Biol, Chandrabani POB 18, Dehra Dun 248001, Uttarakhand, India",30.2834983,77.9735518
 "Wildlife Inst India, Dept Ecodev Planning & Participatory Management, Dehra Dun, India",30.2834983,77.9735518
 "Wildlife Inst India, Dept Habitat Ecol, Post Box 18, Dehra Dun 248001, Uttarakhand, India",30.3426764,78.0051613
+"Wildlife Inst India, Dept Landscape Level Planning & Management, Post Box 18, Dehra Dun 248001, Uttarakhand, India",30.3345816,78.0537813
 "Wildlife Inst India, Ganga Aqualife Conservat & Monitoring Ctr, Dehra Dun, India",30.2830875,77.9735136
 "Wildlife Inst India, PB 18, Dehra Dun 248002, Uttar Pradesh, India",27.5705886,80.0981869
 "Wildlife Inst India, POB 18, Dehra Dun 248001, Uttar Pradesh, India",27.5705886,80.0981869
@@ -1150,7 +1280,9 @@
 "WWF INDIA,IGCMC,172-B,LODI ESTATE,NEW DELHI 110003,INDIA",28.590965,77.223072
 "Yale Univ, Sch Environm, New Haven, CT 06511 USA",41.3040256,-72.9326481
 "Yashvantarao Chavan Inst Sci, Dept Bot, Satara 415001, Maharashtra, India",17.6855395,74.0108602
+"Zagazig Univ, Fac Engn, Water & Water Struct Engn Dept, Zagazig 44519, Egypt",30.5765383,31.5040656
 "ZARS RVS Krishi Vishwa Vidyalaya, Morena, India",26.4947172,77.9940222
 "Zoo Outreach Org ZOO, Coimbatore, Tamil Nadu, India",11.0758138,77.0106614
 "Zool Survey India, Kolkata, W Bengal, India",22.572646,88.363895
+"Zool Survey India, M Block, Kolkata 700053, W Bengal, India",22.5096075,88.3339513
 NA,NA,NA

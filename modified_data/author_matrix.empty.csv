@@ -1,36 +1,13 @@
 "","address","count","paperID","Latitude","Longitude"
 "1","0","0","0",NA,NA
-"14","Chinese Acad Sci, XTBG, Key Lab Trop Forest Ecol, Menglun Town 666303, Yunnan, Peoples R China","2","A3105",NA,NA
-"17","Chinese Acad Sci, XTBG, Ctr Integrat Conservat, Menglun Town 666303, Yunnan, Peoples R China","1","A3105",NA,NA
-"18","Guangxi Univ, Coll Forestry, Guangxi Key Lab Forest Ecol & Conservat, Daxuedonglu 100, Nanning 530004, Peoples R China","1","A3105",NA,NA
-"19","Pondicherry Univ, Dept Ecol & Environm Sci, Kalapet 605014, Puducherry, India","1","A3105",NA,NA
-"20","Bharathiar Univ, Dept Bot, Root & Soil Biol Lab, Coimbatore 641046, Tamil Nadu, India","1","A3105",NA,NA
-"21","Shanghai Jiao Tong Univ, Sch Environm Sci & Engn, Shanghai 200240, Peoples R China","1","A0784",NA,NA
-"22","Univ Lancaster, Pentland Ctr, Lancaster LA1 1YW, England","2","A0784",NA,NA
-"23","Univ Educ, Lahore, Pakistan","1","A0784",NA,NA
-"24","Shanghai Jiao Tong Univ, Sch Int & Publ Affairs, Shanghai 200030, Peoples R China","1","A0784",NA,NA
-"25","Shanghai Jiao Tong Univ, China Inst Urban Governance, 800 Dongchuan Rd, Shanghai 200240, Peoples R China","1","A0784",NA,NA
-"26","Shanghai Inst Pollut Control & Ecol Secur, Shanghai 200092, Peoples R China","1","A0784",NA,NA
 "27",NA,"3","A3105",NA,NA
 "34",NA,"3","A3010",NA,NA
 "41",NA,"1","A2658",NA,NA
 "45",NA,"1","A2911",NA,NA
 "49",NA,"1","A2903",NA,NA
-"50","Mizoram Univ, Dept Forestry, Aizawl 796004, India","2","A1219",NA,NA
 "51",NA,NA,"C0254",NA,NA
-"52","Univ Yangon, Dept Zool, Kamayut Township 11041, Yangon, Myanmar","4","A1722",NA,NA
-"53","Minist Agr Livestock & Irrigat, Dept Fisheries, Naypyitaw, Myanmar","3","A1722",NA,NA
-"54","Tokyo Univ Marine Sci & Technol, Grad Sch Marine Sci & Technol, Minato Ku, Tokyo 1088477, Japan","5","A1722",NA,NA
-"55","Khulna Univ, Fisheries & Marine Resources Technol Discipline, Khulna 9208, Bangladesh","1","A1722",NA,NA
 "56",NA,"1","A3216",NA,NA
 "57",NA,NA,"C0065",NA,NA
-"58","Kerala Agr Univ, Coll Forestry, KAU PO, Trichur 680656, Kerala, India","3","A1692",NA,NA
-"59","Kerala Agr Univ, Coll Forestry, Dept Silviculture & Agroforestry, KAU PO, Trichur 680656, Kerala, India","1","A1692",NA,NA
-"60","Arunachal Univ Studies, Namsai 792103, Arunachal Prad, India","1","A1692",NA,NA
-"61","Dalhousie Univ, Dept Phys & Atmospher Sci, Halifax, NS, Canada","5","A1692",NA,NA
-"62","Harvard Smithsonian Ctr Astrophys, 60 Garden St, Cambridge, MA 02138 USA","1","A1692",NA,NA
-"63","NASA, Atmospher Chem & Dynam Lab, Goddard Space Flight Ctr, Greenbelt, MD USA","1","A1692",NA,NA
-"64","Guru Nanak Dev Univ, Guru Ramdas Sch Planning, Amritsar 143005, Punjab, India","2","A1294",NA,NA
 "65",NA,NA,"B0021",NA,NA
 "66",NA,"1","A2803",NA,NA
 "70",NA,NA,"B0010",NA,NA
@@ -45,429 +22,335 @@
 "115",NA,"1","A2598",NA,NA
 "116",NA,"2","A3048",NA,NA
 "125",NA,NA,"C0083",NA,NA
-"128","IIT Kharagpur, CORAL, Kharagpur, India","2","A2665",NA,NA
-"129","Univ Southampton, Southampton, England","1","A2665",NA,NA
 "130",NA,"1","A3240",NA,NA
-"131","Birbal Sahni Inst Paleobot, Quaternary Palynol Dept, 53 Univ Rd, Lucknow 226007, Uttar Pradesh, India","3","A2665",NA,NA
-"132","Univ Lucknow, Dept Geol, Lucknow 226007, Uttar Pradesh, India","1","A2665",NA,NA
-"133","Natl Res Ctr Agroforestry, Jhansi 284003, Uttar Pradesh, India","6","A2668",NA,NA
-"134","Univ Kerala, Accredited Ctr Res, Mahatma Gandhi Coll, Post Grad Dept, Thiruvananthapuram 695004, Kerala, India","2","A1692",NA,NA
-"135","Univ Kerala, Accredited Ctr Res, Mahatma Gandhi Coll, Res Ctr Bot, Thiruvananthapuram 695004, Kerala, India","2","A1692",NA,NA
-"136","Univ Kerala, Accredited Ctr Res, Jawaharlal Nehru Trop Bot Garden & Res Inst JNTBG, Biotechnol & Bioinformat Div, Thiruvananthapuram 695562, Kerala, India","1","A1692",NA,NA
-"137","Univ Kashmir, Ctr Res Dev, Srinagar 190006, Jammu & Kashmir, India","1","A1524",NA,NA
-"138","Univ Kashmir, Dept Bot, Srinagar 190006, Jammu & Kashmir, India","1","A1524",NA,NA
-"139","CSIR Natl Bot Res Inst NBRI, Bot Garden Div, Rana Pratap Marg, Lucknow 226001, Uttar Pradesh, India","1","A1524",NA,NA
-"140","Acad Sci & Innovat Res AcSIR, Ghaziabad 201002, Uttar Pradesh, India","1","A1524",NA,NA
-"141","Cent Univ Kashmir, Dept Bot, Sci Campus, Ganderbal 191201, Jammu & Kashmir, India","1","A1524",NA,NA
 "142",NA,NA,"C0148",NA,NA
-"143","Indian Inst Technol, Indian Sch Mines, Dept Appl Geol, Coal Geol & Organ Petrol Lab, Dhanbad 826004, Jharkhand, India","4","A1692",NA,NA
-"144","Rajasthan Tech Univ, Univ Dept, Petr Engn Branch, Kota 324010, Rajasthan, India","1","A1692",NA,NA
-"145","DST Birbal Sahni Inst Palaeosci, Lucknow 226007, Uttar Pradesh, India","2","A1692",NA,NA
-"146","HNB Garhwal Univ, Dept Bot & Microbiol, Ecol Lab, Srinagar, Uttarakhand, India","2","A2665",NA,NA
-"147","Sheikh ul Aalam Mem SAM Govt Degree Coll, Dept Bot, Budgam Kashmir 191111, J&K, India","1","A2665",NA,NA
 "150",NA,"1","A2664",NA,NA
 "151",NA,"2","A3146",NA,NA
-"152","NIMR, Sector 8, New Delhi 110077, India","7","A1722",NA,NA
-"153","NIMR Field Unit Ranchi, Jharkhand, India","1","A1722",NA,NA
-"154","WHO, SE Asian Reg Off, New Delhi, India","1","A1722",NA,NA
-"155","Jiwaji Univ, Sch Studies Zool, Gwalior 474011, Madhya Pradesh, India","1","A1722",NA,NA
-"158","Bees Dev, Monmouth NP25 9AA, Gwent, Wales","1","A1692",NA,NA
-"159","Univ Reading, Ctr Agri Environm Res, Reading RG6 6AR, Berks, England","2","A1692",NA,NA
-"160","Pondicherry Univ, Dept Ecol & Environm Sci, Kalapet 605014, Puducherry, India","1","A1692",NA,NA
-"161","Univ Fed Parana, Dept Bot, Caixa Postal 19031, BR-81531980 Curitiba, PR, Brazil","1","A1692",NA,NA
-"162","New York Bot Garden, Inst Systemat Bot, Bronx, NY 10458 USA","1","A1692",NA,NA
-"163","Marymount Manhattan Coll, New York, NY 10021 USA","1","A1692",NA,NA
-"168","Natl Bur Plant Genet Resources, New Delhi 110012, India","4","A2665",NA,NA
-"169","Cent Hort Expt Stn, Vejalpur, Gujarat, India","1","A2665",NA,NA
-"170","Cent Food Technol Res Inst, Fermentat Technol & Bio Engn Dept, Mysore 500020, Karnataka, India","3","A1980",NA,NA
-"184",NA,NA,"C0273",NA,NA
-"191",NA,"2","A2961",NA,NA
-"197",NA,NA,"C0135",NA,NA
-"198",NA,NA,"C0238",NA,NA
-"219","Trop Bot Garden & Res Inst, Div Microbiol, Thiruvananthapuram 695562, Kerala, India","2","A1692",NA,NA
-"220","Manonmaniam Sundaranar Univ, Sri Paramakalyani Ctr Environm Sci, Environm Nanotechnol Div, Alwarkurichi 627412, Tamil Nadu, India","3","A1692",NA,NA
-"221","Arignar Anna Govt Arts Coll, Dept Bot, Namakkal 637002, Tamil Nadu, India","1","A1692",NA,NA
-"222",NA,"2","A2840",NA,NA
-"223",NA,NA,"B0027",NA,NA
-"224","Natl Inst Space Res INPE, Ctr Weather Forecasting & Climate Studies CPTEC, BR-12630000 Cachoeira Paulista, SP, Brazil","7","A1341",NA,NA
-"225","Univ Sao Paulo, Lorena Sch Engn EEL, BR-05508050 Lorena, SP, Brazil","1","A1341",NA,NA
-"226","Univ Sao Paulo, Inst Adv Studies, BR-05508050 Sao Paulo, SP, Brazil","1","A1341",NA,NA
-"227","Univ Sao Francisco USF, Res Grp Environm & Sustainabil GPMAS, BR-13250400 Itatiba, SP, Brazil","1","A1341",NA,NA
-"228","Chinese Acad Sci, Inst Geog Sci & Nat Resources Res, Beijing 100101, Peoples R China","1","A1341",NA,NA
-"229","Int Islamic Univ, Dept Environm Sci, Islamabad 44000, Pakistan","1","A1341",NA,NA
-"230","Abdus Salam Int Ctr Theoret Phys, Earth Syst Phys, I-34151 Trieste, Italy","1","A1341",NA,NA
-"231","Univ Estado Rio De Janeiro, Fac Technol, BR-27537000 Resende, RJ, Brazil","1","A1341",NA,NA
-"232","Univ Fed Mato Grosso do Sul, Inst Phys, BR-79070900 Campo Grande, MS, Brazil","1","A1341",NA,NA
-"233","Fed Univ ABC UFABC, Ctr Engn Modeling & Appl Social Sci CECS, BR-09210580 Santo Andre, SP, Brazil","1","A1341",NA,NA
-"234","Kumaun Univ, Dept Bot, DSB Campus, Naini Tal 263002, India","4","A2665",NA,NA
-"235","Minist Environm Forest & Climate Change, North Eastern Reg Off, Shillong 793021, Meghalaya, India","1","A2665",NA,NA
-"236",NA,"1","A3200",NA,NA
-"237","Dr Harisingh Gour Vishwavidyalaya Cent Univ, Dept Bot, Ecol Lab, Sagar 470003, Madhya Pradesh, India","4","A0098",NA,NA
-"238","CNRS MAEE, French Inst Pondicherry, UMIFRE 21, USR 3330, Pondicherry 605001, India","2","A1524",NA,NA
-"239","INRA, UMR AMAP, F-34000 Montpellier, France","1","A1524",NA,NA
-"240","Univ Paris 06, CNRS MNHN UPMC, MNHN, UMR 7207, F-75231 Paris 05, France","1","A1524",NA,NA
-"241","Museum Natl Hist Nat, CNRS MNHN UPMC, UMR 7207, F-75231 Paris 05, France","1","A1524",NA,NA
-"243","Tezpur Univ, Dept Environm Sci, Tezpur 784028, Assam, India","2","A1850",NA,NA
-"245","World Wide Fund Nat India, Freshwater & Wetlands Programme, New Delhi 110003, India","1","A2665",NA,NA
-"246","Sethupathy Govt Arts Coll, Dept Zool, Ramanathapuram 623502, Tamil Nadu, India","2","A1692",NA,NA
-"247","Madura Coll, Dept Zool, Madurai, Tamil Nadu, India","1","A1692",NA,NA
-"248","Bharathidasan Univ, Dept Environm Biotechnol, Tiruchirappalli, Tamil Nadu, India","1","A1692",NA,NA
-"249",NA,NA,"C0224",NA,NA
-"250","Madurai Kamaraj Univ, Sch Energy Environm & Nat Resources, Madurai 625021, Tamil Nadu, India","3","A2665",NA,NA
-"251","Anna Univ, Inst Remote Sensing, Madras 600025, Tamil Nadu, India","1","A2665",NA,NA
-"252","SASTRA Deemed Univ, Ctr Adv Res Environm, Sch Civil Engn, Thanjavur 613401, India","1","A0935",NA,NA
-"257",NA,NA,"C0138",NA,NA
-"262",NA,"1","A2935",NA,NA
-"264",NA,"2","A3294",NA,NA
-"266",NA,"1","A3077",NA,NA
-"268",NA,"1","A3247",NA,NA
-"269",NA,NA,"B0030",NA,NA
-"274",NA,NA,"C0141",NA,NA
-"275",NA,NA,"A3304",NA,NA
-"276",NA,NA,"C0001",NA,NA
-"289",NA,"1","A3113",NA,NA
-"293",NA,NA,"B0025",NA,NA
-"307",NA,NA,"C0087",NA,NA
-"317",NA,NA,"B0028",NA,NA
-"318",NA,NA,"C0185",NA,NA
-"319",NA,"2","A2954",NA,NA
-"320",NA,NA,"C0077",NA,NA
-"325",NA,"1","A2857",NA,NA
-"332",NA,"1","A3127",NA,NA
-"346",NA,NA,"C0155",NA,NA
-"347","Mizoram Univ, Dept Biotechnol, Mol Microbiol & Systemat Lab, Mizoram, India","5","A1722",NA,NA
-"348","Natl Univ Ireland Galway, Dept Biochem, Mol Glycobiotechnol Grp, Galway, Ireland","1","A1722",NA,NA
-"349","Tamil Nadu Agr Univ, Dept Agr Microbiol, Coimbatore, Tamil Nadu, India","2","A1722",NA,NA
-"350","ICAR Res Complex, Directorate Mushroom Res, Solan, Himachal Prades, India","1","A1722",NA,NA
-"351","Columbia Univ, Earth Inst, New York, NY 10027 USA","1","A1722",NA,NA
-"352","Nature Conservancy, 1815 N Lynn St, Arlington, VA 22203 USA","2","A1722",NA,NA
-"353","Nat Conservat Fdn, Mysore 570017, Karnataka, India","2","A1722",NA,NA
-"354","Columbia Univ, Dept Ecol Evolut & Environm Biol, New York, NY 10027 USA","2","A1722",NA,NA
-"356","Univ Oulu, Dept Biol, Oulu, Finland","1","A2665",NA,NA
-"362",NA,NA,"C0060",NA,NA
-"365",NA,"1","A3013",NA,NA
-"368",NA,NA,"C0056",NA,NA
-"369",NA,NA,"C0245",NA,NA
-"372",NA,"3","A2800",NA,NA
-"377",NA,"1","A3301",NA,NA
-"378",NA,NA,"B0001",NA,NA
-"382",NA,"1","A3050",NA,NA
-"383",NA,"2","A2921",NA,NA
-"384",NA,NA,"C0128",NA,NA
-"385","Natl Inst Technol Karnataka Surathkal, Sch Management, Mangalore 575025, Karnataka, India","2","A1692",NA,NA
-"386","Natl Inst Technol Warangal, Warangal, Andhra Pradesh, India","1","A1692",NA,NA
-"387","Univ Essex, Essex Business Sch, Colchester, Essex, England","1","A1692",NA,NA
-"388","Sardar Swaran Singh Natl Inst Renewable Energy, Kapurthala 144601, Punjab, India","3","A2665",NA,NA
-"389","Dr B R Ambedkar Natl Inst Technol, Jalandhar 144011, Punjab, India","1","A2665",NA,NA
-"390","Mizoram Univ, Pachhunga Univ Coll, Dept Zool, Aizawl 796001, Mizoram, India","2","A2665",NA,NA
-"391","Mizoram Univ, Dept Environm Sci, Tanhril 796004, Mizoram, India","1","A2665",NA,NA
-"392","Indian Stat Inst, 203 Barrackpore Trunk Rd, Kolkata 700108, W Bengal, India","2","A1125",NA,NA
-"393",NA,NA,"C0347",NA,NA
-"394",NA,NA,"C0202",NA,NA
-"409",NA,"1","A2971",NA,NA
-"424",NA,"4","A3177",NA,NA
-"426",NA,NA,"C0074",NA,NA
-"427",NA,NA,"C0063",NA,NA
-"438",NA,"3","A2965",NA,NA
-"440",NA,"1","A2933",NA,NA
-"447",NA,"1","A2839",NA,NA
-"448",NA,"1","A2730",NA,NA
-"454",NA,NA,"B0024",NA,NA
-"455",NA,NA,"C0279",NA,NA
-"476",NA,"1","A2906",NA,NA
-"479",NA,"2","A3183",NA,NA
-"480",NA,NA,"C0244",NA,NA
-"490",NA,"1","A2974",NA,NA
-"491",NA,"3","A2814",NA,NA
-"492",NA,NA,"B0029",NA,NA
-"493",NA,NA,"B0009",NA,NA
-"494",NA,NA,"A3245",NA,NA
-"495","Govt PG Coll, Dept Bot, Rudraprayag, Uttarakhand, India","1","A1722",NA,NA
-"496","Sri Dev Suman Uttarakhand Univ Badsahithol, Tehri Garhwal, Uttarakhand, India","2","A1722",NA,NA
-"497","Chinese Acad Sci, Ctr Integrat Conservat, Xishuangbanna Trop Bot Garden, Mengla 666303, Yunnan, Peoples R China","1","A1722",NA,NA
-"498","Govt PG Coll, Rudraprayag, Uttarakhand, India","1","A1722",NA,NA
-"499","Keystone Fdn, The Nilgiris 643217, Tamil Nadu, India","3","A1692",NA,NA
-"501","Univ Reading, Ctr Agr Environm Res, Reading RG6 6AR, Berks, England","1","A1692",NA,NA
-"504",NA,NA,"C0146",NA,NA
-"505",NA,"1","A2875",NA,NA
-"506",NA,NA,"C0204",NA,NA
-"512",NA,NA,"C0145",NA,NA
-"515",NA,NA,"C0057",NA,NA
-"516",NA,NA,"C0218",NA,NA
-"518","Cochin Univ Sci & Technol, Sch Marine Sci, Dept Marine Biol Microbiol & Biochem, Cochin 682016, Kerala, India","4","A1661",NA,NA
-"519",NA,NA,"C0221",NA,NA
-"520","Univ Sindh, Inst Biotechnol & Genet Engn, Jamshoro 76080, Pakistan","3","A2665",NA,NA
-"521","Kocaeli Univ, Dept Biol Fac Sci & Literature, Kocaeli, Turkey","4","A2665",NA,NA
-"522",NA,NA,"C0043",NA,NA
-"523",NA,"1","A2419",NA,NA
-"524",NA,NA,"C0386",NA,NA
-"525","Birbal Sahni Inst Palaeosci, 53 Univ Rd, Lucknow, Uttar Pradesh, India","4","A1692",NA,NA
-"526","Univ Nacl Colombia, Dept Ciencias Forestales, Sede Medellin, Medellin AA568, Colombia","1","A1692",NA,NA
-"527","Pondicherry Univ, Dept Disaster Management, Port Blair, India","1","A1692",NA,NA
-"528","Ctr Cellular & Mol Biol, Hyderabad 500007, Andhra Pradesh, India","6","A2425",NA,NA
-"529",NA,NA,"B0011",NA,NA
-"530","North Eastern Hill Univ, Dept Environm Studies, Shillong 793022, Meghalaya, India","1","A2665",NA,NA
-"531","North Eastern Hill Univ, Dept Basic Sci & Social Sci, Shillong 793022, Meghalaya, India","1","A2665",NA,NA
-"532",NA,"1","A3204",NA,NA
-"533",NA,NA,"C0213",NA,NA
-"534",NA,"1","A2777",NA,NA
-"535",NA,NA,"B0017",NA,NA
-"536",NA,NA,"C0199",NA,NA
-"553",NA,"1","A3100",NA,NA
-"571",NA,NA,"C0171",NA,NA
-"576",NA,NA,"A3345",NA,NA
-"579",NA,NA,"C0249",NA,NA
-"580",NA,NA,"C0285",NA,NA
-"591",NA,"12","A2780",NA,NA
-"595",NA,NA,"C0256",NA,NA
-"620","Govt Arts Coll, Chennai, Tamil Nadu, India","3","A2665",NA,NA
-"621","Tamil Nadu Forest Dept, Chennai, Tamil Nadu, India","1","A2665",NA,NA
-"624","Salim Ali Ctr Ornithol & Nat Hist, Coimbatore, Tamil Nadu, India","2","A2665",NA,NA
-"625","Govt India, Dept Sci & Technol, New Delhi, India","1","A2665",NA,NA
-"626","Indian Grassland & Fodder Res Inst, Jhansi 284003, Uttar Pradesh, India","1","A2665",NA,NA
-"627","ICAR Res Complex NEH Reg, Umiam, Meghalaya, India","4","A2665",NA,NA
-"628","Birbal Sahni Inst Paleobot, Lucknow 226007, Uttar Pradesh, India","2","A1917",NA,NA
-"629","Chinese Acad Sci, Kunming Inst Bot, Key Lab Plant Divers & Biogeog East Asia KLPB, Kunming 650201, Yunnan, Peoples R China","3","A1032",NA,NA
-"630","World Agroforestry Ctr ICRAF, East & Cent Asia Reg, Ctr Mt Ecosyst Studies, Kunming 650201, Peoples R China","2","A1032",NA,NA
-"631","World Agroforestry Ctr ICRAF, Nairobi, Kenya","1","A1032",NA,NA
-"632","Royal Bot Garden Edinburgh, 20A Inverleith Row, Edinburgh EH3 5LR, Midlothian, Scotland","1","A1032",NA,NA
-"633","CIAT, Div Soils, Nairobi, Kenya","1","A1032",NA,NA
-"634","Euromediterranean Ctr Climate Change, IAFES Div, Sassari, Italy","1","A1032",NA,NA
-"635","Univ Sassari, Dept Sci Nat & Environm Resources DIPNET, Via De Nicola 9, I-07100 Sassari, Italy","1","A1032",NA,NA
-"636","World Agroforestry Ctr ICRAF, Southeast Asia Reg Off, Bogor, Indonesia","1","A1032",NA,NA
-"637","Wageningen Univ & Res, Plant Prod Syst, Wageningen, Netherlands","1","A1032",NA,NA
-"638",NA,"1","A3078",NA,NA
-"639",NA,"3","A3020",NA,NA
-"640",NA,NA,"C0348",NA,NA
-"657",NA,"1","A2914",NA,NA
-"660",NA,"1","A2601",NA,NA
-"661",NA,NA,"C0222",NA,NA
-"662",NA,"3","A2951",NA,NA
-"663",NA,"1","A3172",NA,NA
-"666",NA,NA,"C0226",NA,NA
-"668",NA,NA,"C0106",NA,NA
-"677",NA,NA,"C0017",NA,NA
-"678","Potsdam Inst Climate Impact Res, D-14412 Potsdam, Germany","10","A1032",NA,NA
-"679","Univ Cambridge, Dept Geog, Cambridge CB2 3EN, England","2","A1032",NA,NA
-"680","Univ Sheffield, Dept Anim & Plant Sci, Sheffield S10 2TN, S Yorkshire, England","2","A1032",NA,NA
-"681","Lab Sci Climat & Environm, Gif Sur Yvette, France","2","A1032",NA,NA
-"682","Ctr Ecol & Hydrol, Wallingford OX10 8BB, Oxon, England","1","A1032",NA,NA
-"683","Met Off Hadley Ctr, Exeter EX1 3PB, Devon, England","1","A1032",NA,NA
-"684","Natl Inst Environm Studies, Ctr Global Environm Res, Tsukuba, Ibaraki, Japan","2","A1032",NA,NA
-"685","Max Planck Inst Biogeochem, D-07701 Jena, Germany","2","A1032",NA,NA
-"686","Santa Fe Inst, Santa Fe, NM 87501 USA","1","A1032",NA,NA
-"687","Univ Kashmir, Dept Bot, Srinagar 190006, J&K, India","1","A1692",NA,NA
-"688","GHSS, Dept Bot, Anantnag 192201, J&K, India","1","A1692",NA,NA
-"689","Univ Malakand, Dept Bot, Lab Plant Ecol, Chakdara 28800, Pakistan","1","A1692",NA,NA
-"690","London Sch Econ & Polit Sci LSE, London, England","1","A1722",NA,NA
-"691","Duke Univ, Sanford Sch Publ Policy, Durham, NC 27706 USA","2","A1722",NA,NA
-"692","Duke Univ, Nicholas Sch Environm, Durham, NC 27706 USA","1","A1722",NA,NA
-"693","CTRAN Consulting, Bhubaneswar, India","1","A1722",NA,NA
-"694","Woldia Univ, Fac Hlth Sci, Dept Med Lab Sci, Woldia, Ethiopia","1","A0784",NA,NA
-"695","Univ Gondar, Coll Med & Hlth Sci, Dept Clin Chem, Gondar, Ethiopia","1","A0784",NA,NA
-"696","Woldia Univ, Fac Hlth Sci, Dept Publ Hlth, Woldia, Ethiopia","1","A0784",NA,NA
-"697","Woldia Univ, Fac Hlth Sci, Dept Midwifery, Woldia, Ethiopia","1","A0784",NA,NA
-"698","Univ Gondar, Coll Med & Hlth Sci, Dept Med Microbiol, Gondar, Ethiopia","1","A0784",NA,NA
-"699","Woldia Univ, Fac Hlth Sci, Dept Nursing, Woldia, Ethiopia","1","A0784",NA,NA
-"700","Univ Costa Rica, Lab Biol Mol, Estn Expt Fabio Baudrit Moreno, Alajuela, Costa Rica","2","A2665",NA,NA
-"701","Univ Costa Rica, Programa Mejoramiento Genet Guayaba, Estn Expt Fabio Baudrit Moreno, Alajuela, Costa Rica","1","A2665",NA,NA
-"702","Univ Mysore, Institut Excellence, Biopsychol Lab, Mysuru, India","1","A0988",NA,NA
-"707",NA,NA,"C0076",NA,NA
-"708",NA,"3","A2792",NA,NA
-"709",NA,"1","A2899",NA,NA
-"711",NA,NA,"C0190",NA,NA
-"741",NA,NA,"C0059",NA,NA
-"748",NA,NA,"A3241",NA,NA
-"749",NA,"1","A3022",NA,NA
-"757",NA,NA,"C0055",NA,NA
-"759",NA,NA,"C0054",NA,NA
-"760","Univ New South Wales, Sch Optometry & Vis Sci, Sydney, NSW, Australia","2","A1722",NA,NA
-"761","Brien Holden Vis Inst, Sydney, NSW, Australia","2","A1722",NA,NA
-"762","Childrens Univ Hosp, Dept Ophthalmol, Dublin, Ireland","1","A1722",NA,NA
-"763","Univ Canberra, Discipline Optometry & Vis Sci, Canberra, ACT, Australia","1","A1722",NA,NA
-"764",NA,NA,"A3295",NA,NA
-"765",NA,NA,"A3255",NA,NA
-"769","Univ Hyderabad, Ctr Earth & Space Sci, Hyderabad 500046, Andhra Pradesh, India","1","A1692",NA,NA
-"770","Indian Inst Technol, Sch Water Resources, Kharagpur 721302, W Bengal, India","1","A1692",NA,NA
-"771",NA,NA,"A3302",NA,NA
-"772",NA,"3","A3168",NA,NA
-"773",NA,NA,"B0004",NA,NA
-"791",NA,"2","A2866",NA,NA
-"792",NA,"1","A3207",NA,NA
-"803",NA,"1","A2804",NA,NA
-"804",NA,NA,"C0258",NA,NA
-"808",NA,NA,"C0211",NA,NA
-"809",NA,NA,"C0140",NA,NA
-"814","HNB Garhwal Univ, Dept Bot, Srinagar 249161, Uttarakhand, India","2","A1722",NA,NA
-"817","Mizoram Univ, Dept Forestry, Aizawl 796004, Mizoram, India","1","A1722",NA,NA
-"818","Manipal Univ, Manipal Inst Technol, Dept Civil Engn, Manipal 576104, Karnataka, India","2","A1941",NA,NA
-"819",NA,NA,"C0143",NA,NA
-"820",NA,"2","A2976",NA,NA
-"821","Univ Colombo, Fac Sci, Dept Zool, Colombo 03, Sri Lanka","2","A1524",NA,NA
-"822","Univ Colombo, Inst Biochem Mol Biol & Biotechnol, Colombo 03, Sri Lanka","1","A1524",NA,NA
-"823","Univ Kelaniya, Fac Med, Mol Med Unit, Ragama, Sri Lanka","1","A1524",NA,NA
-"824","Arizona State Univ, Ctr Evolutionary Med & Informat, Biodesing Inst, Tempe, AZ USA","1","A1524",NA,NA
-"825","Sanaria Inc, Rockville, MD 20850 USA","1","A1524",NA,NA
-"826","Birbal Sahni Inst Paleobot, Lucknow 226007, Uttar Pradesh, India","4","A2068",NA,NA
-"827",NA,"2","A2996",NA,NA
-"828","Guru Angad Dev Vet & Anim Sci Univ, Sch Publ Hlth & Zoonoses, Ludhiana, Punjab, India","4","A1692",NA,NA
-"829","Guru Angad Dev Vet & Anim Sci Univ, Dept Vet Anat, Ludhiana, Punjab, India","1","A1692",NA,NA
-"830","Univ Sydney, Sydney Sch Vet Sci, Camden, NSW, Australia","1","A1692",NA,NA
-"831","Natl Bur Plant Genet Resources, Tissue Culture & Cryopreservat Unit, New Delhi 110012, India","4","A2665",NA,NA
-"832","Natl Bur Plant Genet Resources, Div Explorat & Collect, New Delhi 110012, India","2","A2665",NA,NA
-"833","Dr Harisingh Gour Vishwavidyalaya Cent Univ, Dept Bot, Sagar 470003, Madhya Pradesh, India","4","A0046",NA,NA
-"834",NA,NA,"C0179",NA,NA
-"841",NA,"1","A3141",NA,NA
-"848",NA,"1","A2841",NA,NA
-"849","Indian Inst Sci Educ & Res Bhopal, Dept Earth & Environm Sci, Bhopal Bypass Rd, Bhopal 462066, Madhya Pradesh, India","2","A2665",NA,NA
-"850","Indian Inst Sci Educ & Res Bhopal, Ctr ForRes Environm & Sustainable Technol, Bhopal Bypass Rd, Bhopal 462066, Madhya Pradesh, India","1","A2665",NA,NA
-"851","Nat Conservat Fdn, 3076-5,4th Cross,Gokulam Pk, Mysore 570002, Karnataka, India","3","A1524",NA,NA
-"852","Natl Ctr Biol Sci, Wildlife Off, Researchers Wildlife Conservat, GKVK Campus,Bellary Rd, Bangalore 560065, Karnataka, India","1","A1524",NA,NA
-"853","French Inst Pondicherry, Dept Ecol, 11 St Louis St, Pondicherry 605001, India","1","A1524",NA,NA
-"854","VHNSN Coll Autonomous, Dept Bot, 3-151-1 Coll Rd, Virudunagar 626001, Tamil Nadu, India","1","A1524",NA,NA
-"856","Gujarat Univ, Dept Climate Change Impacts Management, Ahmadabad 380009, Gujarat, India","2","A2665",NA,NA
-"857","Indian Space Res Org, Microwave Tech Dev Div, Space Applicat Ctr, Ahmadabad 380015, Gujarat, India","2","A2665",NA,NA
-"864",NA,NA,"C0229",NA,NA
-"877",NA,NA,"C0240",NA,NA
-"880",NA,NA,"B0007",NA,NA
-"887",NA,NA,"C0283",NA,NA
-"888",NA,"2","A3226",NA,NA
-"889",NA,NA,"B0018",NA,NA
-"890",NA,"1","A2474",NA,NA
-"899",NA,NA,"B0022",NA,NA
-"908",NA,"1","A3228",NA,NA
-"909",NA,NA,"C0005",NA,NA
-"924",NA,NA,"C0015",NA,NA
-"925","Cotton Univ, Dept Environm Biol & Wildlife Sci, Panbazar 781001, Guwahati, India","4","A1692",NA,NA
-"926","Natl Inst Adv Studies, Indian Inst Sci Campus, Bengaluru 560012, India","2","A1692",NA,NA
-"927","Indian Inst Sci Educ & Res Kolkata, Mohanpur 741246, India","1","A1692",NA,NA
-"928","Natl Ctr Biol Sci, Postgrad Program Wildlife Biol & Conservat, Bangalore 560065, Karnataka, India","1","A1524",NA,NA
-"929","Wildlife Conservat Soc India Program, Bangalore 560070, Karnataka, India","1","A1524",NA,NA
-"930","Ctr Wildlife Studies, Bangalore 560070, Karnataka, India","1","A1524",NA,NA
-"933","Indian Inst Remote Sensing, Forestry & Ecol Dept, Dehra Dun 248001, Uttarakhand, India","3","A1692",NA,NA
-"934","Czech Univ Life Sci, Fac Forestry & Wood Sci, Prague 16500, Czech Republic","1","A1692",NA,NA
-"935","Indian Inst Technol, Dept Civil Engn, Geomat Grp, Roorkee 247667, Uttar Pradesh, India","1","A1692",NA,NA
-"936",NA,NA,"C0009",NA,NA
-"937",NA,NA,"C0061",NA,NA
-"938","Dr Yashwant Singh Parmar Univ Hort & Forestry, Microbiol Sect, Dept Basic Sci, Solan 173230, HP, India","4","A2185",NA,NA
-"939",NA,NA,"C0210",NA,NA
-"940",NA,NA,"C0020",NA,NA
-"941",NA,NA,"B0005",NA,NA
-"958",NA,NA,"B0003",NA,NA
-"962",NA,"1","A3094",NA,NA
-"963",NA,NA,"C0345",NA,NA
-"964",NA,NA,"A3331",NA,NA
-"965",NA,NA,"B0026",NA,NA
-"966","Bangor Univ, Sch Environm Nat Resources & Geog SENRGY, Bangor LL57 2UW, Gwynedd, Wales","3","A1704",NA,NA
-"967","Rajiv Gandhi Univ, Dept Zool, Univ Rd, Itanagar 791112, Arunachal Prade, India","2","A0784",NA,NA
-"968","Tata Inst Fundamental Res, Natl Ctr Biol Sci, Bellary Rd, Bangalore 560065, Karnataka, India","2","A0784",NA,NA
-"969","Univ Guelph, Sch Environm Sci, Guelph, ON N1G 2W1, Canada","1","A0784",NA,NA
-"970","Univ Bern, Inst Bee Hlth, Vetsuisse Fac, CH-3097 Bern, Switzerland","1","A0784",NA,NA
-"971","Agroscope, CH-3097 Bern, Switzerland","1","A0784",NA,NA
-"972","Univ Kansas, Dept Ecol & Evolutionary Biol, Lawrence, KS 66045 USA","1","A0784",NA,NA
-"973","ICAR Indian Inst Soil & Water Conservat, Res Ctr, Sect 27A, Chandigarh 160019, India","2","A1032",NA,NA
-"974","KSN Univ Agr & Hort Sci Shivamogga, Coll Forestry, Ponnampet 571216, India","5","A1032",NA,NA
-"975","ICAR Indian Inst Soil & Water Conservat, 218 Kaulagarh Rd, Dehra Dun 248195, Uttarakhand, India","1","A1032",NA,NA
-"976","Dr Yashwant Singh Parmar Univ Hort & Forestry, Dept Silviculture & Agroforestry, Coll Forestry, Solan 173230, India","3","A1032",NA,NA
-"977","Uttar Banga Krishi Viswavidyalaya, Dept Forestry, Cooch Behar 736165, India","8","A1032",NA,NA
-"978","Navsari Agr Univ, Coll Forestry, Navsari 396450, India","1","A1032",NA,NA
-"980","North Eastern Hill Univ, Dept Forestry, Tura Campus, Chasingre 794002, India","2","A1032",NA,NA
-"981","KSN Univ Agr & Hort Sci, Coll Agr, Shivamogga 577225, India","1","A1032",NA,NA
-"982",NA,"3","A3184",NA,NA
-"983","Govind Ballabh Pant Univ Agr & Technol, Ctr Adv Studies Plant Pathol, Pantnagar 263145, Uttarakhand, India","3","A1524",NA,NA
-"984","Jamia Millia Islamia, Dept Biosci, New Delhi 110025, India","2","A1524",NA,NA
-"985","Forest Res Inst, Forest Pathol Div, Dehra Dun, Uttarakhand, India","1","A1524",NA,NA
-"986","Govind Ballabh Pant Univ Agr & Technol, Dept Mol Biol & Genet Engn, Pantnagar 263145, Uttarakhand, India","1","A1524",NA,NA
-"987","ICAR Res Complex, Cent Res Inst Jute & Allied Fibres, Kolkata, India","1","A1524",NA,NA
-"988","Pondicherry Univ, Sch Life Sci, Dept Ecol & Environm Sci, Pondicherry 605014, India","2","A2585",NA,NA
-"989","Tata Inst Fundamental Res, Natl Ctr Biol Sci, Wildlife Biol & Conservat Program, GKVK Campus, Bangalore 560065, Karnataka, India","2","A1692",NA,NA
-"990","Nat Conservat Fdn, 1311 Amritha,12th Main,Vijayanagar 1st Stage, Mysore 1311, Karnataka, India","1","A1692",NA,NA
-"991","Yale Univ, Sch Environm, New Haven, CT 06511 USA","1","A1692",NA,NA
-"992","ZARS RVS Krishi Vishwa Vidyalaya, Morena, India","2","A1722",NA,NA
-"993","RVS Krishi Vishwa Vidyalaya, COA, Mandsour, India","1","A1722",NA,NA
-"994","RVS Krishi Vishwa Vidyalaya, Gwalior, India","1","A1722",NA,NA
-"995","Ctr Adv Sustainable Agr, New Delhi, India","1","A1722",NA,NA
-"996","Indian Inst Technol Kharagpur, Agr & Food Engn Dept, Kharagpur 721302, W Bengal, India","6","A0186",NA,NA
-"997","CSIR, Natl Inst Oceanog, Geol Oceanog Div, Panaji, Goa, India","3","A1692",NA,NA
-"998","Goa Univ, Sch Earth Ocean & Atmospher Sci, Taleigao, Goa, India","2","A1692",NA,NA
-"999","Acad Sci & Innovat Res AcSIR, Ghaziabad, India","2","A1692",NA,NA
-"1000","GB Pant Natl Inst Himalayan Environm & Sustainabl, Sikkim Unit, Gangtok 737101, Sikkim, India","2","A1093",NA,NA
-"1001","Indian Council Agr Res, Indian Inst Hort Res, Cent Hort Expt Stn, Bhubaneswar 751019, Orissa, India","3","A2506",NA,NA
-"1002",NA,"4","A2872",NA,NA
-"1007",NA,"2","A2920",NA,NA
-"1019",NA,NA,"C0029",NA,NA
-"1023",NA,"1","A3249",NA,NA
-"1030",NA,NA,"C0051",NA,NA
-"1032",NA,"3","A3109",NA,NA
-"1037",NA,"2","A3024",NA,NA
-"1060",NA,"3","A2825",NA,NA
-"1062",NA,NA,"A3243",NA,NA
-"1063",NA,"1","A3072",NA,NA
-"1064",NA,NA,"B0014",NA,NA
-"1070",NA,NA,"C0033",NA,NA
-"1071",NA,"3","A3210",NA,NA
-"1082","Punjab Agr Univ, Dept Forestry & Nat Resources, Ludhiana 141004, Punjab, India","3","A2665",NA,NA
-"1083","Punjab Agr Univ, Reg Res Stn, Bathinda 151001, Punjab, India","1","A2665",NA,NA
-"1084","Forest Res Inst, Dehra Dun 248006, Uttarakhand, India","7","A1692",NA,NA
-"1085","GB Pant Univ Agr & Technol, Pantnagar 263145, Uttar Pradesh, India","1","A1692",NA,NA
-"1086","ICAR Indian Inst Soil & Water Conservat, Dehra Dun 248001, Uttarakhand, India","1","A1692",NA,NA
-"1087","Bangalore Univ, Dept Studies Zool, Bengaluru 560056, Karnataka, India","2","A1893",NA,NA
-"1088",NA,"1","A2493",NA,NA
-"1098",NA,NA,"C0200",NA,NA
-"1099",NA,NA,"C0162",NA,NA
-"1109",NA,"5","A3152",NA,NA
-"1118",NA,"1","A2910",NA,NA
-"1119",NA,"1","A3196",NA,NA
-"1120",NA,NA,"C0117",NA,NA
-"1121",NA,NA,"C0228",NA,NA
-"1122",NA,NA,"C0284",NA,NA
-"1123",NA,NA,"C0259",NA,NA
-"1124",NA,NA,"C0014",NA,NA
-"1130","Jadavpur Univ, Sch Oceanog Studies, Kolkata 700032, India","2","A2665",NA,NA
-"1131","Space Applicat Ctr ISRO, Ahmadabad 380015, Gujarat, India","1","A2665",NA,NA
-"1132","Shiv Nadar Univ, Sch Nat Sci, Environm Sci & Nat Resource Management, Dadri, Gautam Budh Nag, India","1","A1619",NA,NA
-"1133","Indian Sch Mines, Indian Inst Technol, Dept Environm Sci & Engn, Dhanbad, Bihar, India","3","A1480",NA,NA
-"1134",NA,NA,"C0182",NA,NA
-"1136",NA,NA,"C0180",NA,NA
-"1137",NA,NA,"C0008",NA,NA
-"1158",NA,NA,"C0037",NA,NA
-"1163",NA,"3","A2929",NA,NA
-"1166",NA,NA,"C0006",NA,NA
-"1167",NA,"1","A2934",NA,NA
-"1168",NA,"2","A2847",NA,NA
-"1175",NA,NA,"C0086",NA,NA
-"1176",NA,"1","A2749",NA,NA
-"1177",NA,"3","A2850",NA,NA
-"1178",NA,"1","A3088",NA,NA
-"1199",NA,"1","A3067",NA,NA
-"1200","Govt India, Dept Space, NRSC ISRO, Reg Remote Sensing Ctr West, Jodhpur 342003, Rajasthan, India","3","A2372",NA,NA
-"1201",NA,NA,"C0223",NA,NA
-"1202","Indian Agr Res Inst, Div Environm Sci, New Delhi 110012, India","4","A2454",NA,NA
-"1203","Natl Environm Engn Res Inst, Environm Biotechnol Div, Nagpur 440020, Maharashtra, India","6","A2621",NA,NA
-"1204","UP Pandit Deen Dayal Upadhyaya Pashu Chikitsa Vig, Dept Parasitol, Coll Vet Sci & Anim Husb, Mathura 281001, India","3","A1722",NA,NA
-"1205","UP Pandit Deen Dayal Upadhyaya Pashu Chikitsa Vig, Coll Biotechnol, Coll Vet Sci & Anim Husb, Mathura 281001, India","1","A1722",NA,NA
-"1206","UP Pandit Deen Dayal Upadhyaya Pashu Chikitsa Vig, Dept Vet Clin Med, Coll Vet Sci & Anim Husb, Mathura 281001, India","1","A1722",NA,NA
-"1207","Coll Vet Sci & Anim Husb, Dharapura, Dholpur, India","1","A1722",NA,NA
-"1208",NA,NA,"B0012",NA,NA
-"1209","Affiliated Bharathidasan Univ, Jamal Mohamed Coll Autonomous, PG & Res Dept Bot, Tiruchirappalli 620020, Tamil Nadu, India","1","A2665",NA,NA
-"1210","Bharathidasan Univ, Sch Life Sci, Dept Bot, Tiruchirappalli 620024, Tamil Nadu, India","3","A2665",NA,NA
-"1211",NA,"1","A3256",NA,NA
-"1212",NA,"1","A3027",NA,NA
-"1222",NA,NA,"C0058",NA,NA
-"1223",NA,"1","A2863",NA,NA
-"1224",NA,NA,"B0016",NA,NA
-"1225","Tripura Univ, Dept Geog & Disaster Management, Agartala 799130, Tripura West, India","1","A2665",NA,NA
-"1226","Iswar Chandra Vidyasagar Coll, Dept Geog, Bilonia, Tripura South, India","1","A2665",NA,NA
-"1227",NA,NA,"C0137",NA,NA
-"1228","ICAR Indian Inst Soil & Water Conservat, Dehra Dun, Uttarakhand, India","1","A1692",NA,NA
-"1229","ICAR Indian Inst Nat Resins & Gums, Ranchi, Bihar, India","1","A1692",NA,NA
-"1230","ICAR Indian Grassland & Fodder Res Inst, Res Stn, Srinagar, Jammu & Kashmir, India","1","A1692",NA,NA
-"1236",NA,NA,"B0023",NA,NA
-"1244",NA,NA,"C0132",NA,NA
-"1245",NA,"3","A3044",NA,NA
-"1246",NA,NA,"C0010",NA,NA
-"1249","Indian Inst Sci, Asian Nat Conservat Fdn, Bangalore 560012, Karnataka, India","2","A1692",NA,NA
-"1250","Bombay Nat Hist Soc, Bombay 400001, Maharashtra, India","2","A1692",NA,NA
-"1251","AVC Coll, Postgrad & Res Dept Zool & Wildlife Biol, Mayiladuthurai 609305, Tamil Nadu, India","2","A1692",NA,NA
-"1252","Birbal Sahni Inst Palaeosci, 53 Univ Rd, Lucknow 226007, Uttar Pradesh, India","5","A0312",NA,NA
-"1253",NA,"2","A3004",NA,NA
+"157","Assam Agr Univ, Coll Sericulture, Jorhat 785013, Assam, India","1","A2665",NA,NA
+"158","Network Conserving Cent India, Ranchi, Bihar, India","1","A1722",NA,NA
+"159","Satpuda Fdn, Amravati, India","1","A1722",NA,NA
+"160","Ctr Large Landscape Conservat, Bozeman, MT USA","1","A1722",NA,NA
+"161","Columbia Univ, Dept Ecol Evolut & Environm Biol, New York, NY USA","1","A1722",NA,NA
+"162","Thapar Univ, Dept Biotechnol & Environm Studies, Patiala, Punjab, India","2","A2129",NA,NA
+"163","Natl Inst Tech Teachers Training & Res, Chandigarh 160019, India","2","A2665",NA,NA
+"164","Polytech Coimbra, ESTGOH, Rua Gen Santos Costa, P-3400124 Oliveira Do Hosp, Portugal","1","A2665",NA,NA
+"165","Punjabi Univ, Dept Bot, Patiala 147002, Punjab, India","3","A1282",NA,NA
+"166",NA,NA,"A3288",NA,NA
+"167",NA,NA,"C0169",NA,NA
+"168","Indira Gandhi Agr Univ, Dept Forestry, Raipur, Madhya Pradesh, India","1","A1692",NA,NA
+"169","Kumaun Univ, Dept Bot, Naini Tal, India","2","A1692",NA,NA
+"170","Banaras Hindu Univ, Dept Bot, Varanasi, Uttar Pradesh, India","1","A1692",NA,NA
+"171","Indian Inst Technol, Dept Chem Engn, Bombay 400076, Maharashtra, India","3","A2737",NA,NA
+"174","North Eastern Reg Inst Sci & Technol, Dept Forestry, Itanagar, India","1","A1341",NA,NA
+"175","Assam Univ, Dept Ecol & Environm Sci, Silchar, India","1","A1341",NA,NA
+"176","Tripura Univ, Dept Forestry & Biodivers, Agartala, India","1","A1341",NA,NA
+"178","Manipur Univ, Dept Life Sci, Imphal, Manipur, India","1","A1341",NA,NA
+"179","Sikkim Univ, Dept Bot, Gangtok, India","1","A1341",NA,NA
+"180","NE Hill Univ, Dept Environm Studies, Shillong, Meghalaya, India","2","A1341",NA,NA
+"181","Dr Rajendra Prasad Cent Agr Univ, Dept Forestry, Samastipur, Bihar, India","1","A1341",NA,NA
+"183","Univ Agr Sci Bangalore, Dept Crop Physiol, Bangalore, Karnataka, India","2","A1032",NA,NA
+"184","Univ Agr Sci Bangalore, Sch Ecol & Conservat, Bangalore, Karnataka, India","4","A1032",NA,NA
+"185","Ashoka Trust Res Ecol & Environm, Conservat Genet Lab, Bangalore, Karnataka, India","3","A1032",NA,NA
+"186","Univ Agr Sci Bangalore, Dept Forestry & Environm Sci, Bangalore, Karnataka, India","1","A1032",NA,NA
+"187","Inst Terr Ecosyst, Zurich, Switzerland","1","A1032",NA,NA
+"188","Univ Kansas, Biodivers Inst, Lawrence, KS 66045 USA","1","A1032",NA,NA
+"189","Concordia Univ, Dept Biol, Montreal, PQ H3G 1M8, Canada","1","A1032",NA,NA
+"190","Concordia Univ, Ctr Struct & Funct Genom, Montreal, PQ, Canada","1","A1032",NA,NA
+"191","Quebec Ctr Biodivers Sci, Montreal, PQ, Canada","1","A1032",NA,NA
+"193","NERIST, Dept Forestry, Nirjuli 791109, Arunachal Prade, India","1","A2665",NA,NA
+"194",NA,NA,"C0027",NA,NA
+"223",NA,NA,"C0273",NA,NA
+"230",NA,"2","A2961",NA,NA
+"236",NA,NA,"C0135",NA,NA
+"237",NA,NA,"C0238",NA,NA
+"261",NA,"2","A2840",NA,NA
+"262",NA,NA,"B0027",NA,NA
+"275",NA,"1","A3200",NA,NA
+"288",NA,NA,"C0224",NA,NA
+"296",NA,NA,"C0138",NA,NA
+"301",NA,"1","A2935",NA,NA
+"303",NA,"2","A3294",NA,NA
+"305",NA,"1","A3077",NA,NA
+"307",NA,"1","A3247",NA,NA
+"308",NA,NA,"B0030",NA,NA
+"313",NA,NA,"C0141",NA,NA
+"314",NA,NA,"A3304",NA,NA
+"315",NA,NA,"C0001",NA,NA
+"328",NA,"1","A3113",NA,NA
+"332",NA,NA,"B0025",NA,NA
+"346",NA,NA,"C0087",NA,NA
+"356",NA,NA,"B0028",NA,NA
+"357",NA,NA,"C0185",NA,NA
+"358",NA,"2","A2954",NA,NA
+"359",NA,NA,"C0077",NA,NA
+"364",NA,"1","A2857",NA,NA
+"371",NA,"1","A3127",NA,NA
+"385",NA,"1","A3287",NA,NA
+"386","Wildlife Inst India, Dept Landscape Level Planning & Management, Post Box 18, Dehra Dun 248001, Uttarakhand, India","3","A2665",NA,NA
+"387","Zool Survey India, M Block, Kolkata 700053, W Bengal, India","2","A2665",NA,NA
+"388","Konkan Cetacean Res Team Dadar West, Bombay 400028, Maharashtra, India","1","A0784",NA,NA
+"389","Konkan Cetacean Res Team, 9-A Balaji Apts,Dutta Raul Marg,Dadar W, Bombay 400028, Maharashtra, India","4","A0784",NA,NA
+"390","James Cook Univ, Coll Marine & Environm Sci, Townsville, Qld 4811, Australia","1","A0784",NA,NA
+"391","Natl Ctr Biol Sci, GKVK Campus, Bengaluru 560065, Karnataka, India","1","A0784",NA,NA
+"392","Ctr Wildlife Studies, 551,7th Main Rd,2nd Phase, Bengaluru 560097, India","1","A0784",NA,NA
+"393","Cornell Univ, Cornell Lab Ornithol, Bioacoust Res Program, Ithaca, NY 14853 USA","1","A0784",NA,NA
+"394",NA,NA,"C0156",NA,NA
+"395","Inst Microbial Technol, MTCC Microbial Type Culture Collect & Gene Bank, Chandigarh, India","3","A2665",NA,NA
+"396","DSMZ German Collect Microorganisms & Cell Culture, Braunschweig, Germany","2","A2665",NA,NA
+"397","Mahatma Gandhi Inst Technol Hyderabad, Dept Comp Sci & Engn, Hyderabad, India","4","A2665",NA,NA
+"398","VNR Vignana Jyothi Inst Engn & Technol, Dept Mech Engn, Hyderabad, India","1","A2665",NA,NA
+"399","Univ Vet & Anim Sci, Inst Biochem & Biotechnol, Lahore, Pakistan","2","A1722",NA,NA
+"400","Univ Hlth Sci, CRERS, Lahore, Pakistan","1","A1722",NA,NA
+"401","Manonmaniam Sundaranar Univ, Sri Paramakalyani Ctr Environm Sci, Tirunelveli, Tamil Nadu, India","1","A1722",NA,NA
+"403",NA,NA,"C0231",NA,NA
+"404",NA,NA,"B0008",NA,NA
+"405",NA,NA,"A3278",NA,NA
+"406",NA,NA,"C0155",NA,NA
+"422",NA,NA,"C0060",NA,NA
+"425",NA,"1","A3013",NA,NA
+"428",NA,NA,"C0056",NA,NA
+"429",NA,NA,"C0245",NA,NA
+"432",NA,"3","A2800",NA,NA
+"437",NA,"1","A3301",NA,NA
+"438",NA,NA,"B0001",NA,NA
+"442",NA,"1","A3050",NA,NA
+"443",NA,"2","A2921",NA,NA
+"444",NA,NA,"C0128",NA,NA
+"453",NA,NA,"C0347",NA,NA
+"454",NA,NA,"C0202",NA,NA
+"469",NA,"1","A2971",NA,NA
+"484",NA,"4","A3177",NA,NA
+"486",NA,NA,"C0074",NA,NA
+"487",NA,NA,"C0063",NA,NA
+"498",NA,"3","A2965",NA,NA
+"500",NA,"1","A2933",NA,NA
+"507",NA,"1","A2839",NA,NA
+"508",NA,"1","A2730",NA,NA
+"514",NA,NA,"B0024",NA,NA
+"515",NA,NA,"C0279",NA,NA
+"536",NA,"1","A2906",NA,NA
+"539",NA,"2","A3183",NA,NA
+"540",NA,NA,"C0244",NA,NA
+"550",NA,"1","A2974",NA,NA
+"551","Swiss Fed Inst Technol, Inst Terr Ecosyst, Ecosyst Management, Univ Str 16, CH-8092 Zurich, Switzerland","3","A1692",NA,NA
+"552","Swiss Fed Inst Technol, Inst Integrat Biol, Plant Ecol Genet, Univ Str 16, CH-8092 Zurich, Switzerland","1","A1692",NA,NA
+"553","Univ Agr & Hort Sci Shimoga, Coll Forestry, Ponnampet 571216, India","1","A1692",NA,NA
+"554","Chinese Acad Forestry, Res Inst Resource Insects, Key Lab Cultivating & Utilizat Resource Insects, State Forestry Adm, Kunming 650224, Peoples R China","3","A2277",NA,NA
+"555",NA,"2","A3185",NA,NA
+"556",NA,"1","A3059",NA,NA
+"557","OP Jindal Global Univ, Sonipat 131001, Haryana, India","1","A2665",NA,NA
+"558","Mira Corp Suites, BSI Grp India, Global Reporting Initiat GRI, Plot 1 & 2,Mathura Rd, New Delhi 110065, India","1","A2665",NA,NA
+"559",NA,"3","A2814",NA,NA
+"560",NA,NA,"B0029",NA,NA
+"561",NA,NA,"B0009",NA,NA
+"562",NA,NA,"A3245",NA,NA
+"572",NA,NA,"C0146",NA,NA
+"573",NA,"1","A2875",NA,NA
+"574",NA,NA,"C0204",NA,NA
+"580",NA,NA,"C0145",NA,NA
+"583",NA,NA,"C0057",NA,NA
+"584",NA,NA,"C0218",NA,NA
+"587",NA,NA,"C0221",NA,NA
+"590",NA,NA,"C0043",NA,NA
+"591",NA,"1","A2419",NA,NA
+"592",NA,NA,"C0386",NA,NA
+"597",NA,NA,"B0011",NA,NA
+"600",NA,"1","A3204",NA,NA
+"601",NA,NA,"C0213",NA,NA
+"602",NA,"1","A2777",NA,NA
+"603",NA,NA,"B0017",NA,NA
+"604",NA,NA,"C0199",NA,NA
+"621",NA,"1","A3100",NA,NA
+"639",NA,NA,"C0171",NA,NA
+"644",NA,NA,"A3345",NA,NA
+"647",NA,NA,"C0249",NA,NA
+"648",NA,NA,"C0285",NA,NA
+"659",NA,"12","A2780",NA,NA
+"663",NA,NA,"C0256",NA,NA
+"688","Ctr Biotechnol Bordj Cedria, Lab Physiol Mol Plantes, Hammam Lif, Tunisia","2","A2665",NA,NA
+"689","Univ Reims, Lab Microbiol Gen & Mol, F-51687 Reims, France","3","A2665",NA,NA
+"690",NA,NA,"C0209",NA,NA
+"709",NA,"1","A3078",NA,NA
+"710",NA,"3","A3020",NA,NA
+"711",NA,NA,"C0348",NA,NA
+"728",NA,"1","A2914",NA,NA
+"731",NA,"1","A2601",NA,NA
+"732",NA,NA,"C0222",NA,NA
+"733",NA,"3","A2951",NA,NA
+"734",NA,"1","A3172",NA,NA
+"737",NA,NA,"C0226",NA,NA
+"739",NA,NA,"C0106",NA,NA
+"748",NA,NA,"C0017",NA,NA
+"778",NA,NA,"C0076",NA,NA
+"779",NA,"3","A2792",NA,NA
+"780",NA,"1","A2899",NA,NA
+"782",NA,NA,"C0190",NA,NA
+"812",NA,NA,"C0059",NA,NA
+"819",NA,NA,"A3241",NA,NA
+"820",NA,"1","A3022",NA,NA
+"828",NA,NA,"C0055",NA,NA
+"830",NA,NA,"B0002",NA,NA
+"831","ICAR Cent Marine Fisheries Res Inst, Calicut Res Ctr, West Hill PO, Calicut 673005, Kerala, India","5","A2665",NA,NA
+"832","Cent Marine Fisheries Res Inst, Ernakulam North PO, Kochi 682018, Kerala, India","2","A2665",NA,NA
+"833",NA,"1","A2795",NA,NA
+"834","Abellon CleanEnergy Ltd, Sangeeta Complex, Ahmadabad 380006, Gujarat, India","3","A2665",NA,NA
+"835","Hemchandracharya North Gujarat Univ, Dept Biotechnol, Univ Rd, Patan 384265, Gujarat, India","1","A2665",NA,NA
+"836",NA,"1","A3036",NA,NA
+"837","Indian Inst Technol, Ecol Restorat Lab, Dept Environm Sci & Engn, Ctr Min Environm,Indian Sch Mines, Dhanbad 826004, Bihar, India","2","A0445",NA,NA
+"838",NA,NA,"C0070",NA,NA
+"839","Natl Remote Sensing Ctr, Soils & Land Resources Assessment Div, Hyderabad 500037, Andhra Pradesh, India","5","A1524",NA,NA
+"841","Indian Inst Remote Sensing, Agr & Soil Div, Dehra Dun, Uttarakhand, India","1","A1524",NA,NA
+"842","Natl Remote Sensing Ctr, Watershed Monitoring & Rural Dev Div, Hyderabad 500037, Andhra Pradesh, India","1","A1524",NA,NA
+"843","Natl Remote Sensing Ctr, Land Resources Use & Monitoring Grp, Hyderabad 500037, Andhra Pradesh, India","1","A1524",NA,NA
+"844",NA,NA,"C0054",NA,NA
+"849",NA,NA,"A3295",NA,NA
+"850",NA,NA,"A3255",NA,NA
+"856",NA,NA,"A3302",NA,NA
+"857",NA,"3","A3168",NA,NA
+"858",NA,NA,"B0004",NA,NA
+"876",NA,"2","A2866",NA,NA
+"877",NA,"1","A3207",NA,NA
+"888",NA,"1","A2804",NA,NA
+"889",NA,NA,"C0258",NA,NA
+"893",NA,NA,"C0211",NA,NA
+"894",NA,NA,"C0140",NA,NA
+"904",NA,NA,"C0143",NA,NA
+"905",NA,"2","A2976",NA,NA
+"912",NA,"2","A2996",NA,NA
+"919",NA,NA,"C0179",NA,NA
+"926",NA,"1","A3141",NA,NA
+"933",NA,"1","A2841",NA,NA
+"949",NA,NA,"C0229",NA,NA
+"962",NA,NA,"C0240",NA,NA
+"965",NA,NA,"B0007",NA,NA
+"972",NA,NA,"C0283",NA,NA
+"973",NA,"2","A3226",NA,NA
+"974",NA,NA,"B0018",NA,NA
+"975",NA,"1","A2474",NA,NA
+"984",NA,NA,"B0022",NA,NA
+"993",NA,"1","A3228",NA,NA
+"994",NA,NA,"C0005",NA,NA
+"1009",NA,NA,"C0015",NA,NA
+"1010","Mansoura Univ, Fac Agr, Agr Engn Dept, Mansoura 35516, Egypt","1","A2450",NA,NA
+"1011","ICAR Indian Agr Res Inst, Div Agr Engn, New Delhi 110012, India","2","A2450",NA,NA
+"1012","GB Pant Univ Agr & Technol, Dept Irrigat & Drainage Engn, Pantnagar 263145, Uttarakhand, India","1","A2450",NA,NA
+"1013","Catholic Univ Bukavu, Fac Agron Sci, Bukavu, Rep Congo","1","A2450",NA,NA
+"1014","Sandip Univ, SMTS Agr Sci, Madhubani 847235, Bihar, India","1","A2450",NA,NA
+"1015","Univ Illinois, Agroecosyst Sustainabil Ctr, Inst Sustainabil Energy & Environm, Urbana, IL USA","1","A2450",NA,NA
+"1016","St Gadge Baba Amravati Univ, Dept Geol, Amravati 444602, Maharashtra, India","1","A2450",NA,NA
+"1017","Univ Mumbai, Dept Geog, Malina Campus, Mumbai 400098, Maharashtra, India","1","A2450",NA,NA
+"1018","Water Resources & Appl Math Res Lab, Nagpur 440027, Maharashtra, India","1","A2450",NA,NA
+"1019","Punjab Agr Univ, Dept Soil & Water Conservat Engn, Ludhiana 141004, Punjab, India","1","A2450",NA,NA
+"1020","Shoolini Univ, Civil Engn Dept, Solan 173229, Himachal Prades, India","2","A2450",NA,NA
+"1021","Zagazig Univ, Fac Engn, Water & Water Struct Engn Dept, Zagazig 44519, Egypt","1","A2450",NA,NA
+"1022","State Forest Res Inst, Orchid Res & Dev Ctr, Itanagar, Arunachal Prade, India","1","A0937",NA,NA
+"1023","No Arizona Univ, Coll Engn Forestry & Nat Sci, Sch Forestry, Flagstaff, AZ 86011 USA","3","A1195",NA,NA
+"1024","Wildlife Inst India, Dept Anim Ecol Conservat Biol, Chandrabani POB 18, Dehra Dun 248001, Uttarakhand, India","2","A0652",NA,NA
+"1025","Graph Era Hill Univ, Dept Environm Sci, Dehra Dun, Uttarakhand, India","1","A2665",NA,NA
+"1026","Gurukula Kangri Univ, Dept Zool & Environm Sci, Avian Divers & Bioacoust Lab, Haridwar 249404, Uttarakhand, India","1","A2665",NA,NA
+"1027",NA,"1","A3155",NA,NA
+"1029","Univ Kwazulu Natal, Sch Agr Earth & Environm Sci, ZA-4041 Pietermaritzburg, South Africa","1","A2665",NA,NA
+"1030","Tamil Nadu Agr Univ, Dept Agr Microbiol, Coimbatore 641003, Tamil Nadu, India","6","A1722",NA,NA
+"1031","Aban Infrastruct Pvt Ltd, Biotechnol Div, 113 Pantheon Rd, Madras 600008, Tamil Nadu, India","1","A1722",NA,NA
+"1032","Tamil Nadu Agr Univ, Forest Coll, Mettupalayam 641301, Tamil Nadu, India","1","A1722",NA,NA
+"1033","Tamil Nadu Agr Univ, Res Inst, Mettupalayam 641301, Tamil Nadu, India","1","A1722",NA,NA
+"1034",NA,"1","A3326",NA,NA
+"1046",NA,NA,"C0009",NA,NA
+"1047",NA,NA,"C0061",NA,NA
+"1049",NA,NA,"C0210",NA,NA
+"1050",NA,NA,"C0020",NA,NA
+"1051",NA,NA,"B0005",NA,NA
+"1068",NA,NA,"B0003",NA,NA
+"1072",NA,"1","A3094",NA,NA
+"1073",NA,NA,"C0345",NA,NA
+"1074",NA,NA,"A3331",NA,NA
+"1075",NA,NA,"B0026",NA,NA
+"1092",NA,"3","A3184",NA,NA
+"1112",NA,"4","A2872",NA,NA
+"1117",NA,"2","A2920",NA,NA
+"1129",NA,NA,"C0029",NA,NA
+"1133",NA,"1","A3249",NA,NA
+"1140",NA,NA,"C0051",NA,NA
+"1142",NA,"3","A3109",NA,NA
+"1147",NA,"2","A3024",NA,NA
+"1170",NA,"3","A2825",NA,NA
+"1172",NA,NA,"A3243",NA,NA
+"1173",NA,"1","A3072",NA,NA
+"1174",NA,NA,"B0014",NA,NA
+"1180",NA,NA,"C0033",NA,NA
+"1181",NA,"3","A3210",NA,NA
+"1192",NA,"2","A2772",NA,NA
+"1193","Ctr Environm Planning & Technol CEPT Univ, Ahmadabad 380009, Gujarat, India","2","A1692",NA,NA
+"1194","Govt India, Dept Space, Indian Space Res Org, IIRS, 4 Kalidas Rd, Dehra Dun 248001, Uttarakhand, India","3","A1692",NA,NA
+"1195","Univ Hyderabad, Univ Ctr Earth & Space Sci, Prof CR Rao Rd, Hyderabad 500046, Andhra Pradesh, India","1","A1692",NA,NA
+"1196","Veer Chandra Singh Garhwali Uttarakhand Univ Hort, Coll Forestry, Ranichauri 249199, India","6","A2665",NA,NA
+"1197","Indira Gandhi Natl Tribal Univ, Dept Environm Sci, Amarkantak 484887, India","1","A2665",NA,NA
+"1198","French Inst Pondicherry, UMIFRE 21, USR 3330, CNRS MAEE, Pondicherry, India","7","A1524",NA,NA
+"1199","Univ Guyane, Univ Antilles, INRAE, CNRS,UMR EcoFoG,Agroparistech,Cirad, Kourou, French Guiana","1","A1524",NA,NA
+"1200","Univ Montpellier, AMAP, IRD, CNRS,CIRAD,INRA, Montpellier, France","1","A1524",NA,NA
+"1201","Indian Space Res Org, Natl Remote Sensing Ctr, Hyderabad, India","1","A1524",NA,NA
+"1202","Univ Grenoble Alpes, Lab Interdisciplinaire Phys, Grenoble, France","1","A1524",NA,NA
+"1203","NIT, Dept Biotechnol, Yupia 791112, Arunachal Prade, India","2","A2665",NA,NA
+"1204","Rajiv Gandhi Univ, Dept Bot, Ctr Potential Excellence Biodivers, Higher Plant Div & Validat Unit, Rono Hills, Doimukh 791112, Arunachal Prade, India","1","A2665",NA,NA
+"1205","Wageningen Univ, Forest & Nat Conservat Policy Grp, NL-6700 AP Wageningen, Netherlands","3","A1692",NA,NA
+"1206","Univ Utrecht, Copernicus Inst Susthinable Dev, NL-3508 TC Utrecht, Netherlands","1","A1692",NA,NA
+"1207","Wageningen Univ, Strateg Commun Grp, NL-6700 AP Wageningen, Netherlands","1","A1692",NA,NA
+"1214",NA,"1","A2493",NA,NA
+"1224",NA,NA,"C0200",NA,NA
+"1225",NA,NA,"C0162",NA,NA
+"1235",NA,"5","A3152",NA,NA
+"1244",NA,"1","A2910",NA,NA
+"1245",NA,"1","A3196",NA,NA
+"1246",NA,NA,"C0117",NA,NA
+"1247",NA,NA,"C0228",NA,NA
+"1248",NA,NA,"C0284",NA,NA
+"1249",NA,NA,"C0259",NA,NA
+"1250",NA,NA,"C0014",NA,NA
+"1260",NA,NA,"C0182",NA,NA
+"1262",NA,NA,"C0180",NA,NA
+"1263",NA,NA,"C0008",NA,NA
+"1284",NA,NA,"C0037",NA,NA
+"1289",NA,"3","A2929",NA,NA
+"1292",NA,NA,"C0006",NA,NA
+"1293",NA,"1","A2934",NA,NA
+"1294",NA,"2","A2847",NA,NA
+"1301",NA,NA,"C0086",NA,NA
+"1302",NA,"1","A2749",NA,NA
+"1303",NA,"3","A2850",NA,NA
+"1304",NA,"1","A3088",NA,NA
+"1325",NA,"1","A3067",NA,NA
+"1327",NA,NA,"C0223",NA,NA
+"1334",NA,NA,"B0012",NA,NA
+"1337",NA,"1","A3256",NA,NA
+"1338","Cent Univ Rajasthan, Sch Earth Sci, Dept Environm Sci, Remote Sensing & GIS Lab, NH-8, Ajmer 305817, Rajasthan, India","2","A0114",NA,NA
+"1339","Univ Gottingen, Dept Forest Genet & Forest Tree Breeding, Busgenweg 2, D-37077 Gottingen, Germany","3","A1692",NA,NA
+"1340","Forest Res Inst, Forest Bot & Tree Improvement Sect, Yezin 05282, Nay Pyi Taw, Myanmar","1","A1692",NA,NA
+"1341","Michigan Technol Univ, Sch Forest Resources & Environm Sci, 1400 Townsend Dr, Houghton, MI 49931 USA","1","A1692",NA,NA
+"1342","China Univ Min & Technol, State Key Lab Coal Resources & Safe Min, Xuzhou, Jiangsu, Peoples R China","3","A3105",NA,NA
+"1343","Nat Hist Museum, Dept Earth Sci, Cromwell Rd, London SW7 5BD, England","1","A3105",NA,NA
+"1344","China Univ Min & Technol, Sch Resources & Geosci, Xuzhou 221116, Jiangsu, Peoples R China","1","A3105",NA,NA
+"1345","China Univ Min & Technol, Coll Geosci & Survey Engn, Beijing 100083, Peoples R China","1","A3105",NA,NA
+"1346","Chinese Acad Sci, Inst Geol & Geophys, Beijing, Peoples R China","1","A3105",NA,NA
+"1347","Univ Nottingham, Dept Chem & Environm Engn, Nottingham Rd, Nottingham, England","1","A3105",NA,NA
+"1348","Univ New South Wales, Sch Biol Earth & Environm Sci, Sydney, NSW, Australia","1","A3105",NA,NA
+"1349","CSIR, Acad Sci & Innovat Res, New Delhi 110001, India","3","A2665",NA,NA
+"1350","CSIR Indian Inst Toxicol Res, Div Environm Chem, Lucknow 226001, Uttar Pradesh, India","3","A2665",NA,NA
+"1351",NA,"1","A2837",NA,NA
+"1352","Abasaheb Garware Coll, Annasaheb Kulkarni Dept Biodivers, Pune 4, Maharashtra, India","1","A1692",NA,NA
+"1353","Abasaheb Garware Coll, Dept Zool, Pune 4, Maharashtra, India","1","A1692",NA,NA
+"1354","Modern Coll, Dept Zool, Pune 5, Maharashtra, India","1","A1692",NA,NA
+"1355",NA,"2","A3112",NA,NA
+"1356",NA,"1","A3027",NA,NA
+"1366",NA,NA,"C0058",NA,NA
+"1367",NA,"1","A2863",NA,NA
+"1368",NA,NA,"B0016",NA,NA
+"1371",NA,NA,"C0137",NA,NA
+"1380",NA,NA,"B0023",NA,NA
+"1388",NA,NA,"C0132",NA,NA
+"1389",NA,"3","A3044",NA,NA
+"1390",NA,NA,"C0010",NA,NA
+"1397",NA,"2","A3004",NA,NA
+"1398","ICAR Complex NEH Reg, Umiam 793103, Meghalaya, India","10","A2692",NA,NA
+"1399","Kisan PG Coll, Post Grad Dept Bot, Bahraich 271801, Uttar Pradesh, India","2","A2741",NA,NA
+"1400","CSIR Cent Inst Min & Fuel Res, Environm Management Div, Digwadih Campus,PO FRI, Dhanbad 828108, Jharkhand, India","3","A1576",NA,NA
+"1401",NA,NA,"C0130",NA,NA

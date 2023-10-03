@@ -3,8 +3,8 @@ title: "Metadata analysis"
 author: "Krishna Anujan"
 date: "07/03/2023"
 output:
-  word_document: default
   html_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -15,11 +15,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction/Background
 
-Global analyses draw on sparse data from the tropics, particularly from South Asian forests. Even though data from India - representing two-thirds of South Asia - exists, a barrier to syntheses is the absence of standardised and accessible data. To address this gap, we formed the India Tree Inventory (INvenTree, https://inventree.weebly.com) Network to harmonise published tree data from forest plots across India into an aggregate inventory and identify geographic and human dimensions of data gaps across biomes in India. 
+Global analyses draw on sparse data from the tropics, particularly from South Asian forests. Even though data from India - representing two-thirds of South Asia - exists, a barrier to syntheses is the absence of standardised and accessible data. To address this gap, we formed the India Tree Inventory (INvenTree, https://inventree.weebly.com) Network to harmonise published tree data from forest plots across India into an aggregate inventory and identify geographic and human dimensions of data gaps across biomes in India.
 
 ## Objectives
 
-Our objectives are to understand (1) who and where tree-based data on India was being published from, (2) to understand geographic gaps in sampling effort (3) status of data availability across studies.
+We seek to understand (1) publication biases and (2) geographic gaps in tree community research in India.
 
 
 ```{r reading the files, echo=F}
@@ -54,9 +54,7 @@ num_unsure<-table(lvl2$Remarks)[4]
 
 ## Methods
 
-We created a database of peer-reviewed articles published between 1991-2023 from Indian ecosystems that use tree inventory information from multispecies communities. We used a Web of Science Search to search abstracts for the terms ((tree diversity OR forest structure OR (tree* AND biomass) OR (forest* AND biomass\*) OR carbon stock OR vegetation survey* OR vegetation sampling OR (tree* AND plot\*) OR (forest* AND plot\*) OR (measur* AND tree\*) OR (checklist* AND flora\*) OR (checklist* AND tree\*) OR (checklist* AND plant\*)) AND India), that produced 3353 entries. Although this might result in many false positives, we intended to cast a wide net. We then manually sorted these for relevance using three criteria -*) a) reports on data from multi-species tree communities b) either using plot, transect or checklist c) in India*. 
-
-With this filtered dataset, we looked for trends in publication. We used WoS tools to derive publication year, journal names, authors and affiliations. We used Google maps based tools to extract locations of author affiliations. We analysed this using community ecology methods, following Mori et al 2015. 
+We created a database of peer-reviewed articles published between 1991-2023 from Indian ecosystems that use tree inventory information from multispecies communities. We used a Web of Science (WoS) Search to search abstracts using broad search terms for tree, vegetation, plot or biomass  based studies in India, which returned 3353 entries and manually sorted these for relevance. With this filtered dataset, we attempted to discern patterns in publication. We used WoS tools to derive publication year, journal names, authors and affiliations and Google maps-based tools to extract locations of author affiliations. We analysed this dataset using community ecology methods, following Mori et al 2015.
 
 ```{r trends, echo=F}
 
@@ -135,15 +133,6 @@ add2<-add2[,1:3]
 
 add_lat_long<-rbind(add_lat_long, add2)
 
-library(plyr)
-
-add_unique<-ddply(add_lat_long, .(address), summarise,
-                  lat=mean(Latitude, na.rm=T),
-                  long=mean(Longitude, na.rm=T))
-
-write.csv(add_unique, "modified_data/addresses_unique.csv", row.names = F)
-
-#2. only geocode if address is not in lookup table
 
 add3<-read.csv("modified_data/InvenTree_corresponding_adds_12th_March.csv")
 colnames(add3)[1]<-"address"
@@ -160,6 +149,19 @@ add4$address <- sub('\\..*', '', add4$address)
 add4<-add4[complete.cases(add4),]
 add_lat_long<-rbind(add_lat_long, add4)
 
+add5<-read.csv("modified_data/InvenTree_corresponding_adds_13th_March.csv")
+colnames(add5)[1]<-"address"
+add5<-add5[,1:3]
+add5$address <- sub('\\..*', '', add5$address)
+add5<-add5[complete.cases(add5),]
+add_lat_long<-rbind(add_lat_long, add5)
+
+add6<-read.csv("modified_data/InvenTree_authors_13th_March.csv")
+colnames(add6)[1]<-"address"
+add6<-add6[,1:3]
+add6$address <- sub('\\..*', '', add6$address)
+add6<-add6[complete.cases(add6),]
+add_lat_long<-rbind(add_lat_long, add6)
 
 library(plyr)
 
@@ -361,8 +363,12 @@ journals<-sort(table(lvl2$Source.Title), decreasing=T)
 pi<-journals/sum(journals)
 shannon.journal<-round(-sum(pi*log(pi)), 2)
 
-#richness of corresponding authors
-#diversity of corresponding authors
+#richness of corresponding author affiliations
+cor.affs<-sort(table(cor.locs$cor.locs), decreasing=T)
+
+#diversity of corresponding author affiliations
+pi<-cor.affs/sum(cor.affs)
+shannon.cors<-round(-sum(pi*log(pi)), 2)
 ```
 
 ```{r bibliometrix, echo=F}
@@ -371,16 +377,14 @@ shannon.journal<-round(-sum(pi*log(pi)), 2)
 
 ## Results
 
-We have completed phase I of the INvenTree metadata analysis. Manual sorting resulted in `r lvl2_tot` publications that report tree inventories either using plot/transect methods (n=`r num_plot_trans`), checklists (n=`r num_check`) while `r num_unsure` were of uncertain methods.
+Manual sorting resulted in `r lvl2_tot` potentially relevant publications that report on tree inventories from multispecies communities in India either using plot/transect methods (n=`r num_plot_trans`), checklists (n=`r num_check`).
 
-Preliminary results show that publications spanned `r sum(journals)` journals, with the top 3 being `r names(journals)[1]` (n=`r journals[1]`), `r names(journals)[2]` (n=`r journals[2]`) and `r names(journals)[3]` (n=`r journals[3]`). The Shannon's diversity of journals was `r shannon.journal`, suggesting high dominance.
+Preliminary results show that publications spanned `r sum(journals)` journals; the top 3 were `r names(journals)[1]` (n=`r journals[1]`), `r names(journals)[2]` (n=`r journals[2]`) and `r names(journals)[3]` (n=`r journals[3]`). The Shannon's diversity of journals was `r shannon.journal`, suggesting high dominance. Across the papers, there were `r sum(authors_geo$count)` instances of authorship with the most number (n=`r country.freq[1]`) from `r names(country.freq)[1]`, followed by `r names(country.freq)[2]` (n=`r country.freq[2]`). Corresponding authors were predominantly affiliated to institutions in `r max.cor.country` (n=`r cor.max` out of `r lvl2_tot`), followed by `r names(countries)[2]` (n=`r countries[2]`). There were a total of `r sum(cor.affs)` corresponding author affiliations with a Shannon's diversity of `r shannon.cors`.
 
-Corresponding authors were predominantly affiliated to institutions in `r max.cor.country` (n=`r cor.max` out of `r lvl2_tot`), followed by `r names(countries)[2]` (n=`r countries[2]`). Across the papers, there were `r sum(authors_geo$count)` points of authorship with the most number (n=`r country.freq[1]`) from `r names(country.freq)[1]`. Authors were second most frequently from `r names(country.freq)[2]` (n=`r country.freq[2]`).
-
-In ongoing analyses, we are assessing the spread and accessibility of the data as well as gaps.
+Ongoing analyses will assess geographic and habitat biases.
 
 ## Implications
 
-Based on our metadata analysis, we identify opportunities for collaboration and data sharing among Indian scientists as well as between Indian scientists and foreign collaborators to further the goals of understanding forest dynamics in the region. We thus motivate the INvenTree network to share and synthesise tree-based data that will help fill crucial gaps in our understanding of forest dynamics from the region and allow novel syntheses and application.
+Based on our metadata analysis, we identify opportunities for collaboration and data sharing among Indian scientists as well as between Indian scientists and foreign collaborators towards a more diverse and equitable community of ecologists. We thus motivate the INvenTree network to share and synthesise tree-based data that will help fill crucial gaps in our understanding of forest dynamics from the region and allow novel syntheses and application.
 
 
